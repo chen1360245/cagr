@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' as const }, // Homepage
     { path: '/privacy', priority: 0.5, changeFrequency: 'monthly' as const },
+    { path: '/privacy-extension', priority: 0.5, changeFrequency: 'monthly' as const },
     { path: '/terms', priority: 0.5, changeFrequency: 'monthly' as const },
   ]
 
