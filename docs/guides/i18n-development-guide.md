@@ -443,7 +443,7 @@ function compareTranslations(file1, file2) {
 
 ## 相关文档
 
-- [多语言国际化战略方案](./i18n-strategy.md) - 语言选择策略和市场分析
+- [多语言国际化战略方案](../research/i18n-strategy.md) - 语言选择策略和市场分析
 - [多语言实施检查清单](./i18n-checklist.md) - 快速检查和验证清单
 - [Next.js 国际化文档](https://nextjs.org/docs/app/building-your-application/routing/internationalization)
 - [next-intl 官方文档](https://next-intl-docs.vercel.app/)

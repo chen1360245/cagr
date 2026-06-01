@@ -597,7 +597,7 @@ URL格式：https://cagrcalculator.app/?pv=10000&fv=40000&n=10&mode=FV
 - ✅ SEO效果更好（权重集中在一个URL）
 - ✅ 用户体验更佳（滚动浏览，无需跳转）
 - ✅ 100%竞品采用此方案
-- 详见 `EDUCATIONAL_CONTENT_PLACEMENT.md`
+- 详见 `docs/research/educational-content-placement.md`
 
 ---
 
@@ -1624,7 +1624,7 @@ cagr-calculator/
 
 #### Week 7: 教育内容（单页应用，首页Sections）⏱️ 5天
 **设计决策**: 所有教育内容放在**首页底部**（单页应用），而非单独页面
-**决策依据**: 详见 `EDUCATIONAL_CONTENT_PLACEMENT.md`
+**决策依据**: 详见 `docs/research/educational-content-placement.md`
   - ✅ SEO效果更好（权重集中）
   - ✅ 用户体验更佳（滚动浏览，无需跳转）
   - ✅ 100%竞品采用此方案

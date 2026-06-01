@@ -81,6 +81,9 @@ messages/     Localized interface copy
 public/       Static assets
 ```
 
+Additional research and maintainer notes are indexed in
+[`docs/README.md`](docs/README.md).
+
 ## Formula Reference
 
 ```text

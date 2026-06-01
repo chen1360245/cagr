@@ -27,7 +27,7 @@ npm install next-intl@^4.3.12 use-intl@^4.3.12
 
 ### 可选但推荐
 - [ ] `/components/LanguageSwitcher.tsx` - 语言切换组件
-- [ ] `/docs/i18n-development-guide.md` - 开发文档
+- [ ] `/docs/guides/i18n-development-guide.md` - 开发文档
 
 ## ⚙️ 配置检查
 
