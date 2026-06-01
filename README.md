@@ -1,5 +1,7 @@
 # Smart CAGR Calculator
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 A free, multilingual compound annual growth rate calculator. Enter any three
 values and the calculator solves for the fourth:
 
