@@ -16,6 +16,8 @@
 # Misc
 .DS_Store
 *.pem
+*.key
+*.docx
 
 # Windows error files (created when running Windows commands in bash)
 nul
