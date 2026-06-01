@@ -66,6 +66,7 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Validation
 
 ```bash
+npm test
 npx tsc --noEmit
 pnpm lint
 pnpm build
@@ -95,6 +96,12 @@ PV   = FV / (1 + r)^n
 n    = log(FV / PV) / log(1 + r)
 ```
 
+## Disclaimer
+
+This project is provided for educational and informational purposes only.
+Calculation results are estimates based on user inputs. They are not guaranteed
+to be accurate, complete, or suitable for financial or investment decisions.
+
 ## Contributing
 
 Issues and pull requests are welcome. For bug reports or feature ideas, open a
@@ -103,6 +110,7 @@ Issues and pull requests are welcome. For bug reports or feature ideas, open a
 Before opening a pull request, run:
 
 ```bash
+npm test
 npx tsc --noEmit
 pnpm lint
 pnpm build

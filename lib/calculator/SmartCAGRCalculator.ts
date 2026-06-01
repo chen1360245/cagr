@@ -20,6 +20,41 @@ import type {
 } from '@/types/calculator'
 
 export class SmartCAGRCalculator {
+  private static assertFinite(name: string, value: number): void {
+    if (!Number.isFinite(value)) {
+      throw new Error(`${name} must be a finite number`)
+    }
+  }
+
+  private static assertPositive(name: string, value: number): void {
+    this.assertFinite(name, value)
+    if (value <= 0) {
+      throw new Error(`${name} must be greater than 0`)
+    }
+  }
+
+  private static assertRate(r: number): void {
+    this.assertFinite('CAGR', r)
+    if (r <= -1 || r > 10) {
+      throw new Error('CAGR must be greater than -100% and no more than 1000%')
+    }
+  }
+
+  private static assertFiniteResult(name: string, value: number): number {
+    if (!Number.isFinite(value)) {
+      throw new Error(`${name} is outside the supported numeric range`)
+    }
+    return value
+  }
+
+  private static assertPositiveResult(name: string, value: number): number {
+    this.assertFiniteResult(name, value)
+    if (value <= 0) {
+      throw new Error(`${name} is outside the supported numeric range`)
+    }
+    return value
+  }
+
   /**
    * Detect calculation mode based on filled inputs
    * PRD Section 5.1.1: "当填写3个字段时,自动识别计算模式"
@@ -53,20 +88,18 @@ export class SmartCAGRCalculator {
       }
     }
 
-    // Validate input values
-    if (inputs.pv !== undefined && inputs.pv <= 0) {
+    // Core inputs use decimal rates: 0.15 means 15%.
+    if (inputs.pv !== undefined && (!Number.isFinite(inputs.pv) || inputs.pv <= 0)) {
       errors.push({ field: 'pv', message: 'Initial Value must be greater than 0' })
     }
-    if (inputs.fv !== undefined && inputs.fv <= 0) {
+    if (inputs.fv !== undefined && (!Number.isFinite(inputs.fv) || inputs.fv <= 0)) {
       errors.push({ field: 'fv', message: 'Final Value must be greater than 0' })
     }
-    if (inputs.n !== undefined && inputs.n <= 0) {
+    if (inputs.n !== undefined && (!Number.isFinite(inputs.n) || inputs.n <= 0)) {
       errors.push({ field: 'n', message: 'Time Period must be greater than 0' })
     }
-    // FIXED: Accept percentage format (e.g., 15 for 15%) instead of decimal (0.15)
-    // User inputs percentage, we convert to decimal only during calculation
-    if (inputs.r !== undefined && (inputs.r < -100 || inputs.r > 1000)) {
-      errors.push({ field: 'r', message: 'CAGR must be between -100% and 1000%' })
+    if (inputs.r !== undefined && (!Number.isFinite(inputs.r) || inputs.r <= -1 || inputs.r > 10)) {
+      errors.push({ field: 'r', message: 'CAGR must be greater than -100% and no more than 1000%' })
     }
 
     if (errors.length > 0) {
@@ -112,7 +145,10 @@ export class SmartCAGRCalculator {
    * Formula: CAGR = (FV / PV)^(1/n) - 1
    */
   static calculateCAGR(pv: number, fv: number, n: number): number {
-    return Math.pow(fv / pv, 1 / n) - 1
+    this.assertPositive('Initial Value', pv)
+    this.assertPositive('Final Value', fv)
+    this.assertPositive('Time Period', n)
+    return this.assertFiniteResult('CAGR', Math.pow(fv / pv, 1 / n) - 1)
   }
 
   /**
@@ -120,7 +156,10 @@ export class SmartCAGRCalculator {
    * Formula: FV = PV × (1 + r)^n
    */
   static calculateFV(pv: number, r: number, n: number): number {
-    return pv * Math.pow(1 + r, n)
+    this.assertPositive('Initial Value', pv)
+    this.assertRate(r)
+    this.assertPositive('Time Period', n)
+    return this.assertPositiveResult('Final Value', pv * Math.pow(1 + r, n))
   }
 
   /**
@@ -128,7 +167,10 @@ export class SmartCAGRCalculator {
    * Formula: PV = FV / (1 + r)^n
    */
   static calculatePV(fv: number, r: number, n: number): number {
-    return fv / Math.pow(1 + r, n)
+    this.assertPositive('Final Value', fv)
+    this.assertRate(r)
+    this.assertPositive('Time Period', n)
+    return this.assertPositiveResult('Initial Value', fv / Math.pow(1 + r, n))
   }
 
   /**
@@ -136,34 +178,50 @@ export class SmartCAGRCalculator {
    * Formula: n = log(FV / PV) / log(1 + r)
    */
   static calculateTime(pv: number, fv: number, r: number): number {
+    this.assertPositive('Initial Value', pv)
+    this.assertPositive('Final Value', fv)
+    this.assertRate(r)
     if (r === 0) {
       throw new Error('CAGR cannot be 0 when calculating time period')
     }
-    if (r === -1) {
-      throw new Error('CAGR cannot be -100% when calculating time period')
+    const n = Math.log(fv / pv) / Math.log(1 + r)
+    if (!Number.isFinite(n) || n <= 0) {
+      throw new Error('The target value and CAGR do not produce a positive time period')
     }
-    return Math.log(fv / pv) / Math.log(1 + r)
+    return n
   }
 
   /**
    * Generate yearly breakdown data
    */
   static generateYearlyBreakdown(pv: number, r: number, n: number): YearlyData[] {
-    const data: YearlyData[] = []
-    let currentValue = pv
+    this.assertPositive('Initial Value', pv)
+    this.assertRate(r)
+    this.assertPositive('Time Period', n)
 
-    for (let year = 1; year <= n; year++) {
-      const growth = currentValue * r
-      const endValue = currentValue + growth
+    const data: YearlyData[] = []
+    const pointCount = Math.min(Math.ceil(n), 1000)
+    let previousYear = 0
+
+    for (let point = 1; point <= pointCount; point++) {
+      const year = n <= 1000 ? Math.min(point, n) : (point * n) / pointCount
+      const startValue = this.assertPositiveResult(
+        'Yearly breakdown value',
+        pv * Math.pow(1 + r, previousYear)
+      )
+      const endValue = this.assertPositiveResult(
+        'Yearly breakdown value',
+        pv * Math.pow(1 + r, year)
+      )
 
       data.push({
         year,
-        startValue: currentValue,
-        growth,
+        startValue,
+        growth: endValue - startValue,
         endValue,
       })
 
-      currentValue = endValue
+      previousYear = year
     }
 
     return data
@@ -174,12 +232,16 @@ export class SmartCAGRCalculator {
    */
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   static calculateMetrics(pv: number, fv: number, r: number, _n: number): ResultMetrics {
+    this.assertPositive('Initial Value', pv)
+    this.assertPositive('Final Value', fv)
+    this.assertRate(r)
+
     const cagr = r * 100 // Convert to percentage
-    const totalGrowth = ((fv - pv) / pv) * 100
-    const absoluteReturn = fv - pv
+    const totalGrowth = this.assertFiniteResult('Total Growth', ((fv - pv) / pv) * 100)
+    const absoluteReturn = this.assertFiniteResult('Absolute Return', fv - pv)
     // Use accurate logarithmic formula instead of Rule of 72 approximation
     // doublingTime = log(2) / log(1 + r)
-    const doublingTime = r !== 0 ? Math.log(2) / Math.log(1 + r) : Infinity
+    const doublingTime = r > 0 ? Math.log(2) / Math.log(1 + r) : Infinity
 
     return {
       cagr,

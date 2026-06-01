@@ -9,6 +9,13 @@ import { useSearchParams } from 'next/navigation'
 import { SmartCAGRCalculator } from '@/lib/calculator/SmartCAGRCalculator'
 import type { CalculatorInputs, CalculationResult, ModeDetection } from '@/types/calculator'
 
+function toCalculationInputs(inputs: CalculatorInputs): CalculatorInputs {
+  return {
+    ...inputs,
+    r: inputs.r !== undefined ? inputs.r / 100 : undefined,
+  }
+}
+
 export function useSmartCalculator() {
   const searchParams = useSearchParams()
   const hasAutoCalculated = useRef(false)
@@ -26,7 +33,7 @@ export function useSmartCalculator() {
 
   // Detect calculation mode in real-time
   const modeDetection: ModeDetection = useMemo(() => {
-    return SmartCAGRCalculator.detectMode(inputs)
+    return SmartCAGRCalculator.detectMode(toCalculationInputs(inputs))
   }, [inputs])
 
   // Update individual input
@@ -48,12 +55,7 @@ export function useSmartCalculator() {
 
     try {
       // Convert percentage input to decimal for calculation
-      const calculationInputs: CalculatorInputs = {
-        ...inputs,
-        r: inputs.r !== undefined ? inputs.r / 100 : undefined,
-      }
-
-      const calculationResult = SmartCAGRCalculator.calculate(calculationInputs)
+      const calculationResult = SmartCAGRCalculator.calculate(toCalculationInputs(inputs))
       setResult(calculationResult)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Calculation failed')
@@ -113,11 +115,7 @@ export function useSmartCalculator() {
         // Small delay to allow state to update
         setTimeout(() => {
           try {
-            const calculationInputs: CalculatorInputs = {
-              ...urlInputs,
-              r: urlInputs.r !== undefined ? urlInputs.r / 100 : undefined,
-            }
-            const calculationResult = SmartCAGRCalculator.calculate(calculationInputs)
+            const calculationResult = SmartCAGRCalculator.calculate(toCalculationInputs(urlInputs))
             setResult(calculationResult)
             hasAutoCalculated.current = true
           } catch (err) {

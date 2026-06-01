@@ -96,7 +96,9 @@ export function SmartInput({
     }
   }
 
-  const isFilled = value !== undefined && value > 0
+  const isFilled =
+    value !== undefined &&
+    (type === 'percentage' ? value > -100 && value <= 1000 : value > 0)
   const hasError = !!error
 
   return (

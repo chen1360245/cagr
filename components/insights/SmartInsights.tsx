@@ -89,13 +89,20 @@ export function SmartInsights({ result, className }: SmartInsightsProps) {
 
   // 3. Time warning (for Mode 4)
   const getTimeWarning = () => {
-    if (result.mode === 'TIME' && n > 30) {
+    if (result.mode === 'TIME' && cagr > 0 && n > 30) {
+      const higherInitialValue = pv * 2
+      const higherCagr = Math.min(cagr * 1.2, 10)
+      const initialValueSuggestion =
+        higherInitialValue < fv
+          ? `Increase initial investment: ${formatCurrency(pv)} → ${formatCurrency(higherInitialValue)} saves ${(n - SmartCAGRCalculator.calculateTime(higherInitialValue, fv, cagr)).toFixed(1)} years`
+          : `Increase your initial investment to reduce the time needed to reach the target`
+
       return {
         show: true,
         message: `${n.toFixed(1)} years is a very long timeline!`,
         suggestions: [
-          `Increase initial investment: ${formatCurrency(pv)} → ${formatCurrency(pv * 2)} saves ${(n - SmartCAGRCalculator.calculateTime(pv * 2, fv, cagr / 100)).toFixed(1)} years`,
-          `Aim for higher returns: ${formatPercentage(cagr)} → ${formatPercentage(cagr * 1.2)} saves ${(n - SmartCAGRCalculator.calculateTime(pv, fv, (cagr * 1.2) / 100)).toFixed(1)} years`,
+          initialValueSuggestion,
+          `Aim for higher returns: ${formatPercentage(cagr)} → ${formatPercentage(higherCagr)} saves ${(n - SmartCAGRCalculator.calculateTime(pv, fv, higherCagr)).toFixed(1)} years`,
           `Adjust target: ${formatCurrency(fv)} → ${formatCurrency(fv * 0.75)} is more achievable`,
         ],
       }

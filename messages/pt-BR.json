@@ -39,6 +39,7 @@
       "calculateNow": "⚡ Calcular Agora",
       "calculating": "Calculando...",
       "clearAll": "Limpar Tudo",
+      "disclaimer": "Apenas para fins informativos. Os resultados são estimativas baseadas nos dados inseridos e não há garantia de exatidão, integridade ou adequação para decisões de investimento.",
       "placeholders": {
         "initialValue": "10.000",
         "finalValue": "40.000",
@@ -165,7 +166,7 @@
           {
             "title": "Análise de Receita da Empresa",
             "description": "Analise o crescimento da receita de uma empresa ao longo de vários anos para entender seu desempenho a longo prazo. Isso ajuda os stakeholders a tomar decisões informadas sobre a saúde financeira da empresa.",
-            "example": "Exemplo: Receita R$ 5M → R$ 12M em 7 anos = 13,2% CAGR"
+            "example": "Exemplo: Receita R$ 5M → R$ 12M em 7 anos = 13,3% CAGR"
           },
           {
             "title": "Comparação de Fundos Mútuos",
@@ -224,7 +225,7 @@
               "Taxa CAGR: 15%",
               "Período: 10 anos"
             ],
-            "result": "Resultado: R$ 123.589,71"
+            "result": "Resultado: R$ 123.592,35"
           },
           {
             "number": "4",
@@ -245,7 +246,7 @@
           "Formato da Taxa CAGR: Insira como porcentagem (ex: 15 para 15%)",
           "Apenas valores positivos: Valores Inicial e Final devem ser maiores que 0",
           "Período: Deve ser maior que 0 anos (pode ser decimal, ex: 2,5 anos)",
-          "Faixa CAGR: Entre -100% e 1000% para cálculos práticos"
+          "Faixa CAGR: Maior que -100% e não superior a 1000% para cálculos práticos"
         ],
         "interpretingTitle": "Interpretando Seus Resultados",
         "interpretingItems": [
@@ -335,7 +336,7 @@
           "Conteúdo educacional e exemplos"
         ],
         "accuracyTitle": "Precisão e Aviso Legal",
-        "accuracyText": "Nossa calculadora CAGR usa fórmulas matemáticas precisas para garantir a precisão. Todos os cálculos realizados por esta calculadora são baseados na fórmula CAGR padrão: `(VF/VI)^((1/n)) - 1`. No entanto, esta ferramenta de cálculo é fornecida apenas para fins educacionais e informativos. As decisões de investimento devem ser tomadas após consultar consultores financeiros qualificados. O desempenho passado não garante resultados futuros.",
+        "accuracyText": "Nossa calculadora usa a fórmula CAGR padrão: `(VF/VI)^((1/n)) - 1`. Os resultados são estimativas baseadas nos dados inseridos e não há garantia de exatidão ou integridade. Esta ferramenta é fornecida apenas para fins educacionais e informativos. As decisões de investimento devem ser tomadas após consultar consultores financeiros qualificados. O desempenho passado não garante resultados futuros.",
         "technologyTitle": "Tecnologia",
         "technologyIntro": "Construída com tecnologias web modernas para garantir desempenho rápido e excelente experiência do usuário:",
         "technologies": [

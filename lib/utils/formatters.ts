@@ -71,6 +71,8 @@ export function formatPercentageInput(value: string): string {
   const cleaned = value.replace(/[^0-9.-]/g, '')
 
   // Limit to reasonable percentage range
+  if (cleaned === '-' || cleaned === '.' || cleaned === '-.') return cleaned
+
   const num = parseFloat(cleaned)
   if (isNaN(num)) return ''
   if (num < -100) return '-100'

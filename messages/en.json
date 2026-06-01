@@ -39,6 +39,7 @@
       "calculateNow": "⚡ Calculate Now",
       "calculating": "Calculating...",
       "clearAll": "Clear All",
+      "disclaimer": "For informational purposes only. Results are estimates based on your inputs and are not guaranteed to be accurate, complete, or suitable for investment decisions.",
       "placeholders": {
         "initialValue": "10,000",
         "finalValue": "40,000",
@@ -165,7 +166,7 @@
           {
             "title": "Company Revenue Analysis",
             "description": "Analyze a company's revenue growth over multiple years to understand its long-term performance. This helps stakeholders make informed decisions about the company's financial health.",
-            "example": "Example: Revenue $5M → $12M in 7 years = 13.2% CAGR"
+            "example": "Example: Revenue $5M → $12M in 7 years = 13.3% CAGR"
           },
           {
             "title": "Mutual Fund Comparison",
@@ -224,7 +225,7 @@
               "CAGR Rate: 15%",
               "Time Period: 10 years"
             ],
-            "result": "Result: $123,589.71"
+            "result": "Result: $123,592.35"
           },
           {
             "number": "4",
@@ -245,7 +246,7 @@
           "CAGR Rate format: Enter as percentage (e.g., 15 for 15%)",
           "Positive values only: Initial and Final values must be greater than 0",
           "Time period: Must be greater than 0 years (can be decimal, e.g., 2.5 years)",
-          "CAGR range: Between -100% and 1000% for practical calculations"
+          "CAGR range: Greater than -100% and no more than 1000% for practical calculations"
         ],
         "interpretingTitle": "Interpreting Your Results",
         "interpretingItems": [
@@ -301,7 +302,7 @@
           }
         ],
         "stillHaveQuestionsTitle": "Still have questions?",
-        "stillHaveQuestionsText": "This calculator is designed to be as accurate and helpful as possible. All calculations are based on widely-accepted financial formulas. If you have additional questions about CAGR or need help interpreting your results, consider consulting with a financial advisor."
+        "stillHaveQuestionsText": "This calculator is designed to be helpful and uses widely accepted financial formulas. Results are estimates based on your inputs. If you have additional questions about CAGR or need help interpreting your results, consider consulting with a financial advisor."
       },
       "about": {
         "mainTitle": "About Our Free Online CAGR Calculator",
@@ -335,7 +336,7 @@
           "Educational content and examples"
         ],
         "accuracyTitle": "Accuracy & Disclaimer",
-        "accuracyText": "Our CAGR calculator uses precise mathematical formulas to ensure accuracy. All calculations performed by this calculator are based on the standard CAGR formula: `(FV/PV)^((1/n)) - 1`. However, this calculator tool is provided for educational and informational purposes only. Investment decisions should be made after consulting with qualified financial advisors. Past performance does not guarantee future results.",
+        "accuracyText": "Our CAGR calculator uses the standard CAGR formula: `(FV/PV)^((1/n)) - 1`. Results are estimates based on your inputs and are not guaranteed to be accurate or complete. This calculator is provided for educational and informational purposes only. Investment decisions should be made after consulting with qualified financial advisors. Past performance does not guarantee future results.",
         "technologyTitle": "Technology",
         "technologyIntro": "Built with modern web technologies to ensure fast performance and excellent user experience:",
         "technologies": [

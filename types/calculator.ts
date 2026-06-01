@@ -32,7 +32,7 @@ export interface ResultMetrics {
   cagr: number // Annual growth rate as percentage
   totalGrowth: number // Total growth percentage
   absoluteReturn: number // Dollar amount gained/lost
-  doublingTime: number // Years to double (Rule of 72)
+  doublingTime: number // Exact years to double, or Infinity when not applicable
 }
 
 export interface ValidationError {

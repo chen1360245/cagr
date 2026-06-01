@@ -39,6 +39,7 @@
       "calculateNow": "⚡ Calculer maintenant",
       "calculating": "Calcul en cours...",
       "clearAll": "Effacer tout",
+      "disclaimer": "À titre informatif uniquement. Les résultats sont des estimations basées sur vos données et leur exactitude, leur exhaustivité ou leur pertinence pour des décisions d'investissement ne sont pas garanties.",
       "placeholders": {
         "initialValue": "10 000",
         "finalValue": "40 000",
@@ -165,7 +166,7 @@
           {
             "title": "Analyse des revenus d'entreprise",
             "description": "Analysez la croissance des revenus d'une entreprise sur plusieurs années pour comprendre sa performance à long terme. Cela aide les parties prenantes à prendre des décisions éclairées sur la santé financière de l'entreprise.",
-            "example": "Exemple: Revenus 5M€ → 12M€ en 7 ans = 13,2% TCAC"
+            "example": "Exemple: Revenus 5M€ → 12M€ en 7 ans = 13,3% TCAC"
           },
           {
             "title": "Comparaison de fonds communs",
@@ -224,7 +225,7 @@
               "Taux TCAC: 15%",
               "Période: 10 ans"
             ],
-            "result": "Résultat: 123 589,71€"
+            "result": "Résultat: 123 592,35€"
           },
           {
             "number": "4",
@@ -245,7 +246,7 @@
           "Format du taux TCAC: Entrez en pourcentage (ex: 15 pour 15%)",
           "Valeurs positives uniquement: Les valeurs initiale et finale doivent être supérieures à 0",
           "Période: Doit être supérieure à 0 ans (peut être décimale, ex: 2,5 ans)",
-          "Plage TCAC: Entre -100% et 1000% pour des calculs pratiques"
+          "Plage TCAC: Supérieure à -100% et inférieure ou égale à 1000% pour des calculs pratiques"
         ],
         "interpretingTitle": "Interpréter vos résultats",
         "interpretingItems": [
@@ -335,7 +336,7 @@
           "Contenu éducatif et exemples"
         ],
         "accuracyTitle": "Précision et avertissement",
-        "accuracyText": "Notre calculateur TCAC utilise des formules mathématiques précises pour garantir l'exactitude. Tous les calculs effectués par ce calculateur sont basés sur la formule TCAC standard: `(VF/VI)^((1/n)) - 1`. Cependant, cet outil de calcul est fourni à des fins éducatives et informatives uniquement. Les décisions d'investissement doivent être prises après consultation avec des conseillers financiers qualifiés. Les performances passées ne garantissent pas les résultats futurs.",
+        "accuracyText": "Notre calculateur utilise la formule TCAC standard: `(VF/VI)^((1/n)) - 1`. Les résultats sont des estimations basées sur vos données et leur exactitude ou leur exhaustivité ne sont pas garanties. Cet outil est fourni à des fins éducatives et informatives uniquement. Les décisions d'investissement doivent être prises après consultation avec des conseillers financiers qualifiés. Les performances passées ne garantissent pas les résultats futurs.",
         "technologyTitle": "Technologie",
         "technologyIntro": "Construit avec des technologies web modernes pour assurer des performances rapides et une excellente expérience utilisateur:",
         "technologies": [

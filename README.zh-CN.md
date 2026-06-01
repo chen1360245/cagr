@@ -64,6 +64,7 @@ pnpm dev
 ## 验证命令
 
 ```bash
+npm test
 npx tsc --noEmit
 pnpm lint
 pnpm build
@@ -92,6 +93,11 @@ PV   = FV / (1 + r)^n
 n    = log(FV / PV) / log(1 + r)
 ```
 
+## 免责声明
+
+本项目仅用于教育和信息参考。计算结果是基于用户输入数据的估算值，不保证准确或完整，
+也不应作为财务或投资决策依据。
+
 ## 参与贡献
 
 欢迎提交 Issue 和 Pull Request。如需反馈问题或建议功能，请创建
@@ -100,6 +106,7 @@ n    = log(FV / PV) / log(1 + r)
 提交 Pull Request 前，请运行：
 
 ```bash
+npm test
 npx tsc --noEmit
 pnpm lint
 pnpm build

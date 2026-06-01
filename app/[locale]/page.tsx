@@ -136,6 +136,10 @@ function CalculatorContent() {
                 {t('calculator.clearAll')}
               </Button>
             </div>
+
+            <p className="mt-4 text-xs leading-relaxed text-gray-500">
+              {t('calculator.disclaimer')}
+            </p>
           </div>
 
           {/* Result Panel */}
