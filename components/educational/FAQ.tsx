@@ -13,7 +13,7 @@ export function FAQ() {
   }
 
   // Get the number of FAQ questions dynamically
-  const faqCount = 10
+  const faqCount = 15
 
   return (
     <div className="space-y-4">

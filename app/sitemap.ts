@@ -44,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             'fr': `${baseUrl}/fr${page.path}`,
             'pt-BR': `${baseUrl}/pt-BR${page.path}`,
             'ko': `${baseUrl}/ko${page.path}`,
+            'x-default': `${baseUrl}/en${page.path}`,
           }
         }
       })

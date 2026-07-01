@@ -2,6 +2,8 @@
   "metadata": {
     "title": "CAGR Rechner - Kostenlos Online Berechnen",
     "description": "Kostenloser Online CAGR-Rechner. Berechnen Sie die jährliche Wachstumsrate, Endwert, Anfangswert oder Zeitraum. Formeln, Beispiele und Schritt-für-Schritt-Anleitung.",
+    "ogTitle": "CAGR Rechner",
+    "twitterTitle": "CAGR Rechner",
     "keywords": "CAGR Rechner,durchschnittliche jährliche Wachstumsrate,CAGR berechnen,CAGR Rechner online,wie berechnet man CAGR,CAGR Formel,Investitionsrechner,Wachstumsraten Rechner"
   },
   "layout": {
@@ -75,12 +77,14 @@
       "learnTitle": "📚 Über CAGR Lernen",
       "learnSubtitle": "Alles, was Sie wissen müssen, um fundierte Investitionsentscheidungen zu treffen",
       "whatIsCAGR": "Was ist CAGR?",
-      "formula": "CAGR Berechnen - Formel Erklärt",
+      "formula": "CAGR-Formel mit Beispielen - So Berechnen Sie CAGR",
       "useCases": "CAGR-Rechner Anwendungsfälle & Beispiele",
-      "cagrVsMetrics": "CAGR vs. Andere Metriken",
+      "cagrVsMetrics": "CAGR vs IZF vs Annualisierte Rendite",
       "howToUse": "So Verwenden Sie Diesen CAGR-Rechner",
       "faq": "CAGR-Rechner Häufig Gestellte Fragen",
-      "about": "Über Unseren Kostenlosen Online-CAGR-Rechner"
+      "about": "Über Unseren Kostenlosen Online-CAGR-Rechner",
+      "cagrInExcel": "CAGR in Excel",
+      "cagrForInvestments": "CAGR für Aktien, Fonds & Rente"
     },
     "loading": "Rechner wird geladen...",
     "educational": {
@@ -299,6 +303,26 @@
           {
             "question": "Was sind die Haupteinschränkungen von CAGR?",
             "answer": "CAGR geht von konstantem Wachstum aus, was in der Realität selten vorkommt. Es berücksichtigt keine Volatilität, kein Risiko oder zwischenzeitliche Cashflows (Dividenden, Einzahlungen, Abhebungen). Es spiegelt auch nicht den Zeitpunkt der Renditen wider – Sie könnten 4 Jahre lang negative Renditen haben und einen Anstieg im Jahr 5, und zeigen immer noch eine positive CAGR. Verwenden Sie CAGR immer zusammen mit anderen Kennzahlen für ein vollständiges Bild."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen CAGR und IZF?",
+            "answer": "CAGR misst die geglättete annualisierte Wachstumsrate zwischen einem Anfangs- und Endwert, unter der Annahme, dass keine zwischenzeitlichen Cashflows auftreten. IZF (Interner Zinsfuß) berücksichtigt den Zeitpunkt und die Höhe mehrerer Cashflows in und aus einer Investition. Verwenden Sie CAGR für einfache Vergleiche von Anfang bis Ende; verwenden Sie IZF für Investitionen mit Einzahlungen, Abhebungen oder reinvestierten Dividenden in unregelmäßigen Abständen."
+          },
+          {
+            "question": "Beinhaltet CAGR Dividenden?",
+            "answer": "Die Standard-CAGR-Formel berücksichtigt keine Dividenden, es sei denn, sie werden reinvestiert. Wenn Sie Dividenden reinvestieren, schließen Sie sie in den Endwert (EW) ein. Wenn beispielsweise eine Aktie von 10.000€ auf 18.000€ gewachsen ist und 2.000€ an reinvestierten Dividenden ausgezahlt hat, verwenden Sie EW = 20.000€. Wenn Dividenden als Bargeld ausgezahlt werden, sind sie nicht Teil der CAGR und sollten separat als Einkommen erfasst werden."
+          },
+          {
+            "question": "Wie berechne ich CAGR bei monatlichen Beiträgen (Sparplan)?",
+            "answer": "CAGR ist nicht ideal für monatliche Beiträge, da jeder Beitrag einen unterschiedlichen Anlagehorizont hat. Verwenden Sie stattdessen XIRR (Erweiterter Interner Zinsfuß) in Excel oder Google Sheets: Listen Sie jeden Beitragstag und Betrag (negativ) sowie den Endwert (positiv) auf, und wenden Sie =XIRR(Werte; Datumsangaben) an. Dies gibt eine wahre annualisierte Rendite für unregelmäßige Cashflows."
+          },
+          {
+            "question": "Was ist ein realistisches CAGR-Ziel für die Rente?",
+            "answer": "Historische langfristige Aktienmarktdurchschnitte liegen bei etwa 10% jährlich vor Inflation. Ein realistisches CAGR-Ziel für ein Rentenportfolio, nach Anpassung für Inflation und eine diversifizierte Mischung aus Aktien und Anleihen, liegt oft bei 5-7% realer Rendite. Ihr Ziel sollte Ihrer Risikotoleranz, Ihrem Anlagehorizont und Ihrem Entnahmeplan entsprechen. Vergangene Performance garantiert keine zukünftigen Ergebnisse."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen CAGR und XIRR?",
+            "answer": "CAGR funktioniert am besten, wenn es eine einmalige Anlage und einen Endwert gibt. XIRR (Erweiterter Interner Zinsfuß) behandelt mehrere Investitionen oder Abhebungen zu verschiedenen Daten und ist daher besser für Sparpläne, Dividendenreinvestitionspläne oder Portfolios mit unregelmäßigen Beiträgen geeignet. In Excel verwenden Sie =XIRR(Werte; Datumsangaben) mit negativen Cashflows und dem positiven Endwert des Portfolios."
           }
         ],
         "stillHaveQuestionsTitle": "Haben Sie noch Fragen?",
@@ -406,6 +430,60 @@
         "cagrTitle": "CAGR:",
         "cagrCalc": "(180 / 100)^((1/3)) - 1 CAGR = 21,7%",
         "exampleNotice": "Hinweis: CAGR (21,7%) ist genauer, weil es die Aufzinsung berücksichtigt, während der einfache Durchschnitt (26,67%) das wahre annualisierte Wachstum überschätzt."
+      },
+      "cagrInExcel": {
+        "title": "CAGR-Formel in Excel",
+        "intro": "Sie können CAGR in Excel mit der POWER-Funktion, der RATE-Funktion oder einer manuellen Formel berechnen. Jede Methode liefert dasselbe Ergebnis; wählen Sie diejenige, die am besten zu Ihrer Tabelle passt.",
+        "methodsTitle": "Drei Wege, CAGR in Excel zu Berechnen",
+        "methods": [
+          {
+            "name": "POWER-Funktion",
+            "formula": "=POWER(EW/BW, 1/n)-1",
+            "example": "=POWER(20000/10000, 1/5)-1 ergibt 0,1487 oder 14,87%"
+          },
+          {
+            "name": "Manuelle Formel",
+            "formula": "=(EW/BW)^(1/n)-1",
+            "example": "=(20000/10000)^(1/5)-1 ergibt 0,1487 oder 14,87%"
+          },
+          {
+            "name": "RATE-Funktion",
+            "formula": "=RATE(n, 0, -BW, EW)",
+            "example": "=RATE(5, 0, -10000, 20000) ergibt 0,1487 oder 14,87%"
+          }
+        ],
+        "variablesTitle": "Wobei:",
+        "variables": {
+          "fv": "EW = Endwert der Investition",
+          "pv": "BW = Anfangswert der Investition",
+          "n": "n = Anzahl der Jahre"
+        },
+        "tipTitle": "Tipp",
+        "tip": "Wenn Ihre Daten monatliche Beiträge oder unregelmäßige Daten enthalten, verwenden Sie stattdessen =XIRR(Werte; Datumsangaben). Sie können auch unseren kostenlosen Online-CAGR-Rechner oben nutzen, um Ihr Excel-Ergebnis zu überprüfen."
+      },
+      "cagrForInvestments": {
+        "title": "CAGR für Aktien, Fonds & Rente",
+        "intro": "CAGR ist eine der nützlichsten Kennzahlen für den Vergleich von Investitionen über denselben Zeitraum. Sie glättet kurzfristige Volatilität, sodass Sie die annualisierte Wachstumsrate erkennen können.",
+        "scenariosTitle": "Häufige Anlageszenarien",
+        "scenarios": [
+          {
+            "title": "Aktien & Indexfonds",
+            "description": "Der S&P 500 hat historisch über lange Zeiträume etwa 10-11% CAGR vor Inflation erwirtschaftet. Einzelaktien können je nach Unternehmen und Marktbedingungen höher oder niedriger ausfallen.",
+            "example": "Beispiel: 10.000€ in einen Indexfonds bei 10% CAGR wachsen in 10 Jahren auf ~25.937€"
+          },
+          {
+            "title": "Vergleich von Investmentfonds",
+            "description": "Beim Vergleich zweier Fonds zeigt Ihnen CAGR, welcher Fonds über denselben Zeitraum schneller gewachsen ist. Vergleichen Sie immer nach Gebühren und Steuern.",
+            "example": "Beispiel: Fonds A bei 12% CAGR vs. Fonds B bei 9% CAGR über 10 Jahre"
+          },
+          {
+            "title": "Rentenplanung",
+            "description": "Für Rentenprojektionen verwenden viele Planer eine reale CAGR-Annahme von 5-7% nach Inflation. Dies hilft, den benötigten Sparbetrag und die voraussichtliche Dauer des Portfolios abzuschätzen.",
+            "example": "Beispiel: 500€/Monat bei 7% CAGR für 30 Jahre wachsen auf ~609.000€"
+          }
+        ],
+        "cautionTitle": "Was CAGR Ihnen Nicht Sagt",
+        "caution": "CAGR misst kein Risiko, Volatilität oder Drawdowns. Zwei Investitionen können dieselbe CAGR haben, aber sehr unterschiedliche Risikoprofile. Prüfen Sie immer Volatilität, Sharpe Ratio, maximalen Drawdown und Ihre eigene Risikotoleranz, bevor Sie investieren."
       }
     }
   }

@@ -56,7 +56,7 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: t('title'),
+      title: t('ogTitle'),
       description: t('description'),
       url: `https://cagrcalculator.app/${locale}`,
       siteName: 'CAGR Calculator',
@@ -73,7 +73,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: t('title'),
+      title: t('twitterTitle'),
       description: t('description'),
       images: ['/og-image.png'],
     },

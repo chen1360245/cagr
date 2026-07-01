@@ -1,7 +1,9 @@
 {
   "metadata": {
-    "title": "CAGR Calculator - Free Online Compound Annual Growth Rate Calculator",
+    "title": "CAGR Calculator - Free Online CAGR Formula & Calculator",
     "description": "Free online CAGR calculator. Calculate compound annual growth rate, final value, initial value, or time period. Formulas, examples, and step-by-step guide.",
+    "ogTitle": "CAGR Calculator",
+    "twitterTitle": "CAGR Calculator",
     "keywords": "CAGR calculator,compound annual growth rate,calculate cagr,cagr calculator online,how to calculate cagr,cagr formula,investment calculator,growth rate calculator"
   },
   "layout": {
@@ -75,12 +77,14 @@
       "learnTitle": "📚 Learn About CAGR",
       "learnSubtitle": "Everything you need to know to make informed investment decisions",
       "whatIsCAGR": "What is CAGR?",
-      "formula": "How to Calculate CAGR - Formula Explained",
+      "formula": "CAGR Formula with Examples - How to Calculate",
       "useCases": "CAGR Calculator Use Cases & Examples",
-      "cagrVsMetrics": "CAGR vs Other Metrics",
+      "cagrVsMetrics": "CAGR vs IRR vs Annualized Return",
       "howToUse": "How to Use This CAGR Calculator",
       "faq": "CAGR Calculator FAQ",
-      "about": "About Our Free Online CAGR Calculator"
+      "about": "About Our Free Online CAGR Calculator",
+      "cagrInExcel": "CAGR in Excel",
+      "cagrForInvestments": "CAGR for Stocks, Mutual Funds & Retirement"
     },
     "loading": "Loading calculator...",
     "educational": {
@@ -299,6 +303,26 @@
           {
             "question": "What are the main limitations of CAGR?",
             "answer": "CAGR assumes constant growth, which rarely occurs in reality. It doesn't account for volatility, risk, or intermediate cash flows (dividends, deposits, withdrawals). It also doesn't reflect the timing of returns—you could have negative returns for 4 years and a spike in year 5, still showing a positive CAGR. Always use CAGR alongside other metrics for a complete picture."
+          },
+          {
+            "question": "What is the difference between CAGR and IRR?",
+            "answer": "CAGR measures the smoothed annualized growth between a starting and ending value, assuming no intermediate cash flows. IRR (Internal Rate of Return) accounts for the timing and size of multiple cash flows in and out of an investment. Use CAGR for simple start-to-end comparisons; use IRR for investments with deposits, withdrawals, or dividends reinvested at irregular intervals."
+          },
+          {
+            "question": "Does CAGR include dividends?",
+            "answer": "Standard CAGR does not include dividends unless they are reinvested. If you reinvest dividends, include them in the final value (FV). For example, if a stock grew from $10,000 to $18,000 and paid $2,000 in reinvested dividends, use FV = $20,000. If dividends are taken as cash, they are not part of CAGR and should be tracked separately as income."
+          },
+          {
+            "question": "How do I calculate CAGR with monthly contributions (SIP)?",
+            "answer": "CAGR is not ideal for monthly contributions because each contribution has a different investment horizon. Use XIRR (Extended Internal Rate of Return) in Excel or Google Sheets instead: list each contribution date and amount (negative) plus the final value (positive), then apply =XIRR(values, dates). This gives a true annualized return for irregular cash flows."
+          },
+          {
+            "question": "What is a realistic CAGR target for retirement?",
+            "answer": "Historical long-term stock market averages are around 10% annually before inflation. A realistic retirement portfolio CAGR, after adjusting for inflation and a diversified mix of stocks and bonds, is often 5-7% real return. Your target should match your risk tolerance, time horizon, and withdrawal plan. Past performance does not guarantee future results."
+          },
+          {
+            "question": "What is the difference between CAGR and XIRR?",
+            "answer": "CAGR works best when there is one initial investment and one final value. XIRR handles multiple investments or withdrawals at different dates, making it better for SIPs, dividend reinvestment plans, or portfolios with irregular contributions. In Excel, use =XIRR(values, dates) with cash outflows as negative and the final portfolio value as positive."
           }
         ],
         "stillHaveQuestionsTitle": "Still have questions?",
@@ -406,6 +430,60 @@
         "cagrTitle": "CAGR:",
         "cagrCalc": "(180 / 100)^((1/3)) - 1 CAGR = 21.7%",
         "exampleNotice": "Notice: CAGR (21.7%) is more accurate because it accounts for compounding, while the simple average (26.67%) overestimates the true annualized growth."
+      },
+      "cagrInExcel": {
+        "title": "CAGR Formula in Excel",
+        "intro": "You can calculate CAGR in Excel using the POWER function, the RATE function, or a manual formula. Each method gives the same result; choose the one that fits your worksheet.",
+        "methodsTitle": "Three Ways to Calculate CAGR in Excel",
+        "methods": [
+          {
+            "name": "POWER function",
+            "formula": "=POWER(FV/PV, 1/n)-1",
+            "example": "=POWER(20000/10000, 1/5)-1 returns 0.1487 or 14.87%"
+          },
+          {
+            "name": "Manual formula",
+            "formula": "=(FV/PV)^(1/n)-1",
+            "example": "=(20000/10000)^(1/5)-1 returns 0.1487 or 14.87%"
+          },
+          {
+            "name": "RATE function",
+            "formula": "=RATE(n, 0, -PV, FV)",
+            "example": "=RATE(5, 0, -10000, 20000) returns 0.1487 or 14.87%"
+          }
+        ],
+        "variablesTitle": "Where:",
+        "variables": {
+          "fv": "FV = ending value of the investment",
+          "pv": "PV = beginning value of the investment",
+          "n": "n = number of years"
+        },
+        "tipTitle": "Tip",
+        "tip": "If your data includes monthly contributions or irregular dates, use =XIRR(values, dates) instead of CAGR. You can also use our free online CAGR calculator above to double-check your Excel result."
+      },
+      "cagrForInvestments": {
+        "title": "CAGR for Stocks, Mutual Funds & Retirement",
+        "intro": "CAGR is one of the most useful metrics for comparing investments over the same time period. It smooths out short-term volatility so you can see the annualized growth rate.",
+        "scenariosTitle": "Common Investment Scenarios",
+        "scenarios": [
+          {
+            "title": "Stocks & Index Funds",
+            "description": "The S&P 500 has historically returned about 10-11% CAGR before inflation over long periods. Individual stocks can be higher or lower depending on the company and market conditions.",
+            "example": "Example: $10,000 in an index fund at 10% CAGR grows to ~$25,937 in 10 years"
+          },
+          {
+            "title": "Mutual Fund Comparison",
+            "description": "When comparing two mutual funds, CAGR lets you see which fund grew faster over the same period. Always compare after fees and taxes.",
+            "example": "Example: Fund A at 12% CAGR vs Fund B at 9% CAGR over 10 years"
+          },
+          {
+            "title": "Retirement Planning",
+            "description": "For retirement projections, many planners use a 5-7% real CAGR assumption after inflation. This helps estimate how much you need to save and how long your portfolio may last.",
+            "example": "Example: $500/month at 7% CAGR for 30 years grows to ~$609,000"
+          }
+        ],
+        "cautionTitle": "What CAGR Doesn't Tell You",
+        "caution": "CAGR does not measure risk, volatility, or drawdowns. Two investments can have the same CAGR but very different risk profiles. Always review volatility, Sharpe ratio, maximum drawdown, and your own risk tolerance before investing."
       }
     }
   }

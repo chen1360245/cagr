@@ -2,6 +2,8 @@
   "metadata": {
     "title": "Calculateur TCAC - Taux de Croissance Annuel Composé",
     "description": "Calculateur TCAC gratuit en ligne. Calculez le taux de croissance annuel composé, valeur finale, valeur initiale ou période. Formules, exemples et guide étape par étape.",
+    "ogTitle": "Calculateur TCAC",
+    "twitterTitle": "Calculateur TCAC",
     "keywords": "calculateur TCAC,taux de croissance annuel composé,calculer tcac,calculateur tcac en ligne,comment calculer tcac,formule tcac,calculateur d'investissement,calculateur de taux de croissance,calculateur CAGR"
   },
   "layout": {
@@ -75,12 +77,14 @@
       "learnTitle": "📚 En savoir plus sur le TCAC",
       "learnSubtitle": "Tout ce que vous devez savoir pour prendre des décisions d'investissement éclairées",
       "whatIsCAGR": "Qu'est-ce que le TCAC?",
-      "formula": "Comment calculer le TCAC - Explication de la formule",
+      "formula": "Formule du TCAC avec exemples - Comment calculer",
       "useCases": "Cas d'usage et exemples du calculateur TCAC",
-      "cagrVsMetrics": "TCAC vs autres indicateurs",
+      "cagrVsMetrics": "TCAC vs TRI vs rendement annualisé",
       "howToUse": "Comment utiliser ce calculateur TCAC",
       "faq": "FAQ du calculateur TCAC",
-      "about": "À propos de notre calculateur TCAC gratuit en ligne"
+      "about": "À propos de notre calculateur TCAC gratuit en ligne",
+      "cagrInExcel": "TCAC dans Excel",
+      "cagrForInvestments": "TCAC pour actions, fonds et retraite"
     },
     "loading": "Chargement du calculateur...",
     "educational": {
@@ -299,6 +303,26 @@
           {
             "question": "Quelles sont les principales limitations du TCAC?",
             "answer": "Le TCAC suppose une croissance constante, ce qui se produit rarement dans la réalité. Il ne tient pas compte de la volatilité, du risque ou des flux de trésorerie intermédiaires (dividendes, dépôts, retraits). Il ne reflète pas non plus le timing des rendements - vous pourriez avoir des rendements négatifs pendant 4 ans et un pic en année 5, montrant toujours un TCAC positif. Utilisez toujours le TCAC avec d'autres mesures pour une image complète."
+          },
+          {
+            "question": "Quelle est la différence entre le TCAC et le TRI?",
+            "answer": "Le TCAC mesure le taux de croissance annualisé lissé entre une valeur de départ et une valeur d'arrivée, en supposant qu'il n'y a pas de flux de trésorerie intermédiaires. Le TRI (Taux de Rendement Interne) tient compte du timing et de l'importance de multiples flux de trésorerie entrants et sortants d'un investissement. Utilisez le TCAC pour des comparaisons simples du début à la fin ; utilisez le TRI pour des investissements avec dépôts, retraits ou dividendes réinvestis à des intervalles irréguliers."
+          },
+          {
+            "question": "Le TCAC inclut-il les dividendes?",
+            "answer": "Le TCAC standard n'inclut pas les dividendes, sauf s'ils sont réinvestis. Si vous réinvestissez les dividendes, incluez-les dans la valeur finale (VF). Par exemple, si une action est passée de 10 000€ à 18 000€ et a versé 2 000€ de dividendes réinvestis, utilisez VF = 20 000€. Si les dividendes sont encaissés, ils ne font pas partie du TCAC et doivent être suivis séparément comme revenu."
+          },
+          {
+            "question": "Comment calculer le TCAC avec des contributions mensuelles (SIP)?",
+            "answer": "Le TCAC n'est pas idéal pour les contributions mensuelles car chaque contribution a un horizon d'investissement différent. Utilisez plutôt la fonction XIRR (Taux de Rendement Interne Étendu) dans Excel ou Google Sheets : listez chaque date de contribution et le montant (négatif) ainsi que la valeur finale (positive), puis appliquez =XIRR(valeurs, dates). Cela donne un véritable rendement annualisé pour les flux de trésorerie irréguliers."
+          },
+          {
+            "question": "Quel est un objectif TCAC réaliste pour la retraite?",
+            "answer": "Les moyennes historiques à long terme du marché boursier sont d'environ 10% par an avant inflation. Un objectif TCAC réaliste pour un portefeuille de retraite, après ajustement pour l'inflation et un mix diversifié d'actions et d'obligations, est souvent de 5-7% de rendement réel. Votre objectif doit correspondre à votre tolérance au risque, à votre horizon temporel et à votre plan de retrait. Les performances passées ne garantissent pas les résultats futurs."
+          },
+          {
+            "question": "Quelle est la différence entre le TCAC et le XIRR?",
+            "answer": "Le TCAC fonctionne mieux lorsqu'il y a un seul investissement initial et une seule valeur finale. Le XIRR gère plusieurs investissements ou retraits à différentes dates, ce qui le rend meilleur pour les SIP, les plans de réinvestissement de dividendes ou les portefeuilles avec des contributions irrégulières. Dans Excel, utilisez =XIRR(valeurs, dates) avec les flux de trésorerie sortants comme négatifs et la valeur finale du portefeuille comme positive."
           }
         ],
         "stillHaveQuestionsTitle": "Vous avez encore des questions?",
@@ -406,6 +430,60 @@
         "cagrTitle": "TCAC:",
         "cagrCalc": "(180 / 100)^((1/3)) - 1 TCAC = 21,7%",
         "exampleNotice": "Remarque: Le TCAC (21,7%) est plus précis car il tient compte de la composition, tandis que la moyenne simple (26,67%) surestime la vraie croissance annualisée."
+      },
+      "cagrInExcel": {
+        "title": "Formule du TCAC dans Excel",
+        "intro": "Vous pouvez calculer le TCAC dans Excel en utilisant la fonction POWER, la fonction RATE ou une formule manuelle. Chaque méthode donne le même résultat ; choisissez celle qui convient le mieux à votre feuille de calcul.",
+        "methodsTitle": "Trois méthodes pour calculer le TCAC dans Excel",
+        "methods": [
+          {
+            "name": "Fonction POWER",
+            "formula": "=POWER(FV/PV, 1/n)-1",
+            "example": "=POWER(20000/10000, 1/5)-1 retourne 0,1487 ou 14,87%"
+          },
+          {
+            "name": "Formule manuelle",
+            "formula": "=(FV/PV)^(1/n)-1",
+            "example": "=(20000/10000)^(1/5)-1 retourne 0,1487 ou 14,87%"
+          },
+          {
+            "name": "Fonction RATE",
+            "formula": "=RATE(n, 0, -PV, FV)",
+            "example": "=RATE(5, 0, -10000, 20000) retourne 0,1487 ou 14,87%"
+          }
+        ],
+        "variablesTitle": "Où:",
+        "variables": {
+          "fv": "FV = valeur finale de l'investissement",
+          "pv": "PV = valeur initiale de l'investissement",
+          "n": "n = nombre d'années"
+        },
+        "tipTitle": "Astuce",
+        "tip": "Si vos données incluent des contributions mensuelles ou des dates irrégulières, utilisez =XIRR(valeurs, dates) au lieu du TCAC. Vous pouvez également utiliser notre calculateur TCAC gratuit en ligne ci-dessus pour vérifier votre résultat Excel."
+      },
+      "cagrForInvestments": {
+        "title": "TCAC pour actions, fonds communs et retraite",
+        "intro": "Le TCAC est l'une des mesures les plus utiles pour comparer des investissements sur la même période. Il lisse la volatilité à court terme pour que vous puissiez voir le taux de croissance annualisé.",
+        "scenariosTitle": "Scénarios d'investissement courants",
+        "scenarios": [
+          {
+            "title": "Actions et fonds indiciels",
+            "description": "Le S&P 500 a historiquement rapporté environ 10-11% de TCAC avant inflation sur de longues périodes. Les actions individuelles peuvent être plus élevées ou plus basses selon l'entreprise et les conditions du marché.",
+            "example": "Exemple : 10 000€ dans un fonds indiciel à 10% de TCAC atteint ~25 937€ en 10 ans"
+          },
+          {
+            "title": "Comparaison de fonds communs",
+            "description": "Lors de la comparaison de deux fonds communs, le TCAC vous permet de voir quel fonds a le mieux performé sur la même période. Comparez toujours après frais et impôts.",
+            "example": "Exemple : Fonds A à 12% de TCAC vs Fonds B à 9% de TCAC sur 10 ans"
+          },
+          {
+            "title": "Planification de la retraite",
+            "description": "Pour les projections de retraite, de nombreux planificateurs utilisent une hypothèse de TCAC réel de 5-7% après inflation. Cela aide à estimer combien vous devez épargner et combien de temps votre portefeuille peut durer.",
+            "example": "Exemple : 500€/mois à 7% de TCAC pendant 30 ans atteint ~609 000€"
+          }
+        ],
+        "cautionTitle": "Ce que le TCAC ne vous dit pas",
+        "caution": "Le TCAC ne mesure pas le risque, la volatilité ou les drawdowns. Deux investissements peuvent avoir le même TCAC mais des profils de risque très différents. Examinez toujours la volatilité, le ratio de Sharpe, le drawdown maximum et votre propre tolérance au risque avant d'investir."
       }
     }
   }

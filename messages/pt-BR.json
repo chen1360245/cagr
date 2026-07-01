@@ -2,6 +2,8 @@
   "metadata": {
     "title": "Calculadora CAGR - Taxa de Crescimento Anual Composta",
     "description": "Calculadora CAGR gratuita online. Calcule taxa de crescimento anual composta, valor final, valor inicial ou período. Fórmulas, exemplos e guia passo a passo.",
+    "ogTitle": "Calculadora CAGR",
+    "twitterTitle": "Calculadora CAGR",
     "keywords": "calculadora CAGR,taxa de crescimento anual composta,calcular cagr,calculadora cagr online,como calcular cagr,fórmula cagr,calculadora de investimento,calculadora de taxa de crescimento"
   },
   "layout": {
@@ -75,12 +77,14 @@
       "learnTitle": "📚 Aprenda Sobre CAGR",
       "learnSubtitle": "Tudo o que você precisa saber para tomar decisões de investimento informadas",
       "whatIsCAGR": "O que é CAGR?",
-      "formula": "Como Calcular CAGR - Fórmula Explicada",
+      "formula": "Fórmula CAGR com Exemplos - Como Calcular",
       "useCases": "Casos de Uso e Exemplos da Calculadora CAGR",
-      "cagrVsMetrics": "CAGR vs Outras Métricas",
+      "cagrVsMetrics": "CAGR vs TIR vs Retorno Anualizado",
       "howToUse": "Como Usar Esta Calculadora CAGR",
       "faq": "Perguntas Frequentes sobre Calculadora CAGR",
-      "about": "Sobre Nossa Calculadora CAGR Gratuita Online"
+      "about": "Sobre Nossa Calculadora CAGR Gratuita Online",
+      "cagrInExcel": "CAGR no Excel",
+      "cagrForInvestments": "CAGR para Ações, Fundos e Aposentadoria"
     },
     "loading": "Carregando calculadora...",
     "educational": {
@@ -299,6 +303,26 @@
           {
             "question": "Quais são as principais limitações do CAGR?",
             "answer": "O CAGR assume crescimento constante, o que raramente ocorre na realidade. Ele não leva em conta volatilidade, risco ou fluxos de caixa intermediários (dividendos, depósitos, retiradas). Também não reflete o timing dos retornos - você poderia ter retornos negativos por 4 anos e um pico no ano 5, ainda mostrando um CAGR positivo. Sempre use o CAGR junto com outras métricas para uma imagem completa."
+          },
+          {
+            "question": "Qual é a diferença entre CAGR e TIR?",
+            "answer": "O CAGR mede a taxa de crescimento anualizada suavizada entre um valor inicial e um valor final, assumindo que não haja fluxos de caixa intermediários. A TIR (Taxa Interna de Retorno) considera o timing e o tamanho de múltiplos fluxos de caixa de entrada e saída de um investimento. Use CAGR para comparações simples de início a fim; use TIR para investimentos com depósitos, retiradas ou dividendos reinvestidos em intervalos irregulares."
+          },
+          {
+            "question": "O CAGR inclui dividendos?",
+            "answer": "O CAGR padrão não inclui dividendos, a menos que sejam reinvestidos. Se você reinvestir dividendos, inclua-os no valor final (VF). Por exemplo, se uma ação cresceu de R$ 10.000 para R$ 18.000 e pagou R$ 2.000 em dividendos reinvestidos, use VF = R$ 20.000. Se os dividendos forem recebidos em dinheiro, eles não fazem parte do CAGR e devem ser acompanhados separadamente como renda."
+          },
+          {
+            "question": "Como calcular CAGR com aportes mensais (SIP)?",
+            "answer": "O CAGR não é ideal para aportes mensais porque cada contribuição tem um horizonte de investimento diferente. Use XIRR (Taxa Interna de Retorno Estendida) no Excel ou Google Sheets: liste cada data de contribuição e valor (negativo) mais o valor final (positivo), então aplique =XIRR(valores, datas). Isso fornece um retorno anualizado verdadeiro para fluxos de caixa irregulares."
+          },
+          {
+            "question": "Qual é uma meta realista de CAGR para aposentadoria?",
+            "answer": "As médias históricas de longo prazo do mercado de ações são de cerca de 10% ao ano antes da inflação. Uma meta realista de CAGR para carteira de aposentadoria, após ajustar pela inflação e uma mistura diversificada de ações e títulos, é frequentemente de 5-7% de retorno real. Sua meta deve corresponder à sua tolerância ao risco, horizonte de tempo e plano de retirada. O desempenho passado não garante resultados futuros."
+          },
+          {
+            "question": "Qual é a diferença entre CAGR e XIRR?",
+            "answer": "O CAGR funciona melhor quando há um único investimento inicial e um valor final. O XIRR lida com múltiplos investimentos ou retiradas em diferentes datas, tornando-o melhor para SIPs, planos de reinvestimento de dividendos ou carteiras com contribuições irregulares. No Excel, use =XIRR(valores, datas) com saídas de caixa como negativas e o valor final da carteira como positivo."
           }
         ],
         "stillHaveQuestionsTitle": "Ainda tem dúvidas?",
@@ -406,6 +430,60 @@
         "cagrTitle": "CAGR:",
         "cagrCalc": "(180 / 100)^((1/3)) - 1 CAGR = 21,7%",
         "exampleNotice": "Observe: O CAGR (21,7%) é mais preciso porque considera a composição, enquanto a média simples (26,67%) superestima o verdadeiro crescimento anualizado."
+      },
+      "cagrInExcel": {
+        "title": "Fórmula CAGR no Excel",
+        "intro": "Você pode calcular o CAGR no Excel usando a função POWER, a função RATE ou uma fórmula manual. Cada método dá o mesmo resultado; escolha o que melhor se adapta à sua planilha.",
+        "methodsTitle": "Três Maneiras de Calcular CAGR no Excel",
+        "methods": [
+          {
+            "name": "Função POWER",
+            "formula": "=POWER(FV/PV, 1/n)-1",
+            "example": "=POWER(20000/10000, 1/5)-1 retorna 0,1487 ou 14,87%"
+          },
+          {
+            "name": "Fórmula manual",
+            "formula": "=(FV/PV)^(1/n)-1",
+            "example": "=(20000/10000)^(1/5)-1 retorna 0,1487 ou 14,87%"
+          },
+          {
+            "name": "Função RATE",
+            "formula": "=RATE(n, 0, -PV, FV)",
+            "example": "=RATE(5, 0, -10000, 20000) retorna 0,1487 ou 14,87%"
+          }
+        ],
+        "variablesTitle": "Onde:",
+        "variables": {
+          "fv": "FV = valor final do investimento",
+          "pv": "PV = valor inicial do investimento",
+          "n": "n = número de anos"
+        },
+        "tipTitle": "Dica",
+        "tip": "Se seus dados incluem aportes mensais ou datas irregulares, use =XIRR(valores, datas) em vez de CAGR. Você também pode usar nossa calculadora CAGR online gratuita acima para conferir seu resultado do Excel."
+      },
+      "cagrForInvestments": {
+        "title": "CAGR para Ações, Fundos e Aposentadoria",
+        "intro": "O CAGR é uma das métricas mais úteis para comparar investimentos no mesmo período. Ele suaviza a volatilidade de curto prazo para que você possa ver a taxa de crescimento anualizada.",
+        "scenariosTitle": "Cenários de Investimento Comuns",
+        "scenarios": [
+          {
+            "title": "Ações e Fundos de Índice",
+            "description": "O S&P 500 historicamente retornou cerca de 10-11% CAGR antes da inflação ao longo de períodos longos. Ações individuais podem ser mais altas ou mais baixas dependendo da empresa e das condições de mercado.",
+            "example": "Exemplo: R$ 10.000 em um fundo de índice a 10% CAGR cresce para ~R$ 25.937 em 10 anos"
+          },
+          {
+            "title": "Comparação de Fundos Mútuos",
+            "description": "Ao comparar dois fundos mútuos, o CAGR permite que você veja qual fundo cresceu mais rápido no mesmo período. Sempre compare após taxas e impostos.",
+            "example": "Exemplo: Fundo A a 12% CAGR vs Fundo B a 9% CAGR ao longo de 10 anos"
+          },
+          {
+            "title": "Planejamento de Aposentadoria",
+            "description": "Para projeções de aposentadoria, muitos planejadores usam uma suposição de CAGR real de 5-7% após a inflação. Isso ajuda a estimar quanto você precisa poupar e quanto tempo sua carteira pode durar.",
+            "example": "Exemplo: R$ 500/mês a 7% CAGR por 30 anos cresce para ~R$ 609.000"
+          }
+        ],
+        "cautionTitle": "O que o CAGR Não Te Diz",
+        "caution": "O CAGR não mede risco, volatilidade ou drawdowns. Dois investimentos podem ter o mesmo CAGR mas perfis de risco muito diferentes. Sempre revise volatilidade, índice de Sharpe, drawdown máximo e sua própria tolerância ao risco antes de investir."
       }
     }
   }

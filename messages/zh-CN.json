@@ -1,7 +1,9 @@
 {
   "metadata": {
-    "title": "CAGR计算器 - 免费在线复合年增长率计算器",
+    "title": "CAGR计算器 - 免费在线CAGR公式与复合年增长率计算",
     "description": "免费在线CAGR计算器 - 计算复合年增长率、最终值、初始值或时间周期。通过公式、示例和分步指南学习如何计算CAGR。移动友好且准确。",
+    "ogTitle": "CAGR计算器",
+    "twitterTitle": "CAGR计算器",
     "keywords": "CAGR计算器,复合年增长率,计算cagr,在线cagr计算器,如何计算cagr,cagr公式,投资计算器,增长率计算器"
   },
   "layout": {
@@ -75,12 +77,14 @@
       "learnTitle": "📚 学习CAGR知识",
       "learnSubtitle": "了解做出明智投资决策所需的一切知识",
       "whatIsCAGR": "什么是CAGR？",
-      "formula": "如何计算CAGR - 公式详解",
+      "formula": "CAGR公式详解 - 如何计算复合年增长率",
       "useCases": "CAGR计算器使用案例和示例",
-      "cagrVsMetrics": "CAGR与其他指标对比",
+      "cagrVsMetrics": "CAGR vs IRR vs 年化收益率",
       "howToUse": "如何使用此CAGR计算器",
       "faq": "CAGR计算器常见问题",
-      "about": "关于我们的免费在线CAGR计算器"
+      "about": "关于我们的免费在线CAGR计算器",
+      "cagrInExcel": "Excel中的CAGR计算",
+      "cagrForInvestments": "CAGR用于股票、基金与退休规划"
     },
     "loading": "加载计算器中...",
     "educational": {
@@ -299,6 +303,26 @@
           {
             "question": "CAGR 的主要局限性是什么？",
             "answer": "CAGR 假设恒定增长，这在现实中很少发生。它不考虑波动性、风险或中间现金流（股息、存款、提款）。它也不反映回报的时间 - 您可能在 4 年内有负回报，在第 5 年有峰值，仍然显示正 CAGR。始终将 CAGR 与其他指标一起使用以获得完整的图景。"
+          },
+          {
+            "question": "CAGR 和 IRR 有什么区别？",
+            "answer": "CAGR 衡量的是从开始值到结束值之间的平滑年化增长率，假设期间没有中间现金流。IRR（内部收益率）则考虑投资期间多次现金流入和流出的时间与金额。对于简单的起点到终点比较用 CAGR；对于有定投、赎回或股息再投资等不规则现金流的投资用 IRR。"
+          },
+          {
+            "question": "CAGR 是否包含分红？",
+            "answer": "标准 CAGR 不包含分红，除非分红被再投资。如果你将分红再投资，应将其计入最终值（FV）。例如，一只股票从 $10,000 涨到 $18,000，并支付了 $2,000 再投资分红，那么 FV 应取 $20,000。如果分红以现金取出，则不属于 CAGR 的一部分，应单独作为收益记录。"
+          },
+          {
+            "question": "每月定投/SIP 怎么计算 CAGR？",
+            "answer": "CAGR 不太适合每月定投，因为每笔投入的持有时间不同。这种情况下应使用 XIRR（扩展内部收益率）。在 Excel 或 Google Sheets 中，列出每次定投的日期和金额（记为负数），以及最终市值（记为正数），然后使用 =XIRR(金额, 日期)。这能更准确地计算不规则现金流的年化收益。"
+          },
+          {
+            "question": "退休投资的合理 CAGR 目标是多少？",
+            "answer": "长期来看，全球股市历史年化回报约为 10%（未扣除通胀）。考虑通胀和股债混合配置后，退休组合的实际 CAGR 目标通常在 5-7% 左右。具体目标应根据你的风险承受能力、投资期限和取款计划来确定。历史业绩不代表未来表现。"
+          },
+          {
+            "question": "CAGR 和 XIRR 有什么区别？",
+            "answer": "CAGR 最适合一次性投入、期末一次性收回的情况。XIRR 则适用于在不同日期有多笔投入或赎回的投资，如定投、股息再投资计划等。在 Excel 中，使用 =XIRR(金额, 日期)，其中流出为负、最终市值为正。"
           }
         ],
         "stillHaveQuestionsTitle": "还有问题吗？",
@@ -406,6 +430,60 @@
         "cagrTitle": "CAGR：",
         "cagrCalc": "(180 / 100)^((1/3)) - 1 CAGR = 21.7%",
         "exampleNotice": "注意：CAGR (21.7%) 更准确，因为它考虑了复利，而简单平均值 (26.67%) 高估了真实的年化增长。"
+      },
+      "cagrInExcel": {
+        "title": "Excel 中的 CAGR 计算",
+        "intro": "你可以在 Excel 中用 POWER 函数、RATE 函数或手动公式计算 CAGR，三种方法结果相同，选择适合你工作表的方式即可。",
+        "methodsTitle": "三种在 Excel 中计算 CAGR 的方法",
+        "methods": [
+          {
+            "name": "POWER 函数",
+            "formula": "=POWER(FV/PV, 1/n)-1",
+            "example": "=POWER(20000/10000, 1/5)-1 返回 0.1487 即 14.87%"
+          },
+          {
+            "name": "手动公式",
+            "formula": "=(FV/PV)^(1/n)-1",
+            "example": "=(20000/10000)^(1/5)-1 返回 0.1487 即 14.87%"
+          },
+          {
+            "name": "RATE 函数",
+            "formula": "=RATE(n, 0, -PV, FV)",
+            "example": "=RATE(5, 0, -10000, 20000) 返回 0.1487 即 14.87%"
+          }
+        ],
+        "variablesTitle": "其中：",
+        "variables": {
+          "fv": "FV = 投资的结束价值",
+          "pv": "PV = 投资的起始价值",
+          "n": "n = 年数"
+        },
+        "tipTitle": "提示",
+        "tip": "如果你的数据包含每月定投或不规则日期，应使用 =XIRR(金额, 日期) 而不是 CAGR。你也可以使用上方免费的在线 CAGR 计算器来核对 Excel 结果。"
+      },
+      "cagrForInvestments": {
+        "title": "CAGR 用于股票、基金与退休规划",
+        "intro": "CAGR 是横向比较不同投资表现最实用的指标之一，它能平滑短期波动，让你看到年化增长率。",
+        "scenariosTitle": "常见投资场景",
+        "scenarios": [
+          {
+            "title": "股票与指数基金",
+            "description": "标普 500 长期历史回报约为 10-11% CAGR（未扣除通胀）。个股可能因公司和市况不同而更高或更低。",
+            "example": "示例：$10,000 投入年化 10% 的指数基金，10 年后增长至约 $25,937"
+          },
+          {
+            "title": "基金比较",
+            "description": "比较两只基金时，CAGR 能让你看到同周期内哪只增长更快。比较时应考虑费用和税收后的净收益。",
+            "example": "示例：基金 A 10 年 CAGR 12% vs 基金 B 10 年 CAGR 9%"
+          },
+          {
+            "title": "退休规划",
+            "description": "退休组合预测通常使用扣除通胀后 5-7% 的实际 CAGR 假设。这有助于估算你需要存多少钱以及投资组合能持续多久。",
+            "example": "示例：每月 $500、CAGR 7%，30 年后增长至约 $609,000"
+          }
+        ],
+        "cautionTitle": "CAGR 不能告诉你什么",
+        "caution": "CAGR 不衡量风险、波动性或最大回撤。两个投资可能有相同的 CAGR，但风险特征完全不同。投资前请同时关注波动率、夏普比率、最大回撤以及自身的风险承受能力。"
       }
     }
   }

@@ -17,7 +17,9 @@ import { CAGRvsMetrics } from '@/components/educational/CAGRvsMetrics'
 import { FAQ } from '@/components/educational/FAQ'
 import { HowToUse } from '@/components/educational/HowToUse'
 import { About } from '@/components/educational/About'
-import { BookOpen, Calculator as CalculatorIcon, Lightbulb, BarChart, HelpCircle, Info } from 'lucide-react'
+import { CAGRInExcel } from '@/components/educational/CAGRInExcel'
+import { CAGRForInvestments } from '@/components/educational/CAGRForInvestments'
+import { BookOpen, Calculator as CalculatorIcon, Lightbulb, BarChart, HelpCircle, Info, FileSpreadsheet, TrendingUp } from 'lucide-react'
 
 export default async function HomePage({
   params,
@@ -119,6 +121,26 @@ export default async function HomePage({
             defaultExpanded={false}
           >
             <HowToUse />
+          </CollapsibleSection>
+
+          {/* CAGR in Excel */}
+          <CollapsibleSection
+            id="cagr-in-excel"
+            title={t('sections.cagrInExcel')}
+            icon={<FileSpreadsheet className="w-6 h-6" />}
+            defaultExpanded={false}
+          >
+            <CAGRInExcel />
+          </CollapsibleSection>
+
+          {/* CAGR for Stocks, Mutual Funds & Retirement */}
+          <CollapsibleSection
+            id="cagr-for-investments"
+            title={t('sections.cagrForInvestments')}
+            icon={<TrendingUp className="w-6 h-6" />}
+            defaultExpanded={false}
+          >
+            <CAGRForInvestments />
           </CollapsibleSection>
 
           {/* CAGR Calculator FAQ */}
