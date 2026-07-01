@@ -12,7 +12,7 @@
     },
     "footer": {
       "about": "소개",
-      "aboutText": "세계 최초의 지능형 4-파라미터 CAGR 계산기. 성장률, 최종 가치, 초기 투자 또는 기간을 즉시 계산하세요.",
+      "aboutText": "스마트 4-파라미터 CAGR 계산기. 성장률, 최종 가치, 초기 투자 또는 기간을 즉시 계산하세요.",
       "quickLinks": "빠른 링크",
       "whatIsCAGR": "CAGR이란?",
       "formula": "공식",
@@ -29,7 +29,7 @@
     "hero": {
       "title": "🧠 스마트 CAGR 계산기",
       "subtitle": "3개 값 입력, 4번째 값을 즉시 얻으세요",
-      "description": "세계 최초의 지능형 4-파라미터 CAGR 계산기"
+      "description": "스마트 4-파라미터 CAGR 계산기"
     },
     "calculator": {
       "initialValue": "초기 가치",

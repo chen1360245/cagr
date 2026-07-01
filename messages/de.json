@@ -12,7 +12,7 @@
     },
     "footer": {
       "about": "Über uns",
-      "aboutText": "Der weltweit erste intelligente 4-Parameter-CAGR-Rechner. Berechnen Sie Wachstumsrate, Endwert, Anfangsinvestition oder Zeitraum sofort.",
+      "aboutText": "Intelligenter 4-Parameter-CAGR-Rechner. Berechnen Sie Wachstumsrate, Endwert, Anfangsinvestition oder Zeitraum sofort.",
       "quickLinks": "Schnellzugriff",
       "whatIsCAGR": "Was ist CAGR?",
       "formula": "Formel",
@@ -29,7 +29,7 @@
     "hero": {
       "title": "🧠 Intelligenter CAGR-Rechner",
       "subtitle": "Geben Sie 3 beliebige Werte ein, erhalten Sie den 4. sofort",
-      "description": "Der weltweit erste intelligente 4-Parameter-CAGR-Rechner"
+      "description": "Intelligenter 4-Parameter-CAGR-Rechner"
     },
     "calculator": {
       "initialValue": "Anfangswert",

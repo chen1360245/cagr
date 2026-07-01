@@ -12,7 +12,7 @@
     },
     "footer": {
       "about": "について",
-      "aboutText": "世界初のインテリジェント4パラメータCAGR計算機。成長率、最終価値、初期投資、または期間を瞬時に計算します。",
+      "aboutText": "スマートな4パラメータCAGR計算機。成長率、最終価値、初期投資、または期間を瞬時に計算します。",
       "quickLinks": "クイックリンク",
       "whatIsCAGR": "CAGRとは",
       "formula": "公式",
@@ -29,7 +29,7 @@
     "hero": {
       "title": "🧠 スマートCAGR計算機",
       "subtitle": "任意の3つの値を入力すると、4番目の値が即座に得られます",
-      "description": "世界初のインテリジェント4パラメータCAGR計算機"
+      "description": "スマートな4パラメータCAGR計算機"
     },
     "calculator": {
       "initialValue": "初期値",

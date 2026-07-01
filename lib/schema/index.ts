@@ -13,13 +13,11 @@ export * from './types'
 export { getWebApplicationSchema } from './web-application'
 export { getFAQPageSchema } from './faq-page'
 export { getBreadcrumbListSchema } from './breadcrumb'
-export { getHowToSchema } from './how-to'
 
 import { Locale } from '@/i18n/config'
 import { getWebApplicationSchema } from './web-application'
 import { getFAQPageSchema } from './faq-page'
 import { getBreadcrumbListSchema } from './breadcrumb'
-import { getHowToSchema } from './how-to'
 
 /**
  * Generate all Schema.org structured data for a page
@@ -62,7 +60,6 @@ export function getAllSchemas(
     includeWebApp?: boolean
     includeFAQ?: boolean
     includeBreadcrumb?: boolean
-    includeHowTo?: boolean
   }
 ): Array<Record<string, unknown>> {
   const {
@@ -71,7 +68,6 @@ export function getAllSchemas(
     includeWebApp = true,
     includeFAQ = true,
     includeBreadcrumb = true,
-    includeHowTo = true,
   } = options || {}
 
   const schemas: Array<Record<string, unknown>> = []
@@ -81,8 +77,7 @@ export function getAllSchemas(
     schemas.push(getWebApplicationSchema(locale))
   }
 
-  // FAQPage schema - MOST IMPORTANT for click-through rate!
-  // Shows FAQ answers directly in search results
+  // FAQPage schema - helps AI/LLM systems understand the FAQ content
   if (includeFAQ) {
     schemas.push(getFAQPageSchema(locale, faqData))
   }
@@ -90,11 +85,6 @@ export function getAllSchemas(
   // BreadcrumbList schema - shows page hierarchy
   if (includeBreadcrumb) {
     schemas.push(getBreadcrumbListSchema(locale, path))
-  }
-
-  // HowTo schema - shows step-by-step instructions
-  if (includeHowTo) {
-    schemas.push(getHowToSchema(locale))
   }
 
   return schemas

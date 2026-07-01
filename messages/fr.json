@@ -12,7 +12,7 @@
     },
     "footer": {
       "about": "À propos",
-      "aboutText": "Le premier calculateur TCAC intelligent à 4 paramètres au monde. Calculez le taux de croissance, la valeur finale, l'investissement initial ou la période instantanément.",
+      "aboutText": "Calculateur TCAC intelligent à 4 paramètres. Calculez le taux de croissance, la valeur finale, l'investissement initial ou la période instantanément.",
       "quickLinks": "Liens rapides",
       "whatIsCAGR": "Qu'est-ce que le TCAC?",
       "formula": "Formule",
@@ -29,7 +29,7 @@
     "hero": {
       "title": "🧠 Calculateur TCAC Intelligent",
       "subtitle": "Saisissez 3 valeurs, obtenez la 4ème instantanément",
-      "description": "Le premier calculateur TCAC intelligent à 4 paramètres au monde"
+      "description": "Calculateur TCAC intelligent à 4 paramètres"
     },
     "calculator": {
       "initialValue": "Valeur Initiale",

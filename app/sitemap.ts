@@ -24,28 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Generate sitemap entries for each locale
   const sitemapEntries: MetadataRoute.Sitemap = []
 
-  // Add root URL (will redirect to default locale)
-  sitemapEntries.push({
-    url: baseUrl,
-    lastModified: currentDate,
-    changeFrequency: 'weekly',
-    priority: 1.0,
-    alternates: {
-      languages: {
-        'en': `${baseUrl}/en`,
-        'zh-CN': `${baseUrl}/zh-CN`,
-        'es': `${baseUrl}/es`,
-        'de': `${baseUrl}/de`,
-        'ja': `${baseUrl}/ja`,
-        'ar': `${baseUrl}/ar`,
-        'fr': `${baseUrl}/fr`,
-        'pt-BR': `${baseUrl}/pt-BR`,
-        'ko': `${baseUrl}/ko`,
-      }
-    }
-  })
-
-  // Add all locale-specific URLs
+  // Add all locale-specific URLs (the bare domain redirects to /en, so it is
+  // intentionally excluded to avoid a canonical/sitemap mismatch).
   for (const locale of locales) {
     for (const page of pages) {
       sitemapEntries.push({

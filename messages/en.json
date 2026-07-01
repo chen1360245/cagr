@@ -12,7 +12,7 @@
     },
     "footer": {
       "about": "About",
-      "aboutText": "The world's first intelligent 4-parameter CAGR calculator. Calculate growth rate, final value, initial investment, or time period instantly.",
+      "aboutText": "Smart 4-parameter CAGR calculator. Calculate growth rate, final value, initial investment, or time period instantly.",
       "quickLinks": "Quick Links",
       "whatIsCAGR": "What is CAGR?",
       "formula": "Formula",
@@ -29,7 +29,7 @@
     "hero": {
       "title": "🧠 Smart CAGR Calculator",
       "subtitle": "Input any 3 values, get the 4th instantly",
-      "description": "The world's first intelligent 4-parameter CAGR calculator"
+      "description": "Smart 4-parameter CAGR calculator"
     },
     "calculator": {
       "initialValue": "Initial Value",

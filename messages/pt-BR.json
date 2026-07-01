@@ -12,7 +12,7 @@
     },
     "footer": {
       "about": "Sobre",
-      "aboutText": "A primeira calculadora CAGR inteligente de 4 parâmetros do mundo. Calcule taxa de crescimento, valor final, investimento inicial ou período instantaneamente.",
+      "aboutText": "Calculadora CAGR inteligente de 4 parâmetros. Calcule taxa de crescimento, valor final, investimento inicial ou período instantaneamente.",
       "quickLinks": "Links Rápidos",
       "whatIsCAGR": "O que é CAGR?",
       "formula": "Fórmula",
@@ -29,7 +29,7 @@
     "hero": {
       "title": "🧠 Calculadora CAGR Inteligente",
       "subtitle": "Insira 3 valores, obtenha o 4º instantaneamente",
-      "description": "A primeira calculadora CAGR inteligente de 4 parâmetros do mundo"
+      "description": "Calculadora CAGR inteligente de 4 parâmetros"
     },
     "calculator": {
       "initialValue": "Valor Inicial",
