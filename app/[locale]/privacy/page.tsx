@@ -262,8 +262,8 @@ function PrivacyPolicyEN() {
               </a>
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              <strong>Important:</strong> Session recordings do not capture any text you enter into the
-              calculator. Clarity automatically masks form inputs to protect your privacy.
+              <strong>Important:</strong> We configure Microsoft Clarity to mask all text and form inputs, so
+              session recordings do not capture any numbers or text you enter into the calculator.
             </p>
           </section>
 
@@ -632,7 +632,7 @@ function PrivacyPolicyZH() {
               </a>
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              <strong>重要提示：</strong>会话录制不会捕获您在计算器中输入的任何文本。Clarity会自动屏蔽表单输入以保护您的隐私。
+              <strong>重要提示：</strong>我们将 Microsoft Clarity 配置为屏蔽所有文本和表单输入，因此会话录制不会捕获您在计算器中输入的任何数字或文本。
             </p>
           </section>
 
