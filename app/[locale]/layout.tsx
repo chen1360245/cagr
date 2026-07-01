@@ -4,7 +4,6 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics'
-import { ClarityScript } from '@/components/analytics/ClarityScript'
 import { CookieConsent } from '@/components/CookieConsent'
 import { Logo } from '@/components/Logo'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
@@ -141,6 +140,20 @@ export default async function LocaleLayout({
         <link rel="preconnect" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
 
+        {/* Microsoft Clarity */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "xfou3ud29a");
+            `,
+          }}
+        />
+
         {/* Bing Webmaster Verification */}
         <meta name="msvalidate.01" content="1E055CC085BE2BFE4794E9E43E119166" />
       </head>
@@ -162,9 +175,6 @@ export default async function LocaleLayout({
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
         )}
-
-        {/* Microsoft Clarity */}
-        <ClarityScript />
 
         <NextIntlClientProvider messages={messages} locale={locale}>
           <div className="min-h-screen flex flex-col">
