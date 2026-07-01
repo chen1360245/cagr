@@ -91,7 +91,7 @@ public/               # 静态资源
 
 | 日期 | 做了什么 | 关键决策 | 卡在哪/风险 | 下一步 |
 |---|---|---|---|---|
-| 2026-07-01 | 重构首页 SSR、删 HowTo schema、修复 sitemap、删除"世界第一"表述、补 OG 图 | 教育内容必须服务端渲染，否则 Google 视为薄内容 | 计算器区域仍客户端 bailout（不影响 SEO） | 观察 GSC 索引变化，2 周后决定是否加 About/blog |
+| 2026-07-01 | 重构首页 SSR；删 HowTo schema；修复 sitemap；删除"世界第一"表述；补 OG 图；更新 Clarity 代码并加 masking；更新 9 语言隐私政策；创建 CLAUDE.md + AGENTS/GEMINI 软链 | 教育内容必须服务端渲染；Clarity 必须显式配置输入屏蔽 | 计算器区域仍客户端 bailout（不影响 SEO） | 观察 GSC 索引变化，2 周后决定是否加 About/blog |
 
 ---
 
@@ -99,4 +99,6 @@ public/               # 静态资源
 
 > 硬上限：~6 条。完整历史在 `CHANGELOG.md`（append-only，不默认加载）。
 
+- **2026-07-01** 更新 Microsoft Clarity 跟踪代码为新 project ID，补回 `maskAllText` / `maskAllInputs`，并更新 9 语言隐私政策 → `CHANGELOG.md`
+- **2026-07-01** 创建项目 `CLAUDE.md`，并添加 `AGENTS.md` / `GEMINI.md` 软链 → `CHANGELOG.md`
 - **2026-07-01** 首页改为 Server Component，教育内容 SSR；移除废弃 HowTo schema；sitemap 移除裸域名；法律页加 noindex；删除多语言"世界第一"表述；新增 OG 图片 → `CHANGELOG.md`
