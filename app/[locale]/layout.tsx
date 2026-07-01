@@ -242,6 +242,16 @@ export default async function LocaleLayout({
                         </a>
                       </li>
                       <li>
+                        <a href="#cagr-in-excel" className="hover:text-primary transition">
+                          {t('footer.cagrInExcel')}
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#cagr-for-investments" className="hover:text-primary transition">
+                          {t('footer.cagrForInvestments')}
+                        </a>
+                      </li>
+                      <li>
                         <a href="#faq" className="hover:text-primary transition">
                           {t('footer.faq')}
                         </a>

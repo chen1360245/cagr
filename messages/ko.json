@@ -20,6 +20,8 @@
       "formula": "공식",
       "useCases": "사용 사례",
       "howToUse": "사용 방법",
+      "cagrInExcel": "Excel CAGR",
+      "cagrForInvestments": "투자용 CAGR",
       "faq": "자주 묻는 질문",
       "legal": "법률",
       "privacyPolicy": "개인정보 보호정책",
