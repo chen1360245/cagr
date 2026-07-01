@@ -869,6 +869,9 @@ function PrivacyPolicyES() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Análisis y Tecnologías de Seguimiento</h2>
             <p className="text-gray-700 leading-relaxed mb-4">Utilizamos Google Analytics 4 y Microsoft Clarity para comprender el comportamiento del usuario y optimizar la experiencia.</p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>Importante:</strong> Configuramos Microsoft Clarity para enmascarar todo el texto y las entradas de formularios, por lo que las grabaciones de sesión no capturan ningún número o texto que ingrese en la calculadora.
+            </p>
           </section>
 
           <section className="mb-8">
@@ -949,6 +952,9 @@ function PrivacyPolicyDE() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Analyse und Tracking-Technologien</h2>
             <p className="text-gray-700 leading-relaxed mb-4">Wir verwenden Google Analytics 4 und Microsoft Clarity, um das Benutzerverhalten zu verstehen und die Erfahrung zu optimieren.</p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>Wichtig:</strong> Wir konfigurieren Microsoft Clarity so, dass alle Texte und Formulareingaben maskiert werden, sodass Sitzungsaufzeichnungen keine Zahlen oder Texte erfassen, die Sie in den Rechner eingeben.
+            </p>
           </section>
 
           <section className="mb-8">
@@ -1029,6 +1035,9 @@ function PrivacyPolicyJA() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. 分析およびトラッキング技術</h2>
             <p className="text-gray-700 leading-relaxed mb-4">Google Analytics 4とMicrosoft Clarityを使用して、ユーザーの行動を理解し、エクスペリエンスを最適化します。</p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>重要：</strong>Microsoft Clarity を設定して、すべてのテキストとフォーム入力をマスクしています。そのため、セッション録画では計算機に入力する数字やテキストは一切記録されません。
+            </p>
           </section>
 
           <section className="mb-8">
@@ -1109,6 +1118,9 @@ function PrivacyPolicyAR() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. التحليلات وتقنيات التتبع</h2>
             <p className="text-gray-700 leading-relaxed mb-4">نستخدم Google Analytics 4 و Microsoft Clarity لفهم سلوك المستخدم وتحسين التجربة.</p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>مهم:</strong> نكوّن Microsoft Clarity لإخفاء جميع النصوص ومدخلات النماذج، بحيث لا تلتقط تسجيلات الجلسات أي أرقام أو نصوص تدخلها في الآلة الحاسبة.
+            </p>
           </section>
 
           <section className="mb-8">
@@ -1190,6 +1202,9 @@ function PrivacyPolicyFR() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Analyses et technologies de suivi</h2>
             <p className="text-gray-700 leading-relaxed mb-4">Nous utilisons Google Analytics 4 et Microsoft Clarity pour comprendre le comportement des utilisateurs et améliorer l&apos;expérience.</p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>Important :</strong> Nous configurons Microsoft Clarity pour masquer tous les textes et les saisies de formulaire, afin que les enregistrements de session ne capturent aucun nombre ou texte que vous saisissez dans la calculatrice.
+            </p>
           </section>
 
           <section className="mb-8">
@@ -1270,6 +1285,9 @@ function PrivacyPolicyPTBR() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Análise e tecnologias de rastreamento</h2>
             <p className="text-gray-700 leading-relaxed mb-4">Usamos Google Analytics 4 e Microsoft Clarity para entender o comportamento do usuário e melhorar a experiência.</p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>Importante:</strong> Configuramos o Microsoft Clarity para mascarar todo texto e entradas de formulário, para que as gravações de sessão não capturem números ou textos que você digita na calculadora.
+            </p>
           </section>
 
           <section className="mb-8">
@@ -1350,6 +1368,9 @@ function PrivacyPolicyKO() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. 분석 및 추적 기술</h2>
             <p className="text-gray-700 leading-relaxed mb-4">Google Analytics 4와 Microsoft Clarity를 사용하여 사용자 행동을 이해하고 경험을 개선합니다.</p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>중요:</strong> Microsoft Clarity를 구성하여 모든 텍스트와 양식 입력을 마스킹하므로, 세션 녹화는 계산기에 입력하는 숫자나 텍스트를 캡처하지 않습니다.
+            </p>
           </section>
 
           <section className="mb-8">
