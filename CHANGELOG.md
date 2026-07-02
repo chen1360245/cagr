@@ -44,3 +44,26 @@
 - **原因**：统一多 AI 工具对项目架构、提交规范、开发命令的理解，降低上下文失忆成本。
 
 ---
+
+## 2026-07-02
+
+### SEO 关键词策略 P0/P1/P2
+
+- **决策**：完成全站 9 语种关键词审计并执行 P0/P1/P2 三阶段优化。
+- **P0**：修复 es/de/fr/pt-BR/en 的 title/description 截断问题；为法语补充 `calculateur CAGR` 关键词。
+- **P1**：优化 en/zh-CN title 捕获 "cagr formula" 等教育意图；将所有语种的 H2 标题长尾化；FAQ 从 10 题扩展至 15 题，覆盖 CAGR vs IRR、股息、SIP、退休目标、XIRR。
+- **P2**：新增 `CAGR in Excel` 与 `CAGR for Stocks, Mutual Funds & Retirement` 两个教育折叠区块（9 语种）；将 OG/Twitter title 独立为短品牌标题；sitemap 补充 `x-default` hreflang。
+- **原因**：截断导致 SERP CTR 下降，长尾词覆盖不足，教育类查询未被 title/H2 捕获。
+- **风险**：新增 9 语种教育内容由非母语译者生成，质量依赖现有翻译风格模仿；需通过 GSC 监控 CTR 与排名变化验证效果。
+
+### 域名规范化：www → non-www 308 重定向
+
+- **决策**：在 Vercel Domains 中将 `www.cagrcalculator.app` 配置为 308 Permanent Redirect 到 `cagrcalculator.app`，并在 Spaceship DNS 添加 `www` CNAME 指向 `cname.vercel-dns.com`。
+- **原因**：代码层 canonical 已指向非 www，但 DNS 层未配置 www，存在外部链接或用户输入 www 时的潜在重复内容风险。
+
+### 扩展隐私政策页 noindex
+
+- **决策**：将 `privacy-extension/` 页面的 `robots.index` 从 `true` 改为 `false`，与 `privacy/`、`terms/` 保持一致。
+- **原因**：扩展隐私政策属于合规页面，不应占用索引配额。
+
+---

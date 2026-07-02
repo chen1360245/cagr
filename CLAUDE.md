@@ -91,6 +91,7 @@ public/               # 静态资源
 
 | 日期 | 做了什么 | 关键决策 | 卡在哪/风险 | 下一步 |
 |---|---|---|---|---|
+| 2026-07-02 | 完成全站关键词审计并执行 P0/P1/P2：修复截断、长尾 H2、FAQ 扩至 15 题、新增 Excel/投资两个教育区块、OG/Twitter 标题独立、sitemap 补 x-default；privacy-extension 加 noindex；配置 www→non-www 308 重定向 | P0 优先修截断；P1/P2 聚焦长尾词覆盖与内容深度；低价值项（meta keywords 扩展、schema name 缩短）剔除 | 9 语种新内容翻译质量依赖风格模仿；需观察 GSC 反馈 | 监控 GSC CTR/排名 2-4 周；重新提交 sitemap |
 | 2026-07-01 | 重构首页 SSR；删 HowTo schema；修复 sitemap；删除"世界第一"表述；补 OG 图；更新 Clarity 代码并加 masking；更新 9 语言隐私政策；创建 CLAUDE.md + AGENTS/GEMINI 软链 | 教育内容必须服务端渲染；Clarity 必须显式配置输入屏蔽 | 计算器区域仍客户端 bailout（不影响 SEO） | 观察 GSC 索引变化，2 周后决定是否加 About/blog |
 
 ---
@@ -99,6 +100,7 @@ public/               # 静态资源
 
 > 硬上限：~6 条。完整历史在 `CHANGELOG.md`（append-only，不默认加载）。
 
+- **2026-07-02** 完成全站 9 语种关键词审计并执行 P0/P1/P2：修复 title/description 截断、H2 长尾化、FAQ 扩至 15 题、新增 CAGR in Excel / Investments 区块、OG/Twitter 标题独立、sitemap 补 x-default；privacy-extension 加 noindex；配置 www→non-www 308 重定向 → `CHANGELOG.md`
 - **2026-07-01** 更新 Microsoft Clarity 跟踪代码为新 project ID，补回 `maskAllText` / `maskAllInputs`，并更新 9 语言隐私政策 → `CHANGELOG.md`
 - **2026-07-01** 创建项目 `CLAUDE.md`，并添加 `AGENTS.md` / `GEMINI.md` 软链 → `CHANGELOG.md`
 - **2026-07-01** 首页改为 Server Component，教育内容 SSR；移除废弃 HowTo schema；sitemap 移除裸域名；法律页加 noindex；删除多语言"世界第一"表述；新增 OG 图片 → `CHANGELOG.md`
