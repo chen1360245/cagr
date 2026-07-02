@@ -20,6 +20,6 @@ export const config = {
   // - favicon.ico
   // - robots.txt (SEO文件)
   // - sitemap.xml (SEO文件)
-  // - 所有静态资源文件 (.svg, .png, .jpg, .jpeg, .gif, .webp, .ico, .css, .js)
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.svg|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.gif|.*\\.webp|.*\\.ico).*)']
+  // - 所有静态资源文件 (.svg, .png, .jpg, .jpeg, .gif, .webp, .ico, .css, .js, .txt)
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.svg|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.gif|.*\\.webp|.*\\.ico|.*\\.txt).*)']
 }
