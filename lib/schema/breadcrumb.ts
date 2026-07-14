@@ -53,6 +53,39 @@ export function getBreadcrumbListSchema(locale: Locale, path: string = '/'): Bre
       'pt-BR': 'Termos de Serviço',
       ko: '서비스 약관',
     },
+    'cagr-formula': {
+      en: 'CAGR Formula',
+      'zh-CN': 'CAGR 公式',
+      es: 'Fórmula CAGR',
+      de: 'CAGR-Formel',
+      ja: 'CAGRの公式',
+      ar: 'صيغة معدل النمو السنوي المركب',
+      fr: 'Formule CAGR',
+      'pt-BR': 'Fórmula CAGR',
+      ko: 'CAGR 공식',
+    },
+    'cagr-vs-irr': {
+      en: 'CAGR vs IRR',
+      'zh-CN': 'CAGR 与 IRR',
+      es: 'CAGR vs IRR',
+      de: 'CAGR vs IRR',
+      ja: 'CAGRとIRR',
+      ar: 'معدل النمو السنوي المركب مقابل العائد الداخلي',
+      fr: 'CAGR vs IRR',
+      'pt-BR': 'CAGR vs IRR',
+      ko: 'CAGR 대 IRR',
+    },
+    'cagr-in-excel': {
+      en: 'CAGR in Excel',
+      'zh-CN': 'Excel 中的 CAGR',
+      es: 'CAGR en Excel',
+      de: 'CAGR in Excel',
+      ja: 'ExcelでのCAGR',
+      ar: 'CAGR في Excel',
+      fr: 'CAGR dans Excel',
+      'pt-BR': 'CAGR no Excel',
+      ko: 'Excel의 CAGR',
+    },
   }
 
   // Build breadcrumb items based on current path
@@ -82,6 +115,30 @@ export function getBreadcrumbListSchema(locale: Locale, path: string = '/'): Bre
       position: 2,
       name: pageNames.terms[locale],
       item: `${baseUrl}/${locale}/terms`,
+    })
+  } else if (path.includes('/cagr-formula')) {
+    items.push({
+      '@context': 'https://schema.org',
+      '@type': 'ListItem',
+      position: 2,
+      name: pageNames['cagr-formula'][locale],
+      item: `${baseUrl}/${locale}/cagr-formula`,
+    })
+  } else if (path.includes('/cagr-vs-irr')) {
+    items.push({
+      '@context': 'https://schema.org',
+      '@type': 'ListItem',
+      position: 2,
+      name: pageNames['cagr-vs-irr'][locale],
+      item: `${baseUrl}/${locale}/cagr-vs-irr`,
+    })
+  } else if (path.includes('/cagr-in-excel')) {
+    items.push({
+      '@context': 'https://schema.org',
+      '@type': 'ListItem',
+      position: 2,
+      name: pageNames['cagr-in-excel'][locale],
+      item: `${baseUrl}/${locale}/cagr-in-excel`,
     })
   }
 

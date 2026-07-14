@@ -86,7 +86,11 @@
       "faq": "CAGR計算機のよくある質問",
       "about": "無料オンラインCAGR計算機について",
       "cagrInExcel": "ExcelでのCAGR計算",
-      "cagrForInvestments": "株式・投資信託・退職金のCAGR"
+      "cagrForInvestments": "株式・投資信託・退職金のCAGR",
+      "readMoreFormula": "Read the full CAGR formula guide",
+      "readMoreCagrVsIrr": "Read the full CAGR vs IRR guide",
+      "readMoreCagrInExcel": "Read the full CAGR in Excel guide",
+      "readMoreFaq": "Browse all FAQ"
     },
     "loading": "計算機を読み込んでいます...",
     "educational": {
@@ -306,29 +310,29 @@
             "question": "CAGRの主な制限は何ですか？",
             "answer": "CAGRは一定の成長を前提としていますが、これは現実にはめったに発生しません。変動性、リスク、または中間キャッシュフロー（配当、預金、引き出し）は考慮されていません。また、リターンのタイミングも反映されていません。4年間マイナスのリターンがあり、5年目に急上昇しても、プラスのCAGRを示すことができます。完全な全体像を得るために、常にCAGRを他の指標と一緒に使用してください。"
           },
-        {
-          "question": "CAGRとIRRの違いは何ですか？",
-          "answer": "CAGRは開始価値と終了価値の間の平滑化された年率換算成長率を測定し、中間のキャッシュフローがないことを前提としています。IRR（内部収益率）は、投資の出入りに複数のキャッシュフローのタイミングと規模を考慮します。単純な開始から終了までの比較にはCAGRを使用し、不規則な間隔で預金、引き出し、または配当の再投資を伴う投資にはIRRを使用してください。"
-        },
-        {
-          "question": "CAGRには配当が含まれますか？",
-          "answer": "標準的なCAGRには、配当が再投資された場合を除き、配当は含まれません。配当を再投資する場合は、最終価値（FV）に含めてください。たとえば、株式が10,000ドルから18,000ドルに成長し、2,000ドルの再投資配当があった場合、FV = 20,000ドルを使用します。配当が現金として受け取られる場合、CAGRの一部ではなく、収入として別途追跡する必要があります。"
-        },
-        {
-          "question": "毎月の積立投資（SIP）でCAGRを計算するにはどうすればよいですか？",
-          "answer": "CAGRは、各積立に異なる投資期間があるため、毎月の積立投資には適していません。代わりに、ExcelまたはGoogleスプレッドシートでXIRR（拡張内部収益率）を使用してください：各積立日と金額（負数）と最終価値（正数）をリストアップし、=XIRR(値, 日付)を適用します。これにより、不規則なキャッシュフローの真の年率換算リターンが得られます。"
-        },
-        {
-          "question": "退職金の現実的なCAGR目標は何ですか？",
-          "answer": "歴史的な長期株式市場の平均は、インフレ前で年間約10%です。インフレ調整後と株式・債券の分散ポートフォリオを考慮すると、現実的な退職金ポートフォリオのCAGRはしばしば5-7%の実質リターンです。目標はリスク許容度、時間軸、引き出し計画と一致する必要があります。過去のパフォーマンスは将来の結果を保証するものではありません。"
-        },
-        {
-          "question": "CAGRとXIRRの違いは何ですか？",
-          "answer": "CAGRは、初期投資が1回で最終価値が1つの場合に最適に機能します。XIRRは、異なる日付に複数の投資や引き出しを処理できるため、SIP、配当再投資計画、または不規則な積立を伴うポートフォリオに適しています。Excelでは、キャッシュ流出を負数、最終ポートフォリオ価値を正数として= XIRR(値, 日付)を使用してください。"
-        }
-      ],
-      "stillHaveQuestionsTitle": "まだ質問がありますか？",
-      "stillHaveQuestionsText": "この計算機は、可能な限り正確で役立つように設計されています。すべての計算は、広く受け入れられている財務公式に基づいています。CAGRに関する追加の質問がある場合、または結果の解釈に関するヘルプが必要な場合は、ファイナンシャルアドバイザーに相談することを検討してください。"
+          {
+            "question": "CAGRとIRRの違いは何ですか？",
+            "answer": "CAGRは開始価値と終了価値の間の平滑化された年率換算成長率を測定し、中間のキャッシュフローがないことを前提としています。IRR（内部収益率）は、投資の出入りに複数のキャッシュフローのタイミングと規模を考慮します。単純な開始から終了までの比較にはCAGRを使用し、不規則な間隔で預金、引き出し、または配当の再投資を伴う投資にはIRRを使用してください。"
+          },
+          {
+            "question": "CAGRには配当が含まれますか？",
+            "answer": "標準的なCAGRには、配当が再投資された場合を除き、配当は含まれません。配当を再投資する場合は、最終価値（FV）に含めてください。たとえば、株式が10,000ドルから18,000ドルに成長し、2,000ドルの再投資配当があった場合、FV = 20,000ドルを使用します。配当が現金として受け取られる場合、CAGRの一部ではなく、収入として別途追跡する必要があります。"
+          },
+          {
+            "question": "毎月の積立投資（SIP）でCAGRを計算するにはどうすればよいですか？",
+            "answer": "CAGRは、各積立に異なる投資期間があるため、毎月の積立投資には適していません。代わりに、ExcelまたはGoogleスプレッドシートでXIRR（拡張内部収益率）を使用してください：各積立日と金額（負数）と最終価値（正数）をリストアップし、=XIRR(値, 日付)を適用します。これにより、不規則なキャッシュフローの真の年率換算リターンが得られます。"
+          },
+          {
+            "question": "退職金の現実的なCAGR目標は何ですか？",
+            "answer": "歴史的な長期株式市場の平均は、インフレ前で年間約10%です。インフレ調整後と株式・債券の分散ポートフォリオを考慮すると、現実的な退職金ポートフォリオのCAGRはしばしば5-7%の実質リターンです。目標はリスク許容度、時間軸、引き出し計画と一致する必要があります。過去のパフォーマンスは将来の結果を保証するものではありません。"
+          },
+          {
+            "question": "CAGRとXIRRの違いは何ですか？",
+            "answer": "CAGRは、初期投資が1回で最終価値が1つの場合に最適に機能します。XIRRは、異なる日付に複数の投資や引き出しを処理できるため、SIP、配当再投資計画、または不規則な積立を伴うポートフォリオに適しています。Excelでは、キャッシュ流出を負数、最終ポートフォリオ価値を正数として= XIRR(値, 日付)を使用してください。"
+          }
+        ],
+        "stillHaveQuestionsTitle": "まだ質問がありますか？",
+        "stillHaveQuestionsText": "この計算機は、可能な限り正確で役立つように設計されています。すべての計算は、広く受け入れられている財務公式に基づいています。CAGRに関する追加の質問がある場合、または結果の解釈に関するヘルプが必要な場合は、ファイナンシャルアドバイザーに相談することを検討してください。"
       },
       "about": {
         "mainTitle": "無料オンラインCAGR計算機について",
@@ -486,6 +490,296 @@
         ],
         "cautionTitle": "CAGRが教えてくれないこと",
         "caution": "CAGRはリスク、変動性、またはドローダウンを測定しません。2つの投資は同じCAGRを持つことができますが、非常に異なるリスクプロファイルを持つことがあります。投資前に常に変動性、シャープレシオ、最大ドローダウン、および自身のリスク許容度を確認してください。"
+      }
+    }
+  },
+  "pages": {
+    "cagrFormula": {
+      "metadata": {
+        "title": "CAGR Formula | How to Calculate Compound Annual Growth Rate",
+        "description": "Learn the CAGR formula with step-by-step examples. Calculate compound annual growth rate manually, in Excel, or with our free online CAGR calculator.",
+        "keywords": "cagr formula, compound annual growth rate formula, how to calculate cagr, cagr calculation, cagr variables, reverse cagr formula"
+      },
+      "title": "CAGR Formula: How to Calculate Compound Annual Growth Rate",
+      "subtitle": "A complete guide to the compound annual growth rate formula with examples and reverse formulas",
+      "intro": "The CAGR formula calculates the annualized growth rate of an investment over a stated period, assuming profits are reinvested each year.",
+      "formula": "CAGR = (FV / PV)^(1/n) - 1",
+      "formulaCaption": "Where FV is final value, PV is present value, and n is number of years.",
+      "variablesTitle": "Where:",
+      "variables": {
+        "fv": {
+          "term": "FV (Final Value)",
+          "definition": "The ending value of the investment."
+        },
+        "pv": {
+          "term": "PV (Present Value)",
+          "definition": "The beginning value or initial investment amount."
+        },
+        "n": {
+          "term": "n (Number of Years)",
+          "definition": "The investment time period in years."
+        }
+      },
+      "stepsTitle": "Step-by-Step Calculation",
+      "steps": [
+        "Divide the final value (FV) by the initial value (PV).",
+        "Raise the result to the power of 1 divided by the number of years (n).",
+        "Subtract 1 from the result.",
+        "Multiply by 100 to convert to a percentage."
+      ],
+      "exampleTitle": "Example Calculation",
+      "example": {
+        "given": "Given: PV = $10,000, FV = $20,000, n = 5 years",
+        "step1": "Step 1: 20,000 / 10,000 = 2",
+        "step2": "Step 2: 2^((1/5)) = 2^(0.2) = 1.1487",
+        "step3": "Step 3: 1.1487 - 1 = 0.1487",
+        "result": "Result: 0.1487 × 100 = 14.87%"
+      },
+      "reverseTitle": "Reverse CAGR Formulas",
+      "reverseIntro": "You can rearrange the CAGR formula to solve for any missing variable. These reverse formulas are useful when you know your target return and want to find the required initial investment, final value, or time horizon.",
+      "reverseFormulas": [
+        {
+          "name": "Calculate Final Value",
+          "formula": "FV = PV × (1 + CAGR)^n",
+          "when": "Use when you know the initial investment, CAGR, and time period."
+        },
+        {
+          "name": "Calculate Initial Value",
+          "formula": "PV = FV / (1 + CAGR)^n",
+          "when": "Use when you know the target final value, CAGR, and time period."
+        },
+        {
+          "name": "Calculate Time Period",
+          "formula": "n = ln(FV / PV) / ln(1 + CAGR)",
+          "when": "Use when you know the initial value, final value, and CAGR."
+        }
+      ],
+      "calculatorModesTitle": "Our CAGR Calculator Solves for Any Variable",
+      "calculatorModesIntro": "Our smart calculator lets you input any 3 of the 4 variables and automatically calculates the missing one.",
+      "calculatorModes": [
+        "Calculate CAGR: Given PV, FV, and n",
+        "Calculate FV: Given PV, CAGR, and n",
+        "Calculate PV: Given FV, CAGR, and n",
+        "Calculate Time: Given PV, FV, and CAGR"
+      ],
+      "faq": {
+        "questions": [
+          {
+            "question": "What is the CAGR formula?",
+            "answer": "CAGR = (FV/PV)^(1/n) - 1, where FV is the final value, PV is the initial value, and n is the number of years."
+          },
+          {
+            "question": "Can CAGR be negative?",
+            "answer": "Yes. If the final value is lower than the initial value, CAGR will be negative, indicating a loss."
+          },
+          {
+            "question": "How do I calculate CAGR in Excel?",
+            "answer": "Use =POWER(FV/PV, 1/n)-1, =(FV/PV)^(1/n)-1, or =RATE(n, 0, -PV, FV)."
+          },
+          {
+            "question": "What is a good CAGR?",
+            "answer": "Historically, the S&P 500 has returned about 10-11% CAGR before inflation. A 'good' CAGR depends on your risk tolerance and goals."
+          },
+          {
+            "question": "Does CAGR include dividends?",
+            "answer": "Only if dividends are reinvested. If taken as cash, they should be tracked separately as income."
+          }
+        ]
+      }
+    },
+    "cagrVsIrr": {
+      "metadata": {
+        "title": "CAGR vs IRR: Key Differences & When to Use Each",
+        "description": "CAGR and IRR both measure investment returns, but they answer different questions. Learn the differences, formulas, and when to use each metric.",
+        "keywords": "cagr vs irr, difference between cagr and irr, when to use irr, internal rate of return, cagr formula vs irr"
+      },
+      "title": "CAGR vs IRR: What's the Difference?",
+      "subtitle": "Two popular return metrics, explained with examples",
+      "intro": "CAGR and IRR are both used to measure investment performance, but they work best in different situations. CAGR is simple and good for start-to-end comparisons. IRR is more advanced and accounts for the timing of cash flows.",
+      "comparisonHeaders": {
+        "metric": "Metric",
+        "description": "Description",
+        "bestFor": "Best For"
+      },
+      "comparisonTable": [
+        {
+          "name": "CAGR",
+          "description": "Smoothed annualized growth rate assuming compounding.",
+          "bestFor": "Long-term investment performance with no intermediate cash flows."
+        },
+        {
+          "name": "Simple Average Return",
+          "description": "Arithmetic mean of annual returns.",
+          "bestFor": "Quick rough estimates only."
+        },
+        {
+          "name": "Absolute Return",
+          "description": "Total percentage change from start to end.",
+          "bestFor": "Short-term or single-period performance."
+        },
+        {
+          "name": "IRR",
+          "description": "Discount rate that makes the net present value of all cash flows zero.",
+          "bestFor": "Investments with multiple inflows and outflows."
+        },
+        {
+          "name": "TWR",
+          "description": "Removes the impact of external cash flows.",
+          "bestFor": "Evaluating fund manager performance."
+        }
+      ],
+      "whatIsCagr": {
+        "title": "What Is CAGR?",
+        "text": "CAGR measures the annualized growth of an investment from a starting value to an ending value, assuming no intermediate cash flows. It smooths out volatility and gives a single growth rate."
+      },
+      "whatIsIrr": {
+        "title": "What Is IRR?",
+        "text": "IRR is the annualized rate of return at which the net present value of all cash flows equals zero. It accounts for the timing and size of each cash flow.",
+        "useCase": "Use IRR for projects, real estate investments, private equity, or any investment with irregular contributions and withdrawals."
+      },
+      "exampleTitle": "Same Investment, Different Results",
+      "exampleIntro": "Consider a project where you invest $10,000 and receive cash back over 4 years: $2,000, $3,000, $8,000, and $5,000.",
+      "example": {
+        "cagr": {
+          "title": "CAGR Calculation",
+          "calculation": "CAGR only sees the start ($10,000) and end ($18,000) values over 4 years: CAGR = (18,000/10,000)^(1/4) - 1 = 15.8%."
+        },
+        "irr": {
+          "title": "IRR Calculation",
+          "calculation": "IRR considers each cash flow's timing. Using Excel =IRR(...), the result is approximately 12.4%."
+        },
+        "conclusion": "CAGR looks higher, but IRR is more accurate because it values earlier cash flows more."
+      },
+      "useCagr": {
+        "title": "Use CAGR When",
+        "items": [
+          "You have one initial investment and one final value.",
+          "You want to compare investments over the same time period.",
+          "There are no intermediate deposits or withdrawals.",
+          "You need a quick, easy-to-understand annualized return."
+        ]
+      },
+      "useIrr": {
+        "title": "Use IRR When",
+        "items": [
+          "There are multiple cash flows over time.",
+          "You want to account for the timing of each cash flow.",
+          "You are evaluating a project or business investment.",
+          "You have irregular contributions like a SIP or DCA plan."
+        ]
+      },
+      "faq": {
+        "questions": [
+          {
+            "question": "Is CAGR the same as IRR?",
+            "answer": "No. CAGR measures smoothed annualized growth between two values. IRR accounts for the timing and size of multiple cash flows."
+          },
+          {
+            "question": "Why is IRR lower than CAGR?",
+            "answer": "IRR can be lower when early cash flows are small and later cash flows are large, because money received earlier is more valuable."
+          },
+          {
+            "question": "Can I use CAGR for SIP investments?",
+            "answer": "No. For monthly contributions, use XIRR because each contribution has a different investment horizon."
+          },
+          {
+            "question": "Which is better for comparing mutual funds?",
+            "answer": "CAGR is better for comparing lump-sum investments over the same period. IRR or XIRR is better for SIPs."
+          }
+        ]
+      }
+    },
+    "cagrInExcel": {
+      "metadata": {
+        "title": "CAGR in Excel: 3 Formulas with Examples",
+        "description": "Learn how to calculate CAGR in Excel using POWER, RATE, and manual formulas. Includes examples, common errors, and when to use XIRR instead.",
+        "keywords": "cagr in excel, cagr formula excel, how to calculate cagr in excel, cagr excel template, cagr rate function"
+      },
+      "title": "How to Calculate CAGR in Excel",
+      "subtitle": "Three formulas, one result — with examples and common fixes",
+      "intro": "You can calculate CAGR in Excel using the POWER function, the RATE function, or a manual formula. Each method gives the same result; choose the one that fits your worksheet.",
+      "methodsTitle": "Three Ways to Calculate CAGR in Excel",
+      "methods": [
+        {
+          "name": "POWER function",
+          "formula": "=POWER(FV/PV, 1/n)-1",
+          "example": "=POWER(20000/10000, 1/5)-1 returns 0.1487 or 14.87%"
+        },
+        {
+          "name": "Manual formula",
+          "formula": "=(FV/PV)^(1/n)-1",
+          "example": "=(20000/10000)^(1/5)-1 returns 0.1487 or 14.87%"
+        },
+        {
+          "name": "RATE function",
+          "formula": "=RATE(n, 0, -PV, FV)",
+          "example": "=RATE(5, 0, -10000, 20000) returns 0.1487 or 14.87%"
+        }
+      ],
+      "workedExampleTitle": "Full Worked Example",
+      "workedExampleIntro": "Here is a complete example you can copy into Excel.",
+      "workedExampleHeaders": {
+        "label": "Input",
+        "value": "Value"
+      },
+      "workedExampleRows": {
+        "pv": "Initial Value (PV)",
+        "fv": "Final Value (FV)",
+        "n": "Years (n)",
+        "cagr": "CAGR"
+      },
+      "workedExampleValues": {
+        "pv": "$10,000",
+        "fv": "$20,000",
+        "n": "5",
+        "cagr": "14.87%"
+      },
+      "commonErrorsTitle": "Common Errors & How to Fix Them",
+      "commonErrors": [
+        {
+          "error": "#NUM! error with RATE",
+          "cause": "PV was not entered as a negative number.",
+          "fix": "Use =RATE(n, 0, -PV, FV) with a minus sign before PV."
+        },
+        {
+          "error": "Result looks too small",
+          "cause": "The cell is not formatted as a percentage.",
+          "fix": "Select the cell, then Home → Number → Percentage."
+        },
+        {
+          "error": "Monthly data gives wrong CAGR",
+          "cause": "n was entered in months but the result was not annualized.",
+          "fix": "Use n in years, or multiply the monthly result by 12."
+        },
+        {
+          "error": "Result is 100x too large or small",
+          "cause": "Percentage formatting is missing or applied twice.",
+          "fix": "Check the cell format and whether you already multiplied by 100."
+        }
+      ],
+      "xirr": {
+        "title": "When to Use XIRR Instead",
+        "text": "If your data includes monthly contributions, dividends, or irregular dates, use =XIRR(values, dates) instead of CAGR. XIRR handles cash flows that happen on any date."
+      },
+      "faq": {
+        "questions": [
+          {
+            "question": "What is the CAGR formula in Excel?",
+            "answer": "The most common formulas are =POWER(FV/PV, 1/n)-1 and =RATE(n, 0, -PV, FV)."
+          },
+          {
+            "question": "How do I calculate CAGR for 5 years in Excel?",
+            "answer": "Enter PV, FV, and n=5, then use =POWER(FV/PV, 1/5)-1."
+          },
+          {
+            "question": "Why does RATE show #NUM!?",
+            "answer": "RATE requires PV to be negative because it represents a cash outflow."
+          },
+          {
+            "question": "Should I use CAGR or XIRR for SIP?",
+            "answer": "Use XIRR. CAGR assumes a single initial and final value, while XIRR handles multiple contributions."
+          }
+        ]
       }
     }
   }

@@ -1,5 +1,4 @@
 import { Inter } from 'next/font/google'
-import Script from 'next/script'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
@@ -8,7 +7,6 @@ import { CookieConsent } from '@/components/CookieConsent'
 import { Logo } from '@/components/Logo'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import { locales, type Locale } from '@/i18n/config'
-import { getAllSchemas } from '@/lib/schema'
 import './globals.css'
 
 const inter = Inter({
@@ -118,17 +116,6 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale, namespace: 'layout' })
   const messages = await getMessages({ locale })
 
-  // Extract FAQ data from messages for Schema.org
-  const educationalMessages = messages.page?.educational as Record<string, unknown>
-  const faqMessages = educationalMessages?.faq as { questions?: Array<{ question: string; answer: string }> }
-  const faqData = faqMessages?.questions || []
-
-  // Generate all Schema.org structured data
-  const schemas = getAllSchemas(locale as Locale, {
-    path: '/',
-    faqData: faqData,
-  })
-
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
@@ -160,19 +147,6 @@ export default async function LocaleLayout({
         <meta name="msvalidate.01" content="1E055CC085BE2BFE4794E9E43E119166" />
       </head>
       <body className={inter.className} suppressHydrationWarning>
-        {/* Schema.org JSON-LD Structured Data for SEO */}
-        {schemas.map((schema, index) => (
-          <Script
-            key={`schema-${index}`}
-            id={`schema-${index}`}
-            type="application/ld+json"
-            strategy="beforeInteractive"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(schema),
-            }}
-          />
-        ))}
-
         {/* Google Analytics */}
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />

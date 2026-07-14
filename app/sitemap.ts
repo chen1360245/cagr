@@ -16,6 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Pages that exist for each locale
   const pages = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' as const }, // Homepage
+    { path: '/cagr-formula', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/cagr-vs-irr', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/cagr-in-excel', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/privacy', priority: 0.5, changeFrequency: 'monthly' as const },
     { path: '/privacy-extension', priority: 0.5, changeFrequency: 'monthly' as const },
     { path: '/terms', priority: 0.5, changeFrequency: 'monthly' as const },

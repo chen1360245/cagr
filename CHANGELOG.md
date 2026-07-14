@@ -4,6 +4,27 @@
 
 ---
 
+## 2026-07-14
+
+### 专题页矩阵试点：CAGR Formula / CAGR vs IRR / CAGR in Excel
+
+- **决策**：新增 3 个教育专题页 `/cagr-formula`、`/cagr-vs-irr`、`/cagr-in-excel`，每个页面拥有独立 URL、metadata、FAQPage schema 和 BreadcrumbList schema。
+- **原因**：单页工具站的关键词覆盖受限于首页，专题页能分别捕获 "cagr formula"、"cagr vs irr"、"cagr in excel" 等高意图教育搜索词，扩大流量入口。
+- **实现**：
+  - 创建 `components/seo/PageSchemas.tsx`，将 JSON-LD 从根 layout 下放到各页面自己管理。
+  - 创建 `components/educational/` 下的可复用核心组件与页面布局组件。
+  - 更新 `app/sitemap.ts` 和 `lib/schema/breadcrumb.ts` 包含新路由。
+  - 首页折叠区保留现有内容，并在 Formula / CAGR vs Metrics / CAGR in Excel 区块增加 "Read full guide" 内链。
+- **风险**：其他 8 个语种的专题页内容目前为英文回退，需在验证效果后本地化。
+
+### 首页折叠区默认展开策略
+
+- **决策**：将首页 "What is CAGR" 和 "CAGR Formula" 两个折叠区改为默认展开，其余保持折叠。
+- **原因**：提升 Google 对核心教育内容的主体内容评估权重，同时不牺牲首屏加载体验。
+- **风险**：页面视觉长度略有增加，但前两个区域本就是用户最关注的内容。
+
+---
+
 ## 2026-07-01
 
 ### 首页架构：教育内容必须服务端渲染

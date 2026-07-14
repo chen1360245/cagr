@@ -7,9 +7,12 @@
  */
 
 import { Suspense } from 'react'
-import { getTranslations } from 'next-intl/server'
+import { getMessages, getTranslations } from 'next-intl/server'
 import { CalculatorClient } from '@/components/calculator/CalculatorClient'
+import { PageSchemas } from '@/components/seo/PageSchemas'
 import { CollapsibleSection } from '@/components/educational/CollapsibleSection'
+import { ReadMoreLink } from '@/components/educational/ReadMoreLink'
+import { type Locale } from '@/i18n/config'
 import { WhatIsCAGR } from '@/components/educational/WhatIsCAGR'
 import { FormulaExplained } from '@/components/educational/FormulaExplained'
 import { UseCases } from '@/components/educational/UseCases'
@@ -28,9 +31,18 @@ export default async function HomePage({
 }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'page' })
+  const messages = await getMessages({ locale })
+
+  // Extract FAQ data for Schema.org on the homepage
+  const educationalMessages = messages.page?.educational as Record<string, unknown>
+  const faqMessages = educationalMessages?.faq as { questions?: Array<{ question: string; answer: string }> }
+  const faqData = faqMessages?.questions || []
 
   return (
     <div className="min-h-screen bg-gradient-hero">
+      {/* Schema.org JSON-LD Structured Data for SEO */}
+      <PageSchemas locale={locale as Locale} path="/" faqData={faqData} includeWebApp={true} />
+
       {/* Hero Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-12 pb-4">
         <div className="text-center mb-8">
@@ -88,9 +100,10 @@ export default async function HomePage({
             id="formula"
             title={t('sections.formula')}
             icon={<CalculatorIcon className="w-6 h-6" />}
-            defaultExpanded={false}
+            defaultExpanded={true}
           >
             <FormulaExplained />
+            <ReadMoreLink href={`/${locale}/cagr-formula`} label={t('sections.readMoreFormula')} />
           </CollapsibleSection>
 
           {/* CAGR Calculator Use Cases & Examples */}
@@ -111,6 +124,7 @@ export default async function HomePage({
             defaultExpanded={false}
           >
             <CAGRvsMetrics />
+            <ReadMoreLink href={`/${locale}/cagr-vs-irr`} label={t('sections.readMoreCagrVsIrr')} />
           </CollapsibleSection>
 
           {/* How to Use This CAGR Calculator */}
@@ -131,6 +145,7 @@ export default async function HomePage({
             defaultExpanded={false}
           >
             <CAGRInExcel />
+            <ReadMoreLink href={`/${locale}/cagr-in-excel`} label={t('sections.readMoreCagrInExcel')} />
           </CollapsibleSection>
 
           {/* CAGR for Stocks, Mutual Funds & Retirement */}
