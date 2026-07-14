@@ -25,10 +25,10 @@ for (const file of files) {
   const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
   let modified = false
 
-  if (!data.pages) {
+  if (JSON.stringify(data.pages) !== JSON.stringify(pagesNamespace)) {
     data.pages = pagesNamespace
     modified = true
-    console.log(`Added pages namespace to ${file}`)
+    console.log(`Synced pages namespace in ${file}`)
   }
 
   if (data.page?.sections) {
