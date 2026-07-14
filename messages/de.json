@@ -87,10 +87,10 @@
       "about": "Über Unseren Kostenlosen Online-CAGR-Rechner",
       "cagrInExcel": "CAGR in Excel",
       "cagrForInvestments": "CAGR für Aktien, Fonds & Rente",
-      "readMoreFormula": "Read the full CAGR formula guide",
-      "readMoreCagrVsIrr": "Read the full CAGR vs IRR guide",
-      "readMoreCagrInExcel": "Read the full CAGR in Excel guide",
-      "readMoreFaq": "Browse all FAQ"
+      "readMoreFormula": "Lesen Sie die vollständige Anleitung zur CAGR-Formel",
+      "readMoreCagrVsIrr": "Lesen Sie die vollständige Anleitung zu CAGR vs IZF",
+      "readMoreCagrInExcel": "Lesen Sie die vollständige Anleitung zu CAGR in Excel",
+      "readMoreFaq": "Alle häufigen Fragen durchsuchen"
     },
     "loading": "Rechner wird geladen...",
     "educational": {
@@ -496,288 +496,288 @@
   "pages": {
     "cagrFormula": {
       "metadata": {
-        "title": "CAGR Formula | How to Calculate Compound Annual Growth Rate",
-        "description": "Learn the CAGR formula with step-by-step examples. Calculate compound annual growth rate manually, in Excel, or with our free online CAGR calculator.",
-        "keywords": "cagr formula, compound annual growth rate formula, how to calculate cagr, cagr calculation, cagr variables, reverse cagr formula"
+        "title": "CAGR Formel | So Berechnen Sie die Durchschnittliche Jährliche Wachstumsrate",
+        "description": "Lernen Sie die CAGR-Formel mit Schritt-für-Schritt-Beispielen. Berechnen Sie die durchschnittliche jährliche Wachstumsrate manuell, in Excel oder mit unserem kostenlosen Online-CAGR-Rechner.",
+        "keywords": "CAGR Formel, durchschnittliche jährliche Wachstumsrate Formel, CAGR berechnen, CAGR Berechnung, CAGR Variablen, inverse CAGR Formel"
       },
-      "title": "CAGR Formula: How to Calculate Compound Annual Growth Rate",
-      "subtitle": "A complete guide to the compound annual growth rate formula with examples and reverse formulas",
-      "intro": "The CAGR formula calculates the annualized growth rate of an investment over a stated period, assuming profits are reinvested each year.",
+      "title": "CAGR-Formel: So Berechnen Sie die Durchschnittliche Jährliche Wachstumsrate",
+      "subtitle": "Vollständige Anleitung zur CAGR-Formel mit Beispielen und Inversformeln",
+      "intro": "Die CAGR-Formel berechnet die annualisierte Wachstumsrate einer Investition über einen bestimmten Zeitraum, unter der Annahme, dass die Gewinne jedes Jahr reinvestiert werden.",
       "formula": "CAGR = (FV / PV)^(1/n) - 1",
-      "formulaCaption": "Where FV is final value, PV is present value, and n is number of years.",
-      "variablesTitle": "Where:",
+      "formulaCaption": "Wobei FV der Endwert, PV der Anfangswert und n die Anzahl der Jahre ist.",
+      "variablesTitle": "Wobei:",
       "variables": {
         "fv": {
-          "term": "FV (Final Value)",
-          "definition": "The ending value of the investment."
+          "term": "FV (Endwert)",
+          "definition": "Der Endwert der Investition."
         },
         "pv": {
-          "term": "PV (Present Value)",
-          "definition": "The beginning value or initial investment amount."
+          "term": "PV (Anfangswert)",
+          "definition": "Der Anfangswert oder die initiale Investitionssumme."
         },
         "n": {
-          "term": "n (Number of Years)",
-          "definition": "The investment time period in years."
+          "term": "n (Anzahl der Jahre)",
+          "definition": "Der Zeitraum der Investition in Jahren."
         }
       },
-      "stepsTitle": "Step-by-Step Calculation",
+      "stepsTitle": "Schritt-für-Schritt-Berechnung",
       "steps": [
-        "Divide the final value (FV) by the initial value (PV).",
-        "Raise the result to the power of 1 divided by the number of years (n).",
-        "Subtract 1 from the result.",
-        "Multiply by 100 to convert to a percentage."
+        "Teilen Sie den Endwert (FV) durch den Anfangswert (PV).",
+        "Heben Sie das Ergebnis auf die Potenz von 1 geteilt durch die Anzahl der Jahre (n).",
+        "Subtrahieren Sie 1 vom Ergebnis.",
+        "Multiplizieren Sie mit 100, um in Prozent umzurechnen."
       ],
-      "exampleTitle": "Example Calculation",
+      "exampleTitle": "Berechnungsbeispiel",
       "example": {
-        "given": "Given: PV = $10,000, FV = $20,000, n = 5 years",
-        "step1": "Step 1: 20,000 / 10,000 = 2",
-        "step2": "Step 2: 2^((1/5)) = 2^(0.2) = 1.1487",
-        "step3": "Step 3: 1.1487 - 1 = 0.1487",
-        "result": "Result: 0.1487 × 100 = 14.87%"
+        "given": "Gegeben: PV = 10.000€, FV = 20.000€, n = 5 Jahre",
+        "step1": "Schritt 1: 20.000 / 10.000 = 2",
+        "step2": "Schritt 2: 2^((1/5)) = 2^(0,2) = 1,1487",
+        "step3": "Schritt 3: 1,1487 - 1 = 0,1487",
+        "result": "Ergebnis: 0,1487 × 100 = 14,87%"
       },
-      "reverseTitle": "Reverse CAGR Formulas",
-      "reverseIntro": "You can rearrange the CAGR formula to solve for any missing variable. These reverse formulas are useful when you know your target return and want to find the required initial investment, final value, or time horizon.",
+      "reverseTitle": "Inverse CAGR-Formeln",
+      "reverseIntro": "Sie können die CAGR-Formel umstellen, um jede fehlende Variable zu berechnen. Diese Inversformeln sind nützlich, wenn Sie Ihre Zielrendite kennen und die erforderliche Anfangsinvestition, den Endwert oder den Zeitraum finden möchten.",
       "reverseFormulas": [
         {
-          "name": "Calculate Final Value",
+          "name": "Endwert berechnen",
           "formula": "FV = PV × (1 + CAGR)^n",
-          "when": "Use when you know the initial investment, CAGR, and time period."
+          "when": "Verwenden Sie diese, wenn Sie Anfangswert, CAGR und Zeitraum kennen."
         },
         {
-          "name": "Calculate Initial Value",
+          "name": "Anfangswert berechnen",
           "formula": "PV = FV / (1 + CAGR)^n",
-          "when": "Use when you know the target final value, CAGR, and time period."
+          "when": "Verwenden Sie diese, wenn Sie Zielendwert, CAGR und Zeitraum kennen."
         },
         {
-          "name": "Calculate Time Period",
+          "name": "Zeitraum berechnen",
           "formula": "n = ln(FV / PV) / ln(1 + CAGR)",
-          "when": "Use when you know the initial value, final value, and CAGR."
+          "when": "Verwenden Sie diese, wenn Sie Anfangswert, Endwert und CAGR kennen."
         }
       ],
-      "calculatorModesTitle": "Our CAGR Calculator Solves for Any Variable",
-      "calculatorModesIntro": "Our smart calculator lets you input any 3 of the 4 variables and automatically calculates the missing one.",
+      "calculatorModesTitle": "Unser CAGR-Rechner Löst Jede Variable",
+      "calculatorModesIntro": "Unser intelligenter Rechner lässt Sie 3 der 4 Variablen eingeben und berechnet automatisch die fehlende.",
       "calculatorModes": [
-        "Calculate CAGR: Given PV, FV, and n",
-        "Calculate FV: Given PV, CAGR, and n",
-        "Calculate PV: Given FV, CAGR, and n",
-        "Calculate Time: Given PV, FV, and CAGR"
+        "CAGR berechnen: Gegeben PV, FV und n",
+        "FV berechnen: Gegeben PV, CAGR und n",
+        "PV berechnen: Gegeben FV, CAGR und n",
+        "Zeitraum berechnen: Gegeben PV, FV und CAGR"
       ],
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula?",
-            "answer": "CAGR = (FV/PV)^(1/n) - 1, where FV is the final value, PV is the initial value, and n is the number of years."
+            "question": "Was ist die CAGR-Formel?",
+            "answer": "CAGR = (FV/PV)^(1/n) - 1, wobei FV der Endwert, PV der Anfangswert und n die Anzahl der Jahre ist."
           },
           {
-            "question": "Can CAGR be negative?",
-            "answer": "Yes. If the final value is lower than the initial value, CAGR will be negative, indicating a loss."
+            "question": "Kann CAGR negativ sein?",
+            "answer": "Ja. Wenn der Endwert niedriger ist als der Anfangswert, ist CAGR negativ, was einen Verlust anzeigt."
           },
           {
-            "question": "How do I calculate CAGR in Excel?",
-            "answer": "Use =POWER(FV/PV, 1/n)-1, =(FV/PV)^(1/n)-1, or =RATE(n, 0, -PV, FV)."
+            "question": "Wie berechne ich CAGR in Excel?",
+            "answer": "Verwenden Sie =POTENZ(FV/PV, 1/n)-1, =(FV/PV)^(1/n)-1 oder =ZINS(n, 0, -PV, FV)."
           },
           {
-            "question": "What is a good CAGR?",
-            "answer": "Historically, the S&P 500 has returned about 10-11% CAGR before inflation. A 'good' CAGR depends on your risk tolerance and goals."
+            "question": "Was ist eine gute CAGR?",
+            "answer": "Historisch hat der S&P 500 eine CAGR von etwa 10-11% vor Inflation erzielt. Eine 'gute' CAGR hängt von Ihrer Risikobereitschaft und Ihren Zielen ab."
           },
           {
-            "question": "Does CAGR include dividends?",
-            "answer": "Only if dividends are reinvested. If taken as cash, they should be tracked separately as income."
+            "question": "Beinhaltet CAGR Dividenden?",
+            "answer": "Nur wenn Dividenden reinvestiert werden. Bei Auszahlung in bar sollten sie separat als Einkommen erfasst werden."
           }
         ]
       }
     },
     "cagrVsIrr": {
       "metadata": {
-        "title": "CAGR vs IRR: Key Differences & When to Use Each",
-        "description": "CAGR and IRR both measure investment returns, but they answer different questions. Learn the differences, formulas, and when to use each metric.",
-        "keywords": "cagr vs irr, difference between cagr and irr, when to use irr, internal rate of return, cagr formula vs irr"
+        "title": "CAGR vs IZF: Unterschiede und Wann Sie Welche Verwenden",
+        "description": "CAGR und IZF messen Investmentrenditen, beantworten aber unterschiedliche Fragen. Lernen Sie die Unterschiede, Formeln und den richtigen Einsatz kennen.",
+        "keywords": "cagr vs izf, unterschied cagr izf, wann izf verwenden, interner zinsfuß, cagr formel vs izf"
       },
-      "title": "CAGR vs IRR: What's the Difference?",
-      "subtitle": "Two popular return metrics, explained with examples",
-      "intro": "CAGR and IRR are both used to measure investment performance, but they work best in different situations. CAGR is simple and good for start-to-end comparisons. IRR is more advanced and accounts for the timing of cash flows.",
+      "title": "CAGR vs IZF: Was Ist der Unterschied?",
+      "subtitle": "Zwei beliebte Renditemetriken, erklärt anhand von Beispielen",
+      "intro": "CAGR und IZF werden beide zur Messung der Investmentperformance verwendet, funktionieren aber in unterschiedlichen Situationen am besten. CAGR ist einfach und gut für Vergleiche von Anfang bis Ende. IZF ist fortgeschrittener und berücksichtigt den Zeitpunkt der Cashflows.",
       "comparisonHeaders": {
-        "metric": "Metric",
-        "description": "Description",
-        "bestFor": "Best For"
+        "metric": "Metrik",
+        "description": "Beschreibung",
+        "bestFor": "Beste Für"
       },
       "comparisonTable": [
         {
           "name": "CAGR",
-          "description": "Smoothed annualized growth rate assuming compounding.",
-          "bestFor": "Long-term investment performance with no intermediate cash flows."
+          "description": "Geglättete annualisierte Wachstumsrate unter Annahme von Zinseszins.",
+          "bestFor": "Langfristige Investmentperformance ohne Zwischen-Cashflows."
         },
         {
           "name": "Simple Average Return",
-          "description": "Arithmetic mean of annual returns.",
-          "bestFor": "Quick rough estimates only."
+          "description": "Arithmetisches Mittel der Jahresrenditen.",
+          "bestFor": "Nur schnelle grobe Schätzungen."
         },
         {
           "name": "Absolute Return",
-          "description": "Total percentage change from start to end.",
-          "bestFor": "Short-term or single-period performance."
+          "description": "Gesamtprozentuale Veränderung von Anfang bis Ende.",
+          "bestFor": "Kurzfristige oder Einzelperioden-Performance."
         },
         {
           "name": "IRR",
-          "description": "Discount rate that makes the net present value of all cash flows zero.",
-          "bestFor": "Investments with multiple inflows and outflows."
+          "description": "Diskontsatz, bei dem der Nettobarwert aller Cashflows null ist.",
+          "bestFor": "Investitionen mit mehreren Zahlungszuflüssen und -abflüssen."
         },
         {
           "name": "TWR",
-          "description": "Removes the impact of external cash flows.",
-          "bestFor": "Evaluating fund manager performance."
+          "description": "Entfernt den Einfluss externer Cashflows.",
+          "bestFor": "Bewertung der Fondsmanager-Performance."
         }
       ],
       "whatIsCagr": {
-        "title": "What Is CAGR?",
-        "text": "CAGR measures the annualized growth of an investment from a starting value to an ending value, assuming no intermediate cash flows. It smooths out volatility and gives a single growth rate."
+        "title": "Was ist CAGR?",
+        "text": "CAGR misst das annualisierte Wachstum einer Investition von einem Anfangswert bis zu einem Endwert, unter der Annahme, dass es keine Zwischen-Cashflows gibt. Es glättet die Volatilität und liefert eine einzelne Wachstumsrate."
       },
       "whatIsIrr": {
-        "title": "What Is IRR?",
-        "text": "IRR is the annualized rate of return at which the net present value of all cash flows equals zero. It accounts for the timing and size of each cash flow.",
-        "useCase": "Use IRR for projects, real estate investments, private equity, or any investment with irregular contributions and withdrawals."
+        "title": "Was ist IZF?",
+        "text": "IZF ist die annualisierte Rendite, bei der der Nettobarwert aller Cashflows gleich null ist. Es berücksichtigt Zeitpunkt und Größe jedes Cashflows.",
+        "useCase": "Verwenden Sie IZF für Projekte, Immobilieninvestments, Private Equity oder jede Investition mit unregelmäßigen Ein- und Auszahlungen."
       },
-      "exampleTitle": "Same Investment, Different Results",
-      "exampleIntro": "You buy a stock for $10,000, receive $2,000 in dividends at the end of each year for 4 years, and sell it for $12,000 at the end of year 4.",
+      "exampleTitle": "Gleiche Investition, Unterschiedliche Ergebnisse",
+      "exampleIntro": "Sie kaufen eine Aktie für 10.000€, erhalten 4 Jahre lang jährlich 2.000€ Dividende und verkaufen sie am Ende des 4. Jahres für 12.000€.",
       "example": {
         "cagr": {
-          "title": "CAGR Calculation",
-          "calculation": "CAGR only uses the purchase price ($10,000) and the sale price ($12,000) over 4 years: CAGR = (12,000/10,000)^(1/4) - 1 = 4.66%."
+          "title": "CAGR-Berechnung",
+          "calculation": "CAGR verwendet nur den Kaufpreis (10.000€) und den Verkaufspreis (12.000€) über 4 Jahre: CAGR = (12.000/10.000)^(1/4) - 1 = 4,66%."
         },
         "irr": {
-          "title": "IRR Calculation",
-          "calculation": "IRR includes every dividend's timing. For cash flows -10,000, +2,000, +2,000, +2,000, +14,000, Excel =IRR(...) returns 20.0%."
+          "title": "IZF-Berechnung",
+          "calculation": "IZF berücksichtigt den Zeitpunkt jeder Dividende. Für die Cashflows -10.000, +2.000, +2.000, +2.000, +14.000 liefert Excel =IKV(...) 20,0%."
         },
-        "conclusion": "CAGR understates the true return because it ignores the $8,000 of dividends received before the final sale. IRR captures the full picture."
+        "conclusion": "CAGR unterschätzt die tatsächliche Rendite, weil es die 8.000€ an Dividenden vor dem endgültigen Verkauf ignoriert. IZF zeigt das vollständige Bild."
       },
       "useCagr": {
-        "title": "Use CAGR When",
+        "title": "CAGR Verwenden Wenn",
         "items": [
-          "You have one initial investment and one final value.",
-          "You want to compare investments over the same time period.",
-          "There are no intermediate deposits or withdrawals.",
-          "You need a quick, easy-to-understand annualized return."
+          "Sie eine Anfangsinvestition und einen Endwert haben.",
+          "Sie Investitionen über denselben Zeitraum vergleichen möchten.",
+          "Es keine Zwischeneinlagen oder -entnahmen gibt.",
+          "Sie eine schnell verständliche annualisierte Rendite benötigen."
         ]
       },
       "useIrr": {
-        "title": "Use IRR When",
+        "title": "IZF Verwenden Wenn",
         "items": [
-          "There are multiple cash flows over time.",
-          "You want to account for the timing of each cash flow.",
-          "You are evaluating a project or business investment.",
-          "You have irregular contributions like a SIP or DCA plan."
+          "Es mehrere Cashflows über die Zeit gibt.",
+          "Sie den Zeitpunkt jedes Cashflows berücksichtigen möchten.",
+          "Sie ein Projekt oder Geschäftsinvestment bewerten.",
+          "Sie unregelmäßige Beiträge wie einen SIP- oder DCA-Plan haben."
         ]
       },
       "faq": {
         "questions": [
           {
-            "question": "Is CAGR the same as IRR?",
-            "answer": "No. CAGR measures smoothed annualized growth between two values. IRR accounts for the timing and size of multiple cash flows."
+            "question": "Ist CAGR dasselbe wie IZF?",
+            "answer": "Nein. CAGR misst geglättetes annualisiertes Wachstum zwischen zwei Werten. IZF berücksichtigt Zeitpunkt und Größe mehrerer Cashflows."
           },
           {
-            "question": "Why is IRR lower than CAGR?",
-            "answer": "IRR can be lower when early cash flows are small and later cash flows are large, because money received earlier is more valuable."
+            "question": "Warum ist IZF höher als CAGR?",
+            "answer": "IZF ist oft höher, wenn Sie Cashflows vor dem endgültigen Verkauf erhalten, weil dieses Geld reinvestiert oder anderweitig genutzt werden kann."
           },
           {
-            "question": "Can I use CAGR for SIP investments?",
-            "answer": "No. For monthly contributions, use XIRR because each contribution has a different investment horizon."
+            "question": "Kann ich CAGR für SIP-Investments verwenden?",
+            "answer": "Nein. Bei monatlichen Einzahlungen verwenden Sie XIRR, da jeder Beitrag eine andere Anlagedauer hat."
           },
           {
-            "question": "Which is better for comparing mutual funds?",
-            "answer": "CAGR is better for comparing lump-sum investments over the same period. IRR or XIRR is better for SIPs."
+            "question": "Was ist besser zum Vergleich von Fonds?",
+            "answer": "CAGR ist besser für den Vergleich von Einmalanlagen über denselben Zeitraum. IZF oder XIRR ist besser für Sparpläne."
           }
         ]
       }
     },
     "cagrInExcel": {
       "metadata": {
-        "title": "CAGR in Excel: 3 Formulas with Examples",
-        "description": "Learn how to calculate CAGR in Excel using POWER, RATE, and manual formulas. Includes examples, common errors, and when to use XIRR instead.",
-        "keywords": "cagr in excel, cagr formula excel, how to calculate cagr in excel, cagr excel template, cagr rate function"
+        "title": "CAGR in Excel: 3 Formeln mit Beispielen",
+        "description": "Lernen Sie, wie Sie CAGR in Excel mit den Funktionen POTENZ, ZINS und der manuellen Formel berechnen. Inklusive Beispiele, häufige Fehler und wann Sie stattdessen X verwenden.",
+        "keywords": "cagr in excel, cagr formel excel, cagr berechnen excel, cagr excel vorlage, cagr zins funktion"
       },
-      "title": "How to Calculate CAGR in Excel",
-      "subtitle": "Three formulas, one result — with examples and common fixes",
-      "intro": "You can calculate CAGR in Excel using the POWER function, the RATE function, or a manual formula. Each method gives the same result; choose the one that fits your worksheet.",
-      "methodsTitle": "Three Ways to Calculate CAGR in Excel",
+      "title": "So Berechnen Sie CAGR in Excel",
+      "subtitle": "Drei Formeln, ein Ergebnis: mit Beispielen und häufigen Lösungen",
+      "intro": "Sie können CAGR in Excel mit der POTENZ-Funktion, der ZINS-Funktion oder einer manuellen Formel berechnen. Jede Methode liefert dasselbe Ergebnis; wählen Sie die, die zu Ihrer Tabelle passt.",
+      "methodsTitle": "Drei Wege, CAGR in Excel zu Berechnen",
       "methods": [
         {
-          "name": "POWER function",
-          "formula": "=POWER(FV/PV, 1/n)-1",
-          "example": "=POWER(20000/10000, 1/5)-1 returns 0.1487 or 14.87%"
+          "name": "POTENZ-Funktion",
+          "formula": "=POTENZ(FV/PV, 1/n)-1",
+          "example": "=POTENZ(20000/10000, 1/5)-1 ergibt 0,1487 oder 14,87%"
         },
         {
-          "name": "Manual formula",
+          "name": "Manuelle Formel",
           "formula": "=(FV/PV)^(1/n)-1",
-          "example": "=(20000/10000)^(1/5)-1 returns 0.1487 or 14.87%"
+          "example": "=(20000/10000)^(1/5)-1 ergibt 0,1487 oder 14,87%"
         },
         {
-          "name": "RATE function",
-          "formula": "=RATE(n, 0, -PV, FV)",
-          "example": "=RATE(5, 0, -10000, 20000) returns 0.1487 or 14.87%"
+          "name": "ZINS-Funktion",
+          "formula": "=ZINS(n, 0, -PV, FV)",
+          "example": "=ZINS(5, 0, -10000, 20000) ergibt 0,1487 oder 14,87%"
         }
       ],
-      "workedExampleTitle": "Full Worked Example",
-      "workedExampleIntro": "Here is a complete example you can copy into Excel.",
+      "workedExampleTitle": "Vollständiges Beispiel",
+      "workedExampleIntro": "Hier ist ein vollständiges Beispiel, das Sie in Excel kopieren können.",
       "workedExampleHeaders": {
-        "label": "Input",
-        "value": "Value"
+        "label": "Eingabe",
+        "value": "Wert"
       },
       "workedExampleRows": {
-        "pv": "Initial Value (PV)",
-        "fv": "Final Value (FV)",
-        "n": "Years (n)",
+        "pv": "Anfangswert (PV)",
+        "fv": "Endwert (FV)",
+        "n": "Jahre (n)",
         "cagr": "CAGR"
       },
       "workedExampleValues": {
-        "pv": "$10,000",
-        "fv": "$20,000",
+        "pv": "10.000€",
+        "fv": "20.000€",
         "n": "5",
-        "cagr": "14.87%"
+        "cagr": "14,87%"
       },
-      "commonErrorsTitle": "Common Errors & How to Fix Them",
+      "commonErrorsTitle": "Häufige Fehler und Deren Behebung",
       "commonErrors": [
         {
-          "error": "#NUM! error with RATE",
-          "cause": "PV was not entered as a negative number.",
-          "fix": "Use =RATE(n, 0, -PV, FV) with a minus sign before PV."
+          "error": "#ZAHL!-Fehler bei ZINS",
+          "cause": "PV wurde nicht als negative Zahl eingegeben.",
+          "fix": "Verwenden Sie =ZINS(n, 0, -PV, FV) mit einem Minuszeichen vor PV."
         },
         {
-          "error": "Result looks too small",
-          "cause": "The cell is not formatted as a percentage.",
-          "fix": "Select the cell, then Home → Number → Percentage."
+          "error": "Ergebnis sieht zu klein aus",
+          "cause": "Die Zelle ist nicht als Prozentsatz formatiert.",
+          "fix": "Wählen Sie die Zelle aus, dann Start → Zahl → Prozent."
         },
         {
-          "error": "Monthly data gives wrong CAGR",
-          "cause": "n was entered in months but the result was not annualized.",
-          "fix": "Use n in years, or multiply the monthly result by 12."
+          "error": "Monatsdaten ergeben falsches CAGR",
+          "cause": "n wurde in Monaten eingegeben, aber das Ergebnis wurde nicht annualisiert.",
+          "fix": "Verwenden Sie n in Jahren, oder multiplizieren Sie das Monatsergebnis mit 12."
         },
         {
-          "error": "Result is 100x too large or small",
-          "cause": "Percentage formatting is missing or applied twice.",
-          "fix": "Check the cell format and whether you already multiplied by 100."
+          "error": "Ergebnis ist 100x zu groß oder zu klein",
+          "cause": "Prozentformatierung fehlt oder wurde doppelt angewendet.",
+          "fix": "Prüfen Sie das Zellenformat und ob Sie bereits mit 100 multipliziert haben."
         }
       ],
       "xirr": {
-        "title": "When to Use XIRR Instead",
-        "text": "If your data includes monthly contributions, dividends, or irregular dates, use =XIRR(values, dates) instead of CAGR. XIRR handles cash flows that happen on any date."
+        "title": "Wann Sie Stattdessen XIRR Verwenden",
+        "text": "Wenn Ihre Daten monatliche Einzahlungen, Dividenden oder unregelmäßige Daten enthalten, verwenden Sie stattdessen =XIRR(Werte, Daten). XIRR verarbeitet Cashflows an jedem beliebigen Datum."
       },
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula in Excel?",
-            "answer": "The most common formulas are =POWER(FV/PV, 1/n)-1 and =RATE(n, 0, -PV, FV)."
+            "question": "Was ist die CAGR-Formel in Excel?",
+            "answer": "Die gängigsten Formeln sind =POTENZ(FV/PV, 1/n)-1 und =ZINS(n, 0, -PV, FV)."
           },
           {
-            "question": "How do I calculate CAGR for 5 years in Excel?",
-            "answer": "Enter PV, FV, and n=5, then use =POWER(FV/PV, 1/5)-1."
+            "question": "Wie berechne ich CAGR für 5 Jahre in Excel?",
+            "answer": "Geben Sie PV, FV und n=5 ein, dann verwenden Sie =POTENZ(FV/PV, 1/5)-1."
           },
           {
-            "question": "Why does RATE show #NUM!?",
-            "answer": "RATE requires PV to be negative because it represents a cash outflow."
+            "question": "Warum zeigt ZINS #ZAHL!?",
+            "answer": "ZINS erfordert PV als negativ, weil es einen Auszahlungsbetrag darstellt."
           },
           {
-            "question": "Should I use CAGR or XIRR for SIP?",
-            "answer": "Use XIRR. CAGR assumes a single initial and final value, while XIRR handles multiple contributions."
+            "question": "Sollte ich CAGR oder XIRR für SIP verwenden?",
+            "answer": "Verwenden Sie XIRR. CAGR geht von einem einzelnen Anfangs- und Endwert aus, während XIRR mehrere Einzahlungen verarbeitet."
           }
         ]
       }
