@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "CAGR 계산기 - 무료 온라인 연평균 복합 성장률 계산기",
-    "description": "무료 온라인 CAGR 계산기 - 연평균 복합 성장률, 최종 가치, 초기 가치 또는 기간을 계산하세요. 공식, 예제 및 단계별 가이드로 CAGR 계산 방법을 배우세요. 모바일 최적화 및 정확함.",
+    "title": "CAGR 계산기 - 묣 온라인 연평균 복합 성장률 계산기",
+    "description": "묣 온라인 CAGR 계산기 - 연평균 복합 성장률, 최종 가치, 초기 가치 또는 기간을 계산하세요. 공식, 예제 및 단계별 가이드로 CAGR 계산 방법을 배우세요. 모바일 최적화 및 정확함.",
     "ogTitle": "CAGR 계산기",
     "twitterTitle": "CAGR 계산기",
     "keywords": "CAGR 계산기,연평균 복합 성장률,cagr 계산,온라인 cagr 계산기,cagr 계산 방법,cagr 공식,투자 계산기,성장률 계산기"
@@ -84,13 +84,13 @@
       "cagrVsMetrics": "CAGR vs IRR vs 연평균 수익률",
       "howToUse": "이 CAGR 계산기 사용 방법",
       "faq": "CAGR 계산기 자주 묻는 질문",
-      "about": "무료 온라인 CAGR 계산기 소개",
+      "about": "묣 온라인 CAGR 계산기 소개",
       "cagrInExcel": "Excel에서 CAGR 계산",
       "cagrForInvestments": "주식, 뮤추얼 펀드 및 은퇴를 위한 CAGR",
-      "readMoreFormula": "Read the full CAGR formula guide",
-      "readMoreCagrVsIrr": "Read the full CAGR vs IRR guide",
-      "readMoreCagrInExcel": "Read the full CAGR in Excel guide",
-      "readMoreFaq": "Browse all FAQ"
+      "readMoreFormula": "전체 CAGR 공식 가이드 읽기",
+      "readMoreCagrVsIrr": "전체 CAGR vs IRR 가이드 읽기",
+      "readMoreCagrInExcel": "전체 Excel CAGR 가이드 읽기",
+      "readMoreFaq": "모든 FAQ 보기"
     },
     "loading": "계산기 로딩 중...",
     "educational": {
@@ -196,7 +196,7 @@
           "연도별 변동성을 완화하기 위해",
           "과거 추세를 기반으로 미래 성장을 예측할 때"
         ],
-        "footer": "위의 무료 온라인 계산기를 사용하여 이러한 계산을 즉시 수행하세요."
+        "footer": "위의 묣 온라인 계산기를 사용하여 이러한 계산을 즉시 수행하세요."
       },
       "howToUse": {
         "intro": "스마트 CAGR 계산기는 4개 변수 중 하나를 계산할 수 있습니다. 3개 값을 입력하기만 하면 계산기가 자동으로 사용할 모드를 감지하고 누락된 값을 계산합니다.",
@@ -268,7 +268,7 @@
         ]
       },
       "faq": {
-        "intro": "CAGR 및 무료 온라인 CAGR 계산기에 대한 가장 일반적인 질문에 대한 답변입니다:",
+        "intro": "CAGR 및 묣 온라인 CAGR 계산기에 대한 가장 일반적인 질문에 대한 답변입니다:",
         "questions": [
           {
             "question": "CAGR과 평균 수익률의 차이는 무엇인가요?",
@@ -304,15 +304,15 @@
           },
           {
             "question": "Excel에서 CAGR을 계산하는 방법은?",
-            "answer": "Excel에서 이 공식을 사용하세요: =(FV/PV)^(1/n)-1 또는 =POWER(FV/PV, 1/n)-1. RATE 함수를 사용할 수도 있습니다: =RATE(n, 0, -PV, FV). 예를 들어, 1,000만원이 5년 동안 2,000만원으로 성장하는 경우: =POWER(20000000/10000000, 1/5)-1은 0.1487 또는 14.87%를 반환합니다. 그러나 무료 온라인 계산기가 훨씬 빠르고 공식 오류 위험을 제거합니다."
+            "answer": "Excel에서 이 공식을 사용하세요: =(FV/PV)^(1/n)-1 또는 =POWER(FV/PV, 1/n)-1. RATE 함수를 사용할 수도 있습니다: =RATE(n, 0, -PV, FV). 예를 들어, 1,000만원이 5년 동안 2,000만원으로 성장하는 경우: =POWER(20000000/10000000, 1/5)-1은 0.1487 또는 14.87%를 반환합니다. 그러나 묣 온라인 계산기가 훨씬 빠르고 공식 오류 위험을 제거합니다."
           },
           {
             "question": "CAGR의 주요 한계는 무엇인가요?",
-            "answer": "CAGR은 일정한 성장을 가정하는데, 이는 현실에서 거의 발생하지 않습니다. 변동성, 위험 또는 중간 현금 흐름(배당금, 예금, 인출)을 고려하지 않습니다. 또한 수익의 타이밍을 반영하지 않습니다 - 4년 동안 마이너스 수익을 내고 5년차에 급증해도 여전히 플러스 CAGR을 보일 수 있습니다. 전체 그림을 위해 항상 다른 지표와 함께 CAGR을 사용하세요."
+            "answer": "CAGR은 일정한 성장을 가정하는데, 이는 현실에서 거의 발생하지 않습니다. 변동성, 위험 또는 중간 현금 흐름(배당금, 예금, 인출)을 고려하지 않습니다. 또한 수익의 타이밍을 반영하지 않습니다 - 4년 동안 마이너스 수익을 내고 5년차에 급증필 수 있으며, 여전히 플러스 CAGR을 보일 수 있습니다. 전체 그림을 위해 항상 다른 지표와 함께 CAGR을 사용하세요."
           },
           {
             "question": "CAGR과 IRR의 차이는 무엇인가요?",
-            "answer": "CAGR은 시작 가치와 종료 가치 사이의 연평균 성장률을 측정하며, 중간 현금 흐름이 없다고 가정합니다. IRR(내부 수익률)은 투자 중 발생한 여러 현금 흐름의 시점과 규모를 모두 고려합니다. 간단한 시작-종료 비교에는 CAGR을, 불규칙한 간격으로 예금, 인출, 배당금 재투자가 있는 투자에는 IRR을 사용하세요."
+            "answer": "CAGR은 시작 가치와 종료 가치 사이의 연평균 성장률을 측정하며, 중간 현금 흐름이 없다고 가정합니다. IRR(납부 수익률)은 투자 중 발생한 여러 현금 흐름의 시점과 규모를 모두 고려합니다. 간단한 시작-종료 비교에는 CAGR을, 불규칙한 간격으로 예금, 인출, 배당금 재투자가 있는 투자에는 IRR을 사용하세요."
           },
           {
             "question": "CAGR에 배당금이 포함되나요?",
@@ -320,7 +320,7 @@
           },
           {
             "question": "월별 납입(SIP)이 있는 경우 CAGR을 어떻게 계산하나요?",
-            "answer": "CAGR은 각 납입마다 투자 기간이 다르기 때문에 월별 납입에 적합하지 않습니다. 대신 Excel 또는 Google Sheets에서 XIRR(확장 내부 수익률)을 사용하세요: 각 납입 날짜와 금액(음수) 및 최종 가치(양수)를 목록으로 작성한 후 =XIRR(값, 날짜)를 적용하세요. 이렇게 하면 불규칙한 현금 흐름에 대한 진정한 연평균 수익률을 얻을 수 있습니다."
+            "answer": "CAGR은 각 납입마다 투자 기간이 다르기 때문에 월별 납입에 적합하지 않습니다. 대신 Excel 또는 Google Sheets에서 XIRR(확장 납부 수익률)을 사용하세요: 각 납입 날짜와 금액(음수) 및 최종 가치(양수)를 목록으로 작성한 후 =XIRR(값, 날짜)를 적용하세요. 이렇게 하면 불규칙한 현금 흐름에 대한 진정한 연평균 수익률을 얻을 수 있습니다."
           },
           {
             "question": "은퇴를 위한 현실적인 CAGR 목표는 무엇인가요?",
@@ -335,8 +335,8 @@
         "stillHaveQuestionsText": "이 계산기는 가능한 한 정확하고 유용하도록 설계되었습니다. 모든 계산은 널리 인정되는 재무 공식을 기반으로 합니다. CAGR에 대한 추가 질문이 있거나 결과 해석에 도움이 필요한 경우 재무 고문과 상담하는 것을 고려하세요."
       },
       "about": {
-        "mainTitle": "무료 온라인 CAGR 계산기 소개",
-        "mainDescription": "스마트 CAGR 계산기는 투자자, 비즈니스 분석가 및 금융 전문가가 연평균 복합 성장률을 계산하고 정보에 입각한 투자 결정을 내리는 데 도움이 되도록 설계된 무료 온라인 도구로 정확하고 사용하기 쉽습니다. 이 계산기는 시각적 인사이트와 자세한 분석을 통해 즉각적인 결과를 제공합니다.",
+        "mainTitle": "묣 온라인 CAGR 계산기 소개",
+        "mainDescription": "스마트 CAGR 계산기는 투자자, 비즈니스 분석가 및 금융 전문가가 연평균 복합 성장률을 계산하고 정보에 입각한 투자 결정을 내리는 데 도움이 되도록 설계된 묣 온라인 도구로 정확하고 사용하기 쉽습니다. 이 계산기는 시각적 인사이트와 자세한 분석을 통해 즉각적인 결과를 제공합니다.",
         "features": [
           {
             "emoji": "🎯",
@@ -362,11 +362,11 @@
           "시장 벤치마크가 포함된 스마트 인사이트",
           "URL 또는 기본 공유를 통해 결과 공유",
           "모바일 우선 반응형 디자인",
-          "100% 무료 사용, 등록 불필요",
+          "100% 묣 사용, 등록 불필요",
           "교육 콘텐츠 및 예제"
         ],
         "accuracyTitle": "정확성 및 면책 조항",
-        "accuracyText": "이 계산기는 표준 CAGR 공식: `(FV/PV)^((1/n)) - 1`을 사용합니다. 결과는 입력값을 기반으로 한 추정치이며 정확성 또는 완전성을 보장하지 않습니다. 이 도구는 교육 및 정보 목적으로만 제공됩니다. 투자 결정은 자격을 갖춘 재무 고문과 상담한 후에 내려야 합니다. 과거 성과가 미래 결과를 보장하지 않습니다.",
+        "accuracyText": "이 계산기는 표준 CAGR 공식: `(FV/PV)^((1/n)) - 1`을 사용합니다. 결과는 입력값을 기반으로 한 추정치이며 정확성 또는 완전성을 보장하지 않습니다. 이 도구는 교육 및 정보 목적으로만 제공됩니다. 투자 결정은 자격을 갖춘 재무 고문과 상담한 후에 날해야 합니다. 과거 성과가 미래 결과를 보장하지 않습니다.",
         "technologyTitle": "기술",
         "technologyIntro": "빠른 성능과 우수한 사용자 경험을 보장하기 위해 최신 웹 기술로 구축되었습니다:",
         "technologies": [
@@ -465,7 +465,7 @@
           "n": "n = 년 수"
         },
         "tipTitle": "팁",
-        "tip": "데이터에 월별 납입이나 불규칙한 날짜가 포함된 경우 CAGR 대신 =XIRR(값, 날짜)를 사용하세요. 또한 위의 무료 온라인 CAGR 계산기를 사용하여 Excel 결과를 다시 확인할 수 있습니다."
+        "tip": "데이터에 월별 납입이나 불규칙한 날짜가 포함된 경우 CAGR 대신 =XIRR(값, 날짜)를 사용하세요. 또한 위의 묣 온라인 CAGR 계산기를 사용하여 Excel 결과를 다시 확인할 수 있습니다."
       },
       "cagrForInvestments": {
         "title": "주식, 뮤추얼 펀드 및 은퇴를 위한 CAGR",
@@ -496,288 +496,296 @@
   "pages": {
     "cagrFormula": {
       "metadata": {
-        "title": "CAGR Formula | How to Calculate Compound Annual Growth Rate",
-        "description": "Learn the CAGR formula with step-by-step examples. Calculate compound annual growth rate manually, in Excel, or with our free online CAGR calculator.",
-        "keywords": "cagr formula, compound annual growth rate formula, how to calculate cagr, cagr calculation, cagr variables, reverse cagr formula"
+        "title": "CAGR 공식 | 복합 연평균 성장률 계산 방법",
+        "description": "단계별 예제로 CAGR 공식을 배우세요. 수동으로, Excel에서 또는 묣 온라인 CAGR 계산기로 복합 연평균 성장률을 계산하세요.",
+        "keywords": "cagr 공식, 복합 연평균 성장률 공식, cagr 계산 방법, cagr 계산, cagr 변수, 역산 cagr 공식"
       },
-      "title": "CAGR Formula: How to Calculate Compound Annual Growth Rate",
-      "subtitle": "A complete guide to the compound annual growth rate formula with examples and reverse formulas",
-      "intro": "The CAGR formula calculates the annualized growth rate of an investment over a stated period, assuming profits are reinvested each year.",
+      "title": "CAGR 공식: 복합 연평균 성장률 계산 방법",
+      "subtitle": "예제와 역산 공식이 포함된 복합 연평균 성장률 공식 완벽 가이드",
+      "intro": "CAGR 공식은 이익이 매년 재투자된다고 가정할 때, 특정 기간 동안 투자의 연평균 성장률을 계산합니다.",
       "formula": "CAGR = (FV / PV)^(1/n) - 1",
-      "formulaCaption": "Where FV is final value, PV is present value, and n is number of years.",
-      "variablesTitle": "Where:",
+      "formulaCaption": "여기서 FV는 최종 가치, PV는 현재 가치, n은 년 수입니다.",
+      "variablesTitle": "여기서:",
       "variables": {
         "fv": {
-          "term": "FV (Final Value)",
-          "definition": "The ending value of the investment."
+          "term": "FV (최종 가치)",
+          "definition": "투자의 종료 가치입니다."
         },
         "pv": {
-          "term": "PV (Present Value)",
-          "definition": "The beginning value or initial investment amount."
+          "term": "PV (현재 가치)",
+          "definition": "시작 가치 또는 초기 투자 금액입니다."
         },
         "n": {
-          "term": "n (Number of Years)",
-          "definition": "The investment time period in years."
+          "term": "n (년 수)",
+          "definition": "년 단위의 투자 기간입니다."
         }
       },
-      "stepsTitle": "Step-by-Step Calculation",
+      "stepsTitle": "단계별 계산",
       "steps": [
-        "Divide the final value (FV) by the initial value (PV).",
-        "Raise the result to the power of 1 divided by the number of years (n).",
-        "Subtract 1 from the result.",
-        "Multiply by 100 to convert to a percentage."
+        "최종 가치(FV)를 초기 가치(PV)로 나눕니다.",
+        "결과를 1을 년 수(n)로 나눈 값의 거듭제곱으로 올립니다.",
+        "결과에서 1을 뺍니다.",
+        "백분율로 변환하기 위해 100을 곱합니다."
       ],
-      "exampleTitle": "Example Calculation",
+      "exampleTitle": "계산 예제",
       "example": {
-        "given": "Given: PV = $10,000, FV = $20,000, n = 5 years",
-        "step1": "Step 1: 20,000 / 10,000 = 2",
-        "step2": "Step 2: 2^((1/5)) = 2^(0.2) = 1.1487",
-        "step3": "Step 3: 1.1487 - 1 = 0.1487",
-        "result": "Result: 0.1487 × 100 = 14.87%"
+        "given": "주어진 값: PV = ₩10,000,000, FV = ₩20,000,000, n = 5년",
+        "step1": "1단계: 20,000,000 / 10,000,000 = 2",
+        "step2": "2단계: 2^((1/5)) = 2^(0.2) = 1.1487",
+        "step3": "3단계: 1.1487 - 1 = 0.1487",
+        "result": "결과: 0.1487 × 100 = 14.87%"
       },
-      "reverseTitle": "Reverse CAGR Formulas",
-      "reverseIntro": "You can rearrange the CAGR formula to solve for any missing variable. These reverse formulas are useful when you know your target return and want to find the required initial investment, final value, or time horizon.",
+      "reverseTitle": "역산 CAGR 공식",
+      "reverseIntro": "CAGR 공식을 재배열하여 누락된 변수를 구할 수 있습니다. 이러한 역산 공식은 목표 수익률을 알고 필요한 초기 투자 금액, 최종 가치 또는 기간을 찾고 싶을 때 유용합니다.",
       "reverseFormulas": [
         {
-          "name": "Calculate Final Value",
+          "name": "최종 가치 계산",
           "formula": "FV = PV × (1 + CAGR)^n",
-          "when": "Use when you know the initial investment, CAGR, and time period."
+          "when": "초기 투자, CAGR, 기간을 알 때 사용합니다."
         },
         {
-          "name": "Calculate Initial Value",
+          "name": "초기 가치 계산",
           "formula": "PV = FV / (1 + CAGR)^n",
-          "when": "Use when you know the target final value, CAGR, and time period."
+          "when": "목표 최종 가치, CAGR, 기간을 알 때 사용합니다."
         },
         {
-          "name": "Calculate Time Period",
+          "name": "기간 계산",
           "formula": "n = ln(FV / PV) / ln(1 + CAGR)",
-          "when": "Use when you know the initial value, final value, and CAGR."
+          "when": "초기 가치, 최종 가치, CAGR을 알 때 사용합니다."
         }
       ],
-      "calculatorModesTitle": "Our CAGR Calculator Solves for Any Variable",
-      "calculatorModesIntro": "Our smart calculator lets you input any 3 of the 4 variables and automatically calculates the missing one.",
+      "calculatorModesTitle": "CAGR 계산기는 모든 변수를 계산합니다",
+      "calculatorModesIntro": "스마트 계산기를 사용하면 4개 변수 중 3개를 입력하면 자동으로 누락된 변수를 계산합니다.",
       "calculatorModes": [
-        "Calculate CAGR: Given PV, FV, and n",
-        "Calculate FV: Given PV, CAGR, and n",
-        "Calculate PV: Given FV, CAGR, and n",
-        "Calculate Time: Given PV, FV, and CAGR"
+        "CAGR 계산: PV, FV, n이 주어진 경우",
+        "FV 계산: PV, CAGR, n이 주어진 경우",
+        "PV 계산: FV, CAGR, n이 주어진 경우",
+        "기간 계산: PV, FV, CAGR이 주어진 경우"
       ],
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula?",
-            "answer": "CAGR = (FV/PV)^(1/n) - 1, where FV is the final value, PV is the initial value, and n is the number of years."
+            "question": "CAGR 공식이란 무엇인가요?",
+            "answer": "CAGR = (FV/PV)^(1/n) - 1입니다. 여기서 FV는 최종 가치, PV는 초기 가치, n은 년 수입니다."
           },
           {
-            "question": "Can CAGR be negative?",
-            "answer": "Yes. If the final value is lower than the initial value, CAGR will be negative, indicating a loss."
+            "question": "CAGR이 음수가 될 수 있나요?",
+            "answer": "네. 최종 가치가 초기 가치보다 낮으면 CAGR은 음수가 되어 손실을 나타냅니다."
           },
           {
-            "question": "How do I calculate CAGR in Excel?",
-            "answer": "Use =POWER(FV/PV, 1/n)-1, =(FV/PV)^(1/n)-1, or =RATE(n, 0, -PV, FV)."
+            "question": "Excel에서 CAGR을 어떻게 계산하나요?",
+            "answer": "=POWER(FV/PV, 1/n)-1, =(FV/PV)^(1/n)-1 또는 =RATE(n, 0, -PV, FV)를 사용합니다."
           },
           {
-            "question": "What is a good CAGR?",
-            "answer": "Historically, the S&P 500 has returned about 10-11% CAGR before inflation. A 'good' CAGR depends on your risk tolerance and goals."
+            "question": "좋은 CAGR은 어느 정도인가요?",
+            "answer": "역사적으로 S&P 500은 인플레이션 전 연간 약 10-11%의 CAGR을 기록했습니다. '좋은' CAGR은 위험 감수 성향과 목표에 따라 다릅니다."
           },
           {
-            "question": "Does CAGR include dividends?",
-            "answer": "Only if dividends are reinvested. If taken as cash, they should be tracked separately as income."
+            "question": "CAGR에 배당금이 포함되나요?",
+            "answer": "배당금을 재투자하는 경우에만 포함됩니다. 현금으로 받으면 별도의 소득으로 추적해야 합니다."
           }
         ]
       }
     },
     "cagrVsIrr": {
       "metadata": {
-        "title": "CAGR vs IRR: Key Differences & When to Use Each",
-        "description": "CAGR and IRR both measure investment returns, but they answer different questions. Learn the differences, formulas, and when to use each metric.",
-        "keywords": "cagr vs irr, difference between cagr and irr, when to use irr, internal rate of return, cagr formula vs irr"
+        "title": "CAGR vs IRR: 핵심 차이점 및 사용 시기",
+        "description": "CAGR과 IRR은 모두 투자 수익률을 측정하지만, 서로 다른 질문에 답합니다. 차이점, 공식, 각 지표의 사용 시기를 알아보세요.",
+        "keywords": "cagr vs irr, cagr과 irr의 차이, irr 사용 시기, 내부 수익률, cagr 공식 vs irr"
       },
-      "title": "CAGR vs IRR: What's the Difference?",
-      "subtitle": "Two popular return metrics, explained with examples",
-      "intro": "CAGR and IRR are both used to measure investment performance, but they work best in different situations. CAGR is simple and good for start-to-end comparisons. IRR is more advanced and accounts for the timing of cash flows.",
+      "title": "CAGR vs IRR: 차이점은 무엇인가요?",
+      "subtitle": "예제로 설명하는 두 가지 인기 수익률 지표",
+      "intro": "CAGR과 IRR은 모두 투자 성과를 측정하는 데 사용되지만, 각각 가장 적합한 상황이 다릅니다. CAGR은 간단하고 시작부터 끝까지의 비교에 적합합니다. IRR은 더 고급스럽고 현금 흐름의 시점을 고려합니다.",
       "comparisonHeaders": {
-        "metric": "Metric",
-        "description": "Description",
-        "bestFor": "Best For"
+        "metric": "지표",
+        "description": "설명",
+        "bestFor": "최적 사용"
       },
       "comparisonTable": [
         {
           "name": "CAGR",
-          "description": "Smoothed annualized growth rate assuming compounding.",
-          "bestFor": "Long-term investment performance with no intermediate cash flows."
+          "description": "복리를 가정한 완화된 연평균 성장률.",
+          "bestFor": "중간 현금 흐름이 없는 장기 투자 성과."
         },
         {
-          "name": "Simple Average Return",
-          "description": "Arithmetic mean of annual returns.",
-          "bestFor": "Quick rough estimates only."
+          "name": "단순 평균 수익률",
+          "description": "연간 수익의 산술 평균.",
+          "bestFor": "빠른 대략적인 추정치만."
         },
         {
-          "name": "Absolute Return",
-          "description": "Total percentage change from start to end.",
-          "bestFor": "Short-term or single-period performance."
+          "name": "절대 수익",
+          "description": "시작부터 끝까지의 총 백분율 변화.",
+          "bestFor": "단기 또는 단일 기간 성과."
         },
         {
           "name": "IRR",
-          "description": "Discount rate that makes the net present value of all cash flows zero.",
-          "bestFor": "Investments with multiple inflows and outflows."
+          "description": "모든 현금 흐름의 순현재가치를 0으로 만드는 할인율.",
+          "bestFor": "여러 현금 유입 및 유출이 있는 투자."
         },
         {
           "name": "TWR",
-          "description": "Removes the impact of external cash flows.",
-          "bestFor": "Evaluating fund manager performance."
+          "description": "외부 현금 흐름의 영향을 제거.",
+          "bestFor": "펀드 매니저 성과 평가."
         }
       ],
       "whatIsCagr": {
-        "title": "What Is CAGR?",
-        "text": "CAGR measures the annualized growth of an investment from a starting value to an ending value, assuming no intermediate cash flows. It smooths out volatility and gives a single growth rate."
+        "title": "CAGR이란 무엇인가요?",
+        "text": "CAGR은 중간 현금 흐름이 없다고 가정할 때, 투자의 시작 가치에서 종료 가치까지의 연평균 성장을 측정합니다. 변동성을 완화하고 단일 성장률을 제공합니다."
       },
       "whatIsIrr": {
-        "title": "What Is IRR?",
-        "text": "IRR is the annualized rate of return at which the net present value of all cash flows equals zero. It accounts for the timing and size of each cash flow.",
-        "useCase": "Use IRR for projects, real estate investments, private equity, or any investment with irregular contributions and withdrawals."
+        "title": "IRR이란 무엇인가요?",
+        "text": "IRR은 모든 현금 흐름의 순현재가치가 0이 되는 연평균 수익률입니다. 각 현금 흐름의 시점과 규모를 고려합니다.",
+        "useCase": "프로젝트, 부동산 투자, 사모 펀드, 또는 불규칙한 납입 및 인출이 있는 투자에 IRR을 사용하세요."
       },
-      "exampleTitle": "Same Investment, Different Results",
-      "exampleIntro": "You buy a stock for $10,000, receive $2,000 in dividends at the end of each year for 4 years, and sell it for $12,000 at the end of year 4.",
+      "exampleTitle": "같은 투자, 다른 결과",
+      "exampleIntro": "1,000만원에 주식을 매수하고, 4년 동안 매년 말에 200만원의 배당금을 받은 후, 4년 말에 1,200만원에 매도합니다.",
       "example": {
         "cagr": {
-          "title": "CAGR Calculation",
-          "calculation": "CAGR only uses the purchase price ($10,000) and the sale price ($12,000) over 4 years: CAGR = (12,000/10,000)^(1/4) - 1 = 4.66%."
+          "title": "CAGR 계산",
+          "calculation": "CAGR은 4년간의 매수 가격(1,000만원)과 매도 가격(1,200만원)만 사용합니다: CAGR = (12,000,000/10,000,000)^(1/4) - 1 = 4.66%."
         },
         "irr": {
-          "title": "IRR Calculation",
-          "calculation": "IRR includes every dividend's timing. For cash flows -10,000, +2,000, +2,000, +2,000, +14,000, Excel =IRR(...) returns 20.0%."
+          "title": "IRR 계산",
+          "calculation": "IRR은 각 배당금의 시점을 포함합니다. 현금 흐름 -10,000,000, +2,000,000, +2,000,000, +2,000,000, +14,000,000에 대해 Excel =IRR(...)은 20.0%를 반환합니다."
         },
-        "conclusion": "CAGR understates the true return because it ignores the $8,000 of dividends received before the final sale. IRR captures the full picture."
+        "conclusion": "CAGR은 최종 매도 전에 받은 800만원의 배당금을 무시하기 때문에 실제 수익률을 과소평가합니다. IRR은 전체 상황을 포착합니다."
       },
       "useCagr": {
-        "title": "Use CAGR When",
+        "title": "CAGR을 사용할 때",
         "items": [
-          "You have one initial investment and one final value.",
-          "You want to compare investments over the same time period.",
-          "There are no intermediate deposits or withdrawals.",
-          "You need a quick, easy-to-understand annualized return."
+          "일회성 초기 투자와 단일 최종 가치가 있을 때.",
+          "동일한 기간 동안 투자를 비교하고 싶을 때.",
+          "중간 예금 또는 인출이 없을 때.",
+          "빠르고 이해하기 쉬운 연평균 수익률이 필요할 때."
         ]
       },
       "useIrr": {
-        "title": "Use IRR When",
+        "title": "IRR을 사용할 때",
         "items": [
-          "There are multiple cash flows over time.",
-          "You want to account for the timing of each cash flow.",
-          "You are evaluating a project or business investment.",
-          "You have irregular contributions like a SIP or DCA plan."
+          "시간의 경과에 따라 여러 현금 흐름이 있을 때.",
+          "각 현금 흐름의 시점을 고려하고 싶을 때.",
+          "프로젝트 또는 사업 투자를 평가할 때.",
+          "SIP 또는 DCA 계획과 같은 불규칙한 납입이 있을 때."
         ]
       },
       "faq": {
         "questions": [
           {
-            "question": "Is CAGR the same as IRR?",
-            "answer": "No. CAGR measures smoothed annualized growth between two values. IRR accounts for the timing and size of multiple cash flows."
+            "question": "CAGR과 IRR은 같나요?",
+            "answer": "아닙니다. CAGR은 두 가치 간의 완화된 연평균 성장을 측정합니다. IRR은 여러 현금 흐름의 시점과 규모를 고려합니다."
           },
           {
-            "question": "Why is IRR lower than CAGR?",
-            "answer": "IRR can be lower when early cash flows are small and later cash flows are large, because money received earlier is more valuable."
+            "question": "IRR이 CAGR보다 낮은 이유는 무엇인가요?",
+            "answer": "초기 현금 흐름이 작고 후기 현금 흐름이 클 때 IRR은 낮아질 수 있습니다. 왜냐하면 일찍 받은 돈의 가치가 더 높기 때문입니다."
           },
           {
-            "question": "Can I use CAGR for SIP investments?",
-            "answer": "No. For monthly contributions, use XIRR because each contribution has a different investment horizon."
+            "question": "SIP 투자에 CAGR을 사용할 수 있나요?",
+            "answer": "아니요. 월별 납입의 경우 각 납입의 투자 기간이 다르기 때문에 XIRR을 사용하세요."
           },
           {
-            "question": "Which is better for comparing mutual funds?",
-            "answer": "CAGR is better for comparing lump-sum investments over the same period. IRR or XIRR is better for SIPs."
+            "question": "뮤추얼 펀드 비교에 어떤 것이 더 좋나요?",
+            "answer": "동일한 기간 동안 일시금 투자를 비교할 때는 CAGR이 더 좋습니다. SIP에는 IRR 또는 XIRR이 더 좋습니다."
           }
         ]
       }
     },
     "cagrInExcel": {
       "metadata": {
-        "title": "CAGR in Excel: 3 Formulas with Examples",
-        "description": "Learn how to calculate CAGR in Excel using POWER, RATE, and manual formulas. Includes examples, common errors, and when to use XIRR instead.",
-        "keywords": "cagr in excel, cagr formula excel, how to calculate cagr in excel, cagr excel template, cagr rate function"
+        "title": "Excel에서 CAGR: 예제가 있는 3가지 공식",
+        "description": "Excel에서 POWER, RATE 및 수동 공식을 사용하여 CAGR을 계산하는 방법을 배우세요. 예제, 일반적인 오류, XIRR을 대신 사용해야 하는 경우가 포함됩니다.",
+        "keywords": "excel에서 cagr, cagr 공식 excel, excel에서 cagr 계산 방법, cagr excel 템플릿, cagr rate 함수"
       },
-      "title": "How to Calculate CAGR in Excel",
-      "subtitle": "Three formulas, one result — with examples and common fixes",
-      "intro": "You can calculate CAGR in Excel using the POWER function, the RATE function, or a manual formula. Each method gives the same result; choose the one that fits your worksheet.",
-      "methodsTitle": "Three Ways to Calculate CAGR in Excel",
+      "title": "Excel에서 CAGR을 계산하는 방법",
+      "subtitle": "세 가지 공식, 하나의 결과 — 예제와 일반적인 수정 방법 포함",
+      "intro": "Excel에서 POWER 함수, RATE 함수 또는 수동 공식을 사용하여 CAGR을 계산할 수 있습니다. 각 방법은 동일한 결과를 제공합니다. 워크시트에 가장 적합한 것을 선택하세요.",
+      "methodsTitle": "Excel에서 CAGR을 계산하는 세 가지 방법",
       "methods": [
         {
-          "name": "POWER function",
+          "name": "POWER 함수",
           "formula": "=POWER(FV/PV, 1/n)-1",
-          "example": "=POWER(20000/10000, 1/5)-1 returns 0.1487 or 14.87%"
+          "example": "=POWER(20000000/10000000, 1/5)-1은 0.1487 또는 14.87%를 반환"
         },
         {
-          "name": "Manual formula",
+          "name": "수동 공식",
           "formula": "=(FV/PV)^(1/n)-1",
-          "example": "=(20000/10000)^(1/5)-1 returns 0.1487 or 14.87%"
+          "example": "=(20000000/10000000)^(1/5)-1은 0.1487 또는 14.87%를 반환"
         },
         {
-          "name": "RATE function",
+          "name": "RATE 함수",
           "formula": "=RATE(n, 0, -PV, FV)",
-          "example": "=RATE(5, 0, -10000, 20000) returns 0.1487 or 14.87%"
+          "example": "=RATE(5, 0, -10000000, 20000000)은 0.1487 또는 14.87%를 반환"
         }
       ],
-      "workedExampleTitle": "Full Worked Example",
-      "workedExampleIntro": "Here is a complete example you can copy into Excel.",
+      "variablesTitle": "여기서:",
+      "variables": {
+        "fv": "FV = 투자의 종료 가치",
+        "pv": "PV = 투자의 시작 가치",
+        "n": "n = 년 수"
+      },
+      "tipTitle": "팁",
+      "tip": "데이터에 월별 납입이나 불규칙한 날짜가 포함된 경우 CAGR 대신 =XIRR(값, 날짜)를 사용하세요. 위의 묣 온라인 CAGR 계산기를 사용하여 Excel 결과를 다시 확인할 수도 있습니다.",
+      "workedExampleTitle": "완전한 실전 예제",
+      "workedExampleIntro": "다음은 Excel에 복사할 수 있는 완전한 예제입니다.",
       "workedExampleHeaders": {
-        "label": "Input",
-        "value": "Value"
+        "label": "입력",
+        "value": "값"
       },
       "workedExampleRows": {
-        "pv": "Initial Value (PV)",
-        "fv": "Final Value (FV)",
-        "n": "Years (n)",
+        "pv": "초기 가치 (PV)",
+        "fv": "최종 가치 (FV)",
+        "n": "년 수 (n)",
         "cagr": "CAGR"
       },
       "workedExampleValues": {
-        "pv": "$10,000",
-        "fv": "$20,000",
+        "pv": "₩10,000,000",
+        "fv": "₩20,000,000",
         "n": "5",
         "cagr": "14.87%"
       },
-      "commonErrorsTitle": "Common Errors & How to Fix Them",
+      "commonErrorsTitle": "일반적인 오류 및 수정 방법",
       "commonErrors": [
         {
-          "error": "#NUM! error with RATE",
-          "cause": "PV was not entered as a negative number.",
-          "fix": "Use =RATE(n, 0, -PV, FV) with a minus sign before PV."
+          "error": "RATE에서 #NUM! 오류",
+          "cause": "PV가 음수로 입력되지 않았습니다.",
+          "fix": "PV 앞에 음수 기호를 붙여 =RATE(n, 0, -PV, FV)를 사용합니다."
         },
         {
-          "error": "Result looks too small",
-          "cause": "The cell is not formatted as a percentage.",
-          "fix": "Select the cell, then Home → Number → Percentage."
+          "error": "결과가 너무 작게 보임",
+          "cause": "셀이 백분율 형식으로 설정되지 않았습니다.",
+          "fix": "셀을 선택한 후 홈 → 숫자 → 백분율을 선택합니다."
         },
         {
-          "error": "Monthly data gives wrong CAGR",
-          "cause": "n was entered in months but the result was not annualized.",
-          "fix": "Use n in years, or multiply the monthly result by 12."
+          "error": "월별 데이터가 잘못된 CAGR을 제공함",
+          "cause": "n을 월 단위로 입력했지만 결과를 연간화하지 않았습니다.",
+          "fix": "n을 년 단위로 사용하거나 월별 결과에 12를 곱합니다."
         },
         {
-          "error": "Result is 100x too large or small",
-          "cause": "Percentage formatting is missing or applied twice.",
-          "fix": "Check the cell format and whether you already multiplied by 100."
+          "error": "결과가 100배 크거나 작음",
+          "cause": "백분율 형식이 누락되었거나 두 번 적용되었습니다.",
+          "fix": "셀 형식과 이미 100을 곱했는지 확인합니다."
         }
       ],
       "xirr": {
-        "title": "When to Use XIRR Instead",
-        "text": "If your data includes monthly contributions, dividends, or irregular dates, use =XIRR(values, dates) instead of CAGR. XIRR handles cash flows that happen on any date."
+        "title": "대신 XIRR을 사용해야 하는 경우",
+        "text": "데이터에 월별 납입, 배당금 또는 불규칙한 날짜가 포함된 경우 CAGR 대신 =XIRR(값, 날짜)를 사용하세요. XIRR은 모든 날짜에 발생하는 현금 흐름을 처리합니다."
       },
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula in Excel?",
-            "answer": "The most common formulas are =POWER(FV/PV, 1/n)-1 and =RATE(n, 0, -PV, FV)."
+            "question": "Excel에서 CAGR 공식은 무엇인가요?",
+            "answer": "가장 일반적인 공식은 =POWER(FV/PV, 1/n)-1과 =RATE(n, 0, -PV, FV)입니다."
           },
           {
-            "question": "How do I calculate CAGR for 5 years in Excel?",
-            "answer": "Enter PV, FV, and n=5, then use =POWER(FV/PV, 1/5)-1."
+            "question": "Excel에서 5년간 CAGR을 어떻게 계산하나요?",
+            "answer": "PV, FV, n=5를 입력한 후 =POWER(FV/PV, 1/5)-1을 사용합니다."
           },
           {
-            "question": "Why does RATE show #NUM!?",
-            "answer": "RATE requires PV to be negative because it represents a cash outflow."
+            "question": "RATE가 #NUM!을 표시하는 이유는 무엇인가요?",
+            "answer": "RATE는 PV가 현금 유출을 나타내기 때문에 음수여야 합니다."
           },
           {
-            "question": "Should I use CAGR or XIRR for SIP?",
-            "answer": "Use XIRR. CAGR assumes a single initial and final value, while XIRR handles multiple contributions."
+            "question": "SIP에는 CAGR과 XIRR 중 어떤 것을 사용해야 하나요?",
+            "answer": "XIRR을 사용하세요. CAGR은 단일 초기값과 최종값을 가정하고, XIRR은 여러 납입을 처리합니다."
           }
         ]
       }

@@ -87,10 +87,10 @@
       "about": "حول حاسبة CAGR المجانية عبر الإنترنت",
       "cagrInExcel": "CAGR في Excel",
       "cagrForInvestments": "CAGR للأسهم وصناديق الاستثمار والتقاعد",
-      "readMoreFormula": "Read the full CAGR formula guide",
-      "readMoreCagrVsIrr": "Read the full CAGR vs IRR guide",
-      "readMoreCagrInExcel": "Read the full CAGR in Excel guide",
-      "readMoreFaq": "Browse all FAQ"
+      "readMoreFormula": "اقرأ الدليل الكامل لصيغة CAGR",
+      "readMoreCagrVsIrr": "اقرأ الدليل الكامل CAGR مقابل IRR",
+      "readMoreCagrInExcel": "اقرأ الدليل الكامل CAGR في Excel",
+      "readMoreFaq": "تصفح جميع الأسئلة الشائعة"
     },
     "loading": "جاري تحميل الحاسبة...",
     "educational": {
@@ -496,288 +496,296 @@
   "pages": {
     "cagrFormula": {
       "metadata": {
-        "title": "CAGR Formula | How to Calculate Compound Annual Growth Rate",
-        "description": "Learn the CAGR formula with step-by-step examples. Calculate compound annual growth rate manually, in Excel, or with our free online CAGR calculator.",
-        "keywords": "cagr formula, compound annual growth rate formula, how to calculate cagr, cagr calculation, cagr variables, reverse cagr formula"
+        "title": "صيغة CAGR | كيفية حساب معدل النمو السنوي المركب",
+        "description": "تعلم صيغة CAGR مع أمثلة خطوة بخطوة. احسب معدل النمو السنوي المركب يدوياً، في Excel، أو باستخدام حاسبة CAGR المجانية عبر الإنترنت.",
+        "keywords": "صيغة cagr, معدل النمو السنوي المركب صيغة, كيفية حساب cagr, حساب cagr, متغيرات cagr, صيغة cagr العكسية"
       },
-      "title": "CAGR Formula: How to Calculate Compound Annual Growth Rate",
-      "subtitle": "A complete guide to the compound annual growth rate formula with examples and reverse formulas",
-      "intro": "The CAGR formula calculates the annualized growth rate of an investment over a stated period, assuming profits are reinvested each year.",
+      "title": "صيغة CAGR: كيفية حساب معدل النمو السنوي المركب",
+      "subtitle": "دليل كامل لصيغة معدل النمو السنوي المركب مع أمثلة وصيغ عكسية",
+      "intro": "صيغة CAGR تحسب معدل النمو السنوي المُحوَّل لاستثمار على مدى فترة محددة، بافتراض إعادة استثمار الأرباح كل عام.",
       "formula": "CAGR = (FV / PV)^(1/n) - 1",
-      "formulaCaption": "Where FV is final value, PV is present value, and n is number of years.",
-      "variablesTitle": "Where:",
+      "formulaCaption": "حيث FV هي القيمة النهائية، وPV هي القيمة الحالية، وn هي عدد السنوات.",
+      "variablesTitle": "حيث:",
       "variables": {
         "fv": {
-          "term": "FV (Final Value)",
-          "definition": "The ending value of the investment."
+          "term": "FV (القيمة النهائية)",
+          "definition": "قيمة نهاية الاستثمار."
         },
         "pv": {
-          "term": "PV (Present Value)",
-          "definition": "The beginning value or initial investment amount."
+          "term": "PV (القيمة الحالية)",
+          "definition": "القيمة الأولية أو مبلغ الاستثمار الأولي."
         },
         "n": {
-          "term": "n (Number of Years)",
-          "definition": "The investment time period in years."
+          "term": "n (عدد السنوات)",
+          "definition": "فترة الاستثمار بالسنوات."
         }
       },
-      "stepsTitle": "Step-by-Step Calculation",
+      "stepsTitle": "الحساب خطوة بخطوة",
       "steps": [
-        "Divide the final value (FV) by the initial value (PV).",
-        "Raise the result to the power of 1 divided by the number of years (n).",
-        "Subtract 1 from the result.",
-        "Multiply by 100 to convert to a percentage."
+        "قسّم القيمة النهائية (FV) على القيمة الأولية (PV).",
+        "ارفع النتيجة إلى قوة 1 مقسوماً على عدد السنوات (n).",
+        "اطرح 1 من النتيجة.",
+        "اضرب في 100 للتحويل إلى نسبة مئوية."
       ],
-      "exampleTitle": "Example Calculation",
+      "exampleTitle": "مثال على الحساب",
       "example": {
-        "given": "Given: PV = $10,000, FV = $20,000, n = 5 years",
-        "step1": "Step 1: 20,000 / 10,000 = 2",
-        "step2": "Step 2: 2^((1/5)) = 2^(0.2) = 1.1487",
-        "step3": "Step 3: 1.1487 - 1 = 0.1487",
-        "result": "Result: 0.1487 × 100 = 14.87%"
+        "given": "المُعطى: PV = 10,000$، FV = 20,000$، n = 5 سنوات",
+        "step1": "الخطوة 1: 20,000 / 10,000 = 2",
+        "step2": "الخطوة 2: 2^((1/5)) = 2^(0.2) = 1.1487",
+        "step3": "الخطوة 3: 1.1487 - 1 = 0.1487",
+        "result": "النتيجة: 0.1487 × 100 = 14.87%"
       },
-      "reverseTitle": "Reverse CAGR Formulas",
-      "reverseIntro": "You can rearrange the CAGR formula to solve for any missing variable. These reverse formulas are useful when you know your target return and want to find the required initial investment, final value, or time horizon.",
+      "reverseTitle": "صيغ CAGR العكسية",
+      "reverseIntro": "يمكنك إعادة ترتيب صيغة CAGR لحساب أي متغير مفقود. هذه الصيغ العكسية مفيدة عندما تعرف عائدك المستهدف وتريد إيجاد الاستثمار الأولي المطلوب، أو القيمة النهائية، أو الأفق الزمني.",
       "reverseFormulas": [
         {
-          "name": "Calculate Final Value",
+          "name": "حساب القيمة النهائية",
           "formula": "FV = PV × (1 + CAGR)^n",
-          "when": "Use when you know the initial investment, CAGR, and time period."
+          "when": "استخدمها عندما تعرف الاستثمار الأولي، وCAGR، والفترة الزمنية."
         },
         {
-          "name": "Calculate Initial Value",
+          "name": "حساب القيمة الأولية",
           "formula": "PV = FV / (1 + CAGR)^n",
-          "when": "Use when you know the target final value, CAGR, and time period."
+          "when": "استخدمها عندما تعرف القيمة النهائية المستهدفة، وCAGR، والفترة الزمنية."
         },
         {
-          "name": "Calculate Time Period",
+          "name": "حساب الفترة الزمنية",
           "formula": "n = ln(FV / PV) / ln(1 + CAGR)",
-          "when": "Use when you know the initial value, final value, and CAGR."
+          "when": "استخدمها عندما تعرف القيمة الأولية، والقيمة النهائية، وCAGR."
         }
       ],
-      "calculatorModesTitle": "Our CAGR Calculator Solves for Any Variable",
-      "calculatorModesIntro": "Our smart calculator lets you input any 3 of the 4 variables and automatically calculates the missing one.",
+      "calculatorModesTitle": "حاسبة CAGR الخاصة بنا تحل أي متغير",
+      "calculatorModesIntro": "حاسبتنا الذكية تتيح لك إدخال أي 3 من المتغيرات الأربعة وتحسب المتغير المفقود تلقائياً.",
       "calculatorModes": [
-        "Calculate CAGR: Given PV, FV, and n",
-        "Calculate FV: Given PV, CAGR, and n",
-        "Calculate PV: Given FV, CAGR, and n",
-        "Calculate Time: Given PV, FV, and CAGR"
+        "حساب CAGR: بمعطى PV وFV وn",
+        "حساب FV: بمعطى PV وCAGR وn",
+        "حساب PV: بمعطى FV وCAGR وn",
+        "حساب الوقت: بمعطى PV وFV وCAGR"
       ],
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula?",
-            "answer": "CAGR = (FV/PV)^(1/n) - 1, where FV is the final value, PV is the initial value, and n is the number of years."
+            "question": "ما هي صيغة CAGR؟",
+            "answer": "CAGR = (FV/PV)^(1/n) - 1، حيث FV هي القيمة النهائية، وPV هي القيمة الأولية، وn هي عدد السنوات."
           },
           {
-            "question": "Can CAGR be negative?",
-            "answer": "Yes. If the final value is lower than the initial value, CAGR will be negative, indicating a loss."
+            "question": "هل يمكن أن يكون CAGR سالباً؟",
+            "answer": "نعم. إذا كانت القيمة النهائية أقل من القيمة الأولية، سيكون CAGR سالباً، مما يشير إلى خسارة."
           },
           {
-            "question": "How do I calculate CAGR in Excel?",
-            "answer": "Use =POWER(FV/PV, 1/n)-1, =(FV/PV)^(1/n)-1, or =RATE(n, 0, -PV, FV)."
+            "question": "كيف أحسب CAGR في Excel؟",
+            "answer": "استخدم =POWER(FV/PV, 1/n)-1 أو =(FV/PV)^(1/n)-1 أو =RATE(n, 0, -PV, FV)."
           },
           {
-            "question": "What is a good CAGR?",
-            "answer": "Historically, the S&P 500 has returned about 10-11% CAGR before inflation. A 'good' CAGR depends on your risk tolerance and goals."
+            "question": "ما هو CAGR الجيد؟",
+            "answer": "تاريخياً، عاد مؤشر S&P 500 بحوالي 10-11% CAGR قبل التضخم. يعتمد CAGR \"الجيد\" على تحملك للمخاطر وأهدافك."
           },
           {
-            "question": "Does CAGR include dividends?",
-            "answer": "Only if dividends are reinvested. If taken as cash, they should be tracked separately as income."
+            "question": "هل يتضمن CAGR الأرباح؟",
+            "answer": "فقط إذا تمت إعادة استثمار الأرباح. إذا تم استلامها نقداً، يجب تتبعها بشكل منفصل كدخل."
           }
         ]
       }
     },
     "cagrVsIrr": {
       "metadata": {
-        "title": "CAGR vs IRR: Key Differences & When to Use Each",
-        "description": "CAGR and IRR both measure investment returns, but they answer different questions. Learn the differences, formulas, and when to use each metric.",
-        "keywords": "cagr vs irr, difference between cagr and irr, when to use irr, internal rate of return, cagr formula vs irr"
+        "title": "CAGR مقابل IRR: الاختلافات الرئيسية ومتى تستخدم كل منهما",
+        "description": "CAGR وIRR يقيسان عائد الاستثمار، لكنهما يجيبان على أسئلة مختلفة. تعرف على الاختلافات والصيغ ومتى تستخدم كل مقياس.",
+        "keywords": "cagr مقابل irr, الفرق بين cagr و irr, متى تستخدم irr, معدل العائد الداخلي, صيغة cagr مقابل irr"
       },
-      "title": "CAGR vs IRR: What's the Difference?",
-      "subtitle": "Two popular return metrics, explained with examples",
-      "intro": "CAGR and IRR are both used to measure investment performance, but they work best in different situations. CAGR is simple and good for start-to-end comparisons. IRR is more advanced and accounts for the timing of cash flows.",
+      "title": "CAGR مقابل IRR: ما الفرق؟",
+      "subtitle": "مقياسان شائعان للعائد، موضحان بأمثلة",
+      "intro": "CAGR وIRR يستخدمان لقياس أداء الاستثمار، لكنهما يعملان بشكل أفضل في حالات مختلفة. CAGR بسيط ومناسب للمقارنات من البداية إلى النهاية. IRR أكثر تقدماً ويأخذ في الاعتبار توقيت التدفقات النقدية.",
       "comparisonHeaders": {
-        "metric": "Metric",
-        "description": "Description",
-        "bestFor": "Best For"
+        "metric": "المقياس",
+        "description": "الوصف",
+        "bestFor": "الأفضل لـ"
       },
       "comparisonTable": [
         {
           "name": "CAGR",
-          "description": "Smoothed annualized growth rate assuming compounding.",
-          "bestFor": "Long-term investment performance with no intermediate cash flows."
+          "description": "معدل نمو سنوي مُنعَّم يفترض المضاعفة.",
+          "bestFor": "أداء استثمار طويل الأجل بدون تدفقات نقدية وسيطة."
         },
         {
-          "name": "Simple Average Return",
-          "description": "Arithmetic mean of annual returns.",
-          "bestFor": "Quick rough estimates only."
+          "name": "متوسط العائد البسيط",
+          "description": "المتوسط الحسابي للعوائد السنوية.",
+          "bestFor": "تقديرات سريعة تقريبية فقط."
         },
         {
-          "name": "Absolute Return",
-          "description": "Total percentage change from start to end.",
-          "bestFor": "Short-term or single-period performance."
+          "name": "العائد المطلق",
+          "description": "التغيير المئوي الإجمالي من البداية إلى النهاية.",
+          "bestFor": "أداء قصير الأجل أو لفترة واحدة."
         },
         {
           "name": "IRR",
-          "description": "Discount rate that makes the net present value of all cash flows zero.",
-          "bestFor": "Investments with multiple inflows and outflows."
+          "description": "معدل الخصم الذي يجعل القيمة الحالية الصافية لجميع التدفقات النقدية تساوي صفر.",
+          "bestFor": "استثمارات مع تدفقات نقدية داخلة وخارجة متعددة."
         },
         {
           "name": "TWR",
-          "description": "Removes the impact of external cash flows.",
-          "bestFor": "Evaluating fund manager performance."
+          "description": "يزيل تأثير التدفقات النقدية الخارجية.",
+          "bestFor": "تقييم أداء مدير الصندوق."
         }
       ],
       "whatIsCagr": {
-        "title": "What Is CAGR?",
-        "text": "CAGR measures the annualized growth of an investment from a starting value to an ending value, assuming no intermediate cash flows. It smooths out volatility and gives a single growth rate."
+        "title": "ما هو CAGR؟",
+        "text": "CAGR يقيس النمو السنوي المُحوَّل لاستثمار من قيمة بداية إلى قيمة نهاية، بافتراض عدم وجود تدفقات نقدية وسيطة. يُنعِّم التقلبات ويعطي معدل نمو واحد."
       },
       "whatIsIrr": {
-        "title": "What Is IRR?",
-        "text": "IRR is the annualized rate of return at which the net present value of all cash flows equals zero. It accounts for the timing and size of each cash flow.",
-        "useCase": "Use IRR for projects, real estate investments, private equity, or any investment with irregular contributions and withdrawals."
+        "title": "ما هو IRR؟",
+        "text": "IRR هو معدل العائد السنوي المُحوَّل الذي تكون عنده القيمة الحالية الصافية لجميع التدفقات النقدية مساوية للصفر. يأخذ في الاعتبار توقيت وحجم كل تدفق نقدي.",
+        "useCase": "استخدم IRR للمشاريع، والاستثمارات العقارية، والأسهم الخاصة، أو أي استثمار مع مساهمات وسحوبات غير منتظمة."
       },
-      "exampleTitle": "Same Investment, Different Results",
-      "exampleIntro": "You buy a stock for $10,000, receive $2,000 in dividends at the end of each year for 4 years, and sell it for $12,000 at the end of year 4.",
+      "exampleTitle": "نفس الاستثمار، نتائج مختلفة",
+      "exampleIntro": "تشتري سهماً بـ 10,000 دولار، وتتلقى 2,000 دولار أرباحاً في نهاية كل عام لمدة 4 سنوات، وتبيعه بـ 12,000 دولار في نهاية السنة الرابعة.",
       "example": {
         "cagr": {
-          "title": "CAGR Calculation",
-          "calculation": "CAGR only uses the purchase price ($10,000) and the sale price ($12,000) over 4 years: CAGR = (12,000/10,000)^(1/4) - 1 = 4.66%."
+          "title": "حساب CAGR",
+          "calculation": "CAGR يستخدم فقط سعر الشراء (10,000$) وسعر البيع (12,000$) على مدى 4 سنوات: CAGR = (12,000/10,000)^(1/4) - 1 = 4.66%."
         },
         "irr": {
-          "title": "IRR Calculation",
-          "calculation": "IRR includes every dividend's timing. For cash flows -10,000, +2,000, +2,000, +2,000, +14,000, Excel =IRR(...) returns 20.0%."
+          "title": "حساب IRR",
+          "calculation": "IRR يشمل توقيت كل توزيع أرباح. للتدفقات النقدية -10,000، +2,000، +2,000، +2,000، +14,000، Excel =IRR(...) ترجع 20.0%."
         },
-        "conclusion": "CAGR understates the true return because it ignores the $8,000 of dividends received before the final sale. IRR captures the full picture."
+        "conclusion": "CAGR يقلل من تقدير العائد الحقيقي لأنه يتجاهل 8,000 دولار من الأرباح المستلمة قبل البيع النهائي. IRR يلتقط الصورة الكاملة."
       },
       "useCagr": {
-        "title": "Use CAGR When",
+        "title": "استخدم CAGR عندما",
         "items": [
-          "You have one initial investment and one final value.",
-          "You want to compare investments over the same time period.",
-          "There are no intermediate deposits or withdrawals.",
-          "You need a quick, easy-to-understand annualized return."
+          "لديك استثمار أولي واحد وقيمة نهائية واحدة.",
+          "تريد مقارنة الاستثمارات على نفس الفترة الزمنية.",
+          "لا توجد إيداعات أو سحوبات وسيطة.",
+          "تحتاج إلى عائد سنوي سريع وسهل الفهم."
         ]
       },
       "useIrr": {
-        "title": "Use IRR When",
+        "title": "استخدم IRR عندما",
         "items": [
-          "There are multiple cash flows over time.",
-          "You want to account for the timing of each cash flow.",
-          "You are evaluating a project or business investment.",
-          "You have irregular contributions like a SIP or DCA plan."
+          "هناك تدفقات نقدية متعددة على مدى الوقت.",
+          "تريد الأخذ بعين الاعتبار توقيت كل تدفق نقدي.",
+          "تقيم مشروعاً أو استثماراً تجارياً.",
+          "لديك مساهمات غير منتظمة مثل خطة SIP أو DCA."
         ]
       },
       "faq": {
         "questions": [
           {
-            "question": "Is CAGR the same as IRR?",
-            "answer": "No. CAGR measures smoothed annualized growth between two values. IRR accounts for the timing and size of multiple cash flows."
+            "question": "هل CAGR هو نفسه IRR؟",
+            "answer": "لا. CAGR يقيس النمو السنوي المُنعَّم بين قيمتين. IRR يأخذ في الاعتبار توقيت وحجم التدفقات النقدية المتعددة."
           },
           {
-            "question": "Why is IRR lower than CAGR?",
-            "answer": "IRR can be lower when early cash flows are small and later cash flows are large, because money received earlier is more valuable."
+            "question": "لماذا IRR أقل من CAGR؟",
+            "answer": "يمكن أن يكون IRR أقل عندما تكون التدفقات النقدية المبكرة صغيرة والتدفقات اللاحقة كبيرة، لأن المال المستلم في وقت مبكر أكثر قيمة."
           },
           {
-            "question": "Can I use CAGR for SIP investments?",
-            "answer": "No. For monthly contributions, use XIRR because each contribution has a different investment horizon."
+            "question": "هل يمكنني استخدام CAGR لاستثمارات SIP؟",
+            "answer": "لا. للمساهمات الشهرية، استخدم XIRR لأن كل مساهمة لها أفق استثماري مختلف."
           },
           {
-            "question": "Which is better for comparing mutual funds?",
-            "answer": "CAGR is better for comparing lump-sum investments over the same period. IRR or XIRR is better for SIPs."
+            "question": "أيهما أفضل لمقارنة صناديق الاستثمار المشتركة؟",
+            "answer": "CAGR أفضل لمقارنة الاستثمارات المقطوعة على نفس الفترة. IRR أو XIRR أفضل لـ SIP."
           }
         ]
       }
     },
     "cagrInExcel": {
       "metadata": {
-        "title": "CAGR in Excel: 3 Formulas with Examples",
-        "description": "Learn how to calculate CAGR in Excel using POWER, RATE, and manual formulas. Includes examples, common errors, and when to use XIRR instead.",
-        "keywords": "cagr in excel, cagr formula excel, how to calculate cagr in excel, cagr excel template, cagr rate function"
+        "title": "CAGR في Excel: 3 صيغ مع أمثلة",
+        "description": "تعلم كيفية حساب CAGR في Excel باستخدام صيغ POWER وRATE والصيغ اليدوية. يتضمن أمثلة وأخطاء شائعة ومتى تستخدم XIRR بدلاً من ذلك.",
+        "keywords": "cagr في excel, صيغة cagr excel, كيفية حساب cagr في excel, قالب cagr excel, دالة rate cagr"
       },
-      "title": "How to Calculate CAGR in Excel",
-      "subtitle": "Three formulas, one result — with examples and common fixes",
-      "intro": "You can calculate CAGR in Excel using the POWER function, the RATE function, or a manual formula. Each method gives the same result; choose the one that fits your worksheet.",
-      "methodsTitle": "Three Ways to Calculate CAGR in Excel",
+      "title": "كيفية حساب CAGR في Excel",
+      "subtitle": "ثلاث صيغ، نتيجة واحدة — مع أمثلة وإصلاحات شائعة",
+      "intro": "يمكنك حساب CAGR في Excel باستخدام دالة POWER أو دالة RATE أو صيغة يدوية. كل طريقة تعطي نفس النتيجة؛ اختر الطريقة التي تناسب ورقة عملك.",
+      "methodsTitle": "ثلاث طرق لحساب CAGR في Excel",
       "methods": [
         {
-          "name": "POWER function",
+          "name": "دالة POWER",
           "formula": "=POWER(FV/PV, 1/n)-1",
-          "example": "=POWER(20000/10000, 1/5)-1 returns 0.1487 or 14.87%"
+          "example": "=POWER(20000/10000, 1/5)-1 تُرجع 0.1487 أو 14.87%"
         },
         {
-          "name": "Manual formula",
+          "name": "الصيغة اليدوية",
           "formula": "=(FV/PV)^(1/n)-1",
-          "example": "=(20000/10000)^(1/5)-1 returns 0.1487 or 14.87%"
+          "example": "=(20000/10000)^(1/5)-1 تُرجع 0.1487 أو 14.87%"
         },
         {
-          "name": "RATE function",
+          "name": "دالة RATE",
           "formula": "=RATE(n, 0, -PV, FV)",
-          "example": "=RATE(5, 0, -10000, 20000) returns 0.1487 or 14.87%"
+          "example": "=RATE(5, 0, -10000, 20000) تُرجع 0.1487 أو 14.87%"
         }
       ],
-      "workedExampleTitle": "Full Worked Example",
-      "workedExampleIntro": "Here is a complete example you can copy into Excel.",
+      "variablesTitle": "حيث:",
+      "variables": {
+        "fv": "FV = القيمة النهائية للاستثمار",
+        "pv": "PV = القيمة الأولية للاستثمار",
+        "n": "n = عدد السنوات"
+      },
+      "tipTitle": "نصيحة",
+      "tip": "إذا كانت بياناتك تتضمن مساهمات شهرية أو تواريخ غير منتظمة، استخدم =XIRR(values, dates) بدلاً من CAGR. يمكنك أيضاً استخدام حاسبتنا المجانية عبر الإنترنت أعلاه للتحقق من نتيجة Excel.",
+      "workedExampleTitle": "مثال عملي كامل",
+      "workedExampleIntro": "إليك مثال كامل يمكنك نسخه إلى Excel.",
       "workedExampleHeaders": {
-        "label": "Input",
-        "value": "Value"
+        "label": "المدخل",
+        "value": "القيمة"
       },
       "workedExampleRows": {
-        "pv": "Initial Value (PV)",
-        "fv": "Final Value (FV)",
-        "n": "Years (n)",
+        "pv": "القيمة الأولية (PV)",
+        "fv": "القيمة النهائية (FV)",
+        "n": "السنوات (n)",
         "cagr": "CAGR"
       },
       "workedExampleValues": {
-        "pv": "$10,000",
-        "fv": "$20,000",
+        "pv": "10,000$",
+        "fv": "20,000$",
         "n": "5",
         "cagr": "14.87%"
       },
-      "commonErrorsTitle": "Common Errors & How to Fix Them",
+      "commonErrorsTitle": "أخطاء شائعة وكيفية إصلاحها",
       "commonErrors": [
         {
-          "error": "#NUM! error with RATE",
-          "cause": "PV was not entered as a negative number.",
-          "fix": "Use =RATE(n, 0, -PV, FV) with a minus sign before PV."
+          "error": "خطأ #NUM! مع RATE",
+          "cause": "لم يتم إدخال PV كرقم سالب.",
+          "fix": "استخدم =RATE(n, 0, -PV, FV) مع إشارة سالبة قبل PV."
         },
         {
-          "error": "Result looks too small",
-          "cause": "The cell is not formatted as a percentage.",
-          "fix": "Select the cell, then Home → Number → Percentage."
+          "error": "النتيجة تبدو صغيرة جداً",
+          "cause": "الخلية ليست منسقة كنسبة مئوية.",
+          "fix": "حدد الخلية، ثم الصفحة الرئيسية → رقم → نسبة مئوية."
         },
         {
-          "error": "Monthly data gives wrong CAGR",
-          "cause": "n was entered in months but the result was not annualized.",
-          "fix": "Use n in years, or multiply the monthly result by 12."
+          "error": "البيانات الشهرية تعطي CAGR خاطئاً",
+          "cause": "تم إدخال n بالأشهر لكن لم يتم تحويل النتيجة إلى أساس سنوي.",
+          "fix": "استخدم n بالسنوات، أو اضرب النتيجة الشهرية في 12."
         },
         {
-          "error": "Result is 100x too large or small",
-          "cause": "Percentage formatting is missing or applied twice.",
-          "fix": "Check the cell format and whether you already multiplied by 100."
+          "error": "النتيجة أكبر أو أصغر بمئة مرة",
+          "cause": "تنسيق النسبة المئوية مفقود أو تم تطبيقه مرتين.",
+          "fix": "تحقق من تنسيق الخلية وما إذا كنت قد ضربت بالفعل في 100."
         }
       ],
       "xirr": {
-        "title": "When to Use XIRR Instead",
-        "text": "If your data includes monthly contributions, dividends, or irregular dates, use =XIRR(values, dates) instead of CAGR. XIRR handles cash flows that happen on any date."
+        "title": "متى تستخدم XIRR بدلاً من ذلك",
+        "text": "إذا كانت بياناتك تتضمن مساهمات شهرية، أو أرباحاً، أو تواريخ غير منتظمة، استخدم =XIRR(values, dates) بدلاً من CAGR. XIRR تتعامل مع التدفقات النقدية التي تحدث في أي تاريخ."
       },
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula in Excel?",
-            "answer": "The most common formulas are =POWER(FV/PV, 1/n)-1 and =RATE(n, 0, -PV, FV)."
+            "question": "ما هي صيغة CAGR في Excel؟",
+            "answer": "الصيغ الأكثر شيوعاً هي =POWER(FV/PV, 1/n)-1 و=RATE(n, 0, -PV, FV)."
           },
           {
-            "question": "How do I calculate CAGR for 5 years in Excel?",
-            "answer": "Enter PV, FV, and n=5, then use =POWER(FV/PV, 1/5)-1."
+            "question": "كيف أحسب CAGR لمدة 5 سنوات في Excel؟",
+            "answer": "أدخل PV وFV وn=5، ثم استخدم =POWER(FV/PV, 1/5)-1."
           },
           {
-            "question": "Why does RATE show #NUM!?",
-            "answer": "RATE requires PV to be negative because it represents a cash outflow."
+            "question": "لماذا تظهر RATE خطأ #NUM!؟",
+            "answer": "RATE تتطلب أن تكون PV سالبة لأنها تمثل تدفقاً نقدياً خارجاً."
           },
           {
-            "question": "Should I use CAGR or XIRR for SIP?",
-            "answer": "Use XIRR. CAGR assumes a single initial and final value, while XIRR handles multiple contributions."
+            "question": "هل يجب استخدام CAGR أو XIRR لـ SIP؟",
+            "answer": "استخدم XIRR. CAGR يفترض قيمة أولية ونهائية واحدة، بينما XIRR تتعامل مع مساهمات متعددة."
           }
         ]
       }
