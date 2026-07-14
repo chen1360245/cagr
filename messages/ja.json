@@ -51,7 +51,7 @@
         "cagrRate": "15"
       },
       "helperText": {
-        "currency": "金額をドルで入力してください",
+        "currency": "金額を円で入力してください",
         "number": "年数を入力してください",
         "percentage": "パーセンテージで入力してください（例：15%の場合は15）"
       }
@@ -87,10 +87,10 @@
       "about": "無料オンラインCAGR計算機について",
       "cagrInExcel": "ExcelでのCAGR計算",
       "cagrForInvestments": "株式・投資信託・退職金のCAGR",
-      "readMoreFormula": "Read the full CAGR formula guide",
-      "readMoreCagrVsIrr": "Read the full CAGR vs IRR guide",
-      "readMoreCagrInExcel": "Read the full CAGR in Excel guide",
-      "readMoreFaq": "Browse all FAQ"
+      "readMoreFormula": "CAGR公式ガイド全文を読む",
+      "readMoreCagrVsIrr": "CAGR vs IRRガイド全文を読む",
+      "readMoreCagrInExcel": "ExcelでのCAGRガイド全文を読む",
+      "readMoreFaq": "すべてのよくある質問を見る"
     },
     "loading": "計算機を読み込んでいます...",
     "educational": {
@@ -117,7 +117,7 @@
           }
         },
         "keyInsightTitle": "重要なインサイト",
-        "keyInsightText": "10,000ドルを投資し、5年間で20,000ドルに成長した場合、CAGRは年間約14.87%になります。これは、投資がその期間中に年平均14.87%成長したことを意味します。上記の計算機を使用して、投資のCAGRを即座に見つけてください。"
+        "keyInsightText": "¥10,000を投資し、5年間で¥20,000に成長した場合、CAGRは年間約14.87%になります。これは、投資がその期間中に年平均14.87%成長したことを意味します。上記の計算機を使用して、投資のCAGRを即座に見つけてください。"
       },
       "formula": {
         "title": "CAGR公式",
@@ -145,7 +145,7 @@
         ],
         "exampleTitle": "計算例",
         "example": {
-          "given": "与えられた値：PV = 10,000ドル、FV = 20,000ドル、n = 5年",
+          "given": "与えられた値：PV = ¥10,000、FV = ¥20,000、n = 5年",
           "step1": "ステップ1：20,000 / 10,000 = 2",
           "step2": "ステップ2：2^((1/5)) = 2^(0.2) = 1.1487",
           "step3": "ステップ3：1.1487 - 1 = 0.1487",
@@ -157,7 +157,7 @@
           "cagr": "CAGRを計算：PV、FV、nが与えられた場合",
           "fv": "FVを計算：PV、CAGR、nが与えられた場合",
           "pv": "PVを計算：FV、CAGR、nが与えられた場合",
-          "time": "時間を計算：PV、FV、CAGRが与えられた場合"
+          "time": "期間を計算：PV、FV、CAGRが与えられた場合"
         }
       },
       "useCases": {
@@ -165,18 +165,18 @@
         "cases": [
           {
             "title": "投資ポートフォリオの成長",
-            "description": "投資ポートフォリオが複数年にわたってどのようにパフォーマンスしたかを測定します。たとえば、ポートフォリオが10年間で100,000ドルから300,000ドルに成長した場合、11.6%のCAGRは平均年間成長率を示します。",
-            "example": "例：100,000ドル → 300,000ドル、10年間 = 11.6% CAGR"
+            "description": "投資ポートフォリオが複数年にわたってどのようにパフォーマンスしたかを測定します。たとえば、ポートフォリオが10年間で¥100,000から¥300,000に成長した場合、11.6%のCAGRは平均年間成長率を示します。",
+            "example": "例：¥100,000 → ¥300,000、10年間 = 11.6% CAGR"
           },
           {
             "title": "投資倍増時間",
-            "description": "特定の成長率で投資が倍増するまでにかかる時間を計算します。10,000ドルを投資し、20,000ドルに成長させたい場合、予想されるCAGRを知ることで、タイムフレームを見積もることができます。",
-            "example": "例：10,000ドル → 20,000ドル、14.87% CAGR = 5年"
+            "description": "特定の成長率で投資が倍増するまでにかかる時間を計算します。¥10,000を投資し、¥20,000に成長させたい場合、予想されるCAGRを知ることで、タイムフレームを見積もることができます。",
+            "example": "例：¥10,000 → ¥20,000、14.87% CAGR = 5年"
           },
           {
             "title": "企業収益分析",
             "description": "企業の収益成長を複数年にわたって分析し、長期的なパフォーマンスを理解します。これにより、ステークホルダーは企業の財務健全性について情報に基づいた意思決定を行うことができます。",
-            "example": "例：収益500万ドル → 1200万ドル、7年間 = 13.3% CAGR"
+            "example": "例：収益500万円 → 1200万円、7年間 = 13.3% CAGR"
           },
           {
             "title": "投資信託の比較",
@@ -186,7 +186,7 @@
           {
             "title": "成長予測",
             "description": "過去のCAGRを使用して将来の成長を予測します。ビジネスが過去5年間で15%のCAGRを維持している場合、この率を使用して潜在的な将来のパフォーマンスを予測できます。",
-            "example": "例：現在の価値50,000ドル、15% CAGR = 約5年で100,000ドル"
+            "example": "例：現在の価値¥50,000、15% CAGR = 約5年で¥100,000"
           }
         ],
         "whenToUseTitle": "CAGR計算機を使用するタイミング",
@@ -207,8 +207,8 @@
             "description": "投資が達成した成長率を確認します。",
             "enterLabel": "入力：",
             "inputs": [
-              "初期値：10,000ドル",
-              "最終値：20,000ドル",
+              "初期値：¥10,000",
+              "最終値：¥20,000",
               "期間：5年"
             ],
             "result": "結果：14.87% CAGR"
@@ -219,11 +219,11 @@
             "description": "投資がどれだけ成長するかを予測します。",
             "enterLabel": "入力：",
             "inputs": [
-              "初期値：10,000ドル",
+              "初期値：¥10,000",
               "CAGR率：15%",
               "期間：10年"
             ],
-            "result": "結果：40,455.58ドル"
+            "result": "結果：¥40,455.58"
           },
           {
             "number": "3",
@@ -231,11 +231,11 @@
             "description": "目標を達成するためにいくら投資する必要があるかを確認します。",
             "enterLabel": "入力：",
             "inputs": [
-              "最終値：500,000ドル",
+              "最終値：¥500,000",
               "CAGR率：15%",
               "期間：10年"
             ],
-            "result": "結果：123,592.35ドル"
+            "result": "結果：¥123,592.35"
           },
           {
             "number": "4",
@@ -243,8 +243,8 @@
             "description": "目標に到達するまでにかかる時間を決定します。",
             "enterLabel": "入力：",
             "inputs": [
-              "初期値：100ドル",
-              "最終値：200ドル",
+              "初期値：¥100",
+              "最終値：¥200",
               "CAGR率：50%"
             ],
             "result": "結果：1.7年"
@@ -262,9 +262,9 @@
         "interpretingItems": [
           "CAGR（%）：年率換算成長率 - 高い方が良い（ただしリスクを考慮）",
           "総成長率（%）：開始から終了までの全体的なパーセンテージ増加",
-          "絶対リターン（$）：獲得または損失した実際のドル額",
+          "絶対リターン（¥）：獲得または損失した実際の円額",
           "倍増時間：この成長率でお金が倍増するまでにかかる時間",
-          "ベンチマーク比較：結果が市場平均（S&P 500、債券など）と比較してどうか"
+          "ベンチマーク比較：結果が市場平均（日経平均、債券など）と比較してどうか"
         ]
       },
       "faq": {
@@ -276,7 +276,7 @@
           },
           {
             "question": "CAGRは負の値になることがありますか？",
-            "answer": "はい、最終価値が初期価値よりも小さい場合、CAGRは負の値になる可能性があります。負のCAGRは、投資が期間中に価値を失ったことを示します。たとえば、10,000ドルが5年間で8,000ドルになった場合、CAGRは約-4.4%になります。"
+            "answer": "はい、最終価値が初期価値よりも小さい場合、CAGRは負の値になる可能性があります。負のCAGRは、投資が期間中に価値を失ったことを示します。たとえば、¥10,000が5年間で¥8,000になった場合、CAGRは約-4.4%になります。"
           },
           {
             "question": "高いCAGRは常に良いですか？",
@@ -300,11 +300,11 @@
           },
           {
             "question": "株式、債券、不動産の良いCAGRは何ですか？",
-            "answer": "歴史的に：S&P 500株式は約10-11% CAGR、社債は約5-6% CAGR、不動産は約8-9% CAGR、金は約7% CAGRです。ただし、過去のパフォーマンスは将来のリターンを保証するものではありません。「良い」CAGRは、リスク許容度、投資目標、およびより広い経済状況に依存します。"
+            "answer": "歴史的に：日経平均株価は約5-7% CAGR、社債は約5-6% CAGR、不動産は約8-9% CAGR、金は約7% CAGRです。ただし、過去のパフォーマンスは将来のリターンを保証するものではありません。「良い」CAGRは、リスク許容度、投資目標、およびより広い経済状況に依存します。"
           },
           {
             "question": "ExcelでCAGRを計算するにはどうすればよいですか？",
-            "answer": "Excelでは、次の式を使用してください：=(FV/PV)^(1/n)-1または=POWER(FV/PV, 1/n)-1。RATE関数も使用できます：=RATE(n, 0, -PV, FV)。たとえば、10,000ドルが5年間で20,000ドルに成長する場合：=POWER(20000/10000, 1/5)-1は0.1487または14.87%を返します。ただし、当社の無料オンライン計算機ははるかに高速で、式エラーのリスクを排除します。"
+            "answer": "Excelでは、次の式を使用してください：=(FV/PV)^(1/n)-1または=POWER(FV/PV, 1/n)-1。RATE関数も使用できます：=RATE(n, 0, -PV, FV)。たとえば、¥10,000が5年間で¥20,000に成長する場合：=POWER(20000/10000, 1/5)-1は0.1487または14.87%を返します。ただし、当社の無料オンライン計算機ははるかに高速で、式エラーのリスクを排除します。"
           },
           {
             "question": "CAGRの主な制限は何ですか？",
@@ -316,7 +316,7 @@
           },
           {
             "question": "CAGRには配当が含まれますか？",
-            "answer": "標準的なCAGRには、配当が再投資された場合を除き、配当は含まれません。配当を再投資する場合は、最終価値（FV）に含めてください。たとえば、株式が10,000ドルから18,000ドルに成長し、2,000ドルの再投資配当があった場合、FV = 20,000ドルを使用します。配当が現金として受け取られる場合、CAGRの一部ではなく、収入として別途追跡する必要があります。"
+            "answer": "標準的なCAGRには、配当が再投資された場合を除き、配当は含まれません。配当を再投資する場合は、最終価値（FV）に含めてください。たとえば、株式が¥10,000から¥18,000に成長し、¥2,000の再投資配当があった場合、FV = ¥20,000を使用します。配当が現金として受け取られる場合、CAGRの一部ではなく、収入として別途追跡する必要があります。"
           },
           {
             "question": "毎月の積立投資（SIP）でCAGRを計算するにはどうすればよいですか？",
@@ -430,7 +430,7 @@
           "過去のCAGRは将来のリターンを保証しない"
         ],
         "exampleTitle": "例：CAGR vs 単純平均",
-        "exampleIntro": "100ドル → 150ドル → 120ドル → 180ドルと推移する投資を考えてみましょう（3年間）",
+        "exampleIntro": "¥100 → ¥150 → ¥120 → ¥180と推移する投資を考えてみましょう（3年間）",
         "simpleAverageTitle": "単純平均リターン：",
         "simpleAverageCalc": "1年目：+50% | 2年目：-20% | 3年目：+50% 平均 = (50 - 20 + 50) / 3 = 26.67%",
         "cagrTitle": "CAGR：",
@@ -474,8 +474,8 @@
         "scenarios": [
           {
             "title": "株式とインデックスファンド",
-            "description": "S&P 500は、長期にわたってインフレ前で年間約10-11%のCAGRを歴史的に返しています。個別株は、企業と市場状況によって、より高いまたは低い可能性があります。",
-            "example": "例：年間10%のCAGRのインデックスファンドに10,000ドルを投資すると、10年間で約25,937ドルに成長します"
+            "description": "日経平均株価は、長期にわたってインフレ前で年間約5-7%のCAGRを歴史的に示しています。個別株は、企業と市場状況によって、より高いまたは低い可能性があります。",
+            "example": "例：年間10%のCAGRのインデックスファンドに¥10,000を投資すると、10年間で約¥25,937に成長します"
           },
           {
             "title": "投資信託の比較",
@@ -485,7 +485,7 @@
           {
             "title": "退職金計画",
             "description": "退職金の予測では、多くのプランナーがインフレ後の実質CAGRとして5-7%を使用します。これにより、いくら貯蓄する必要があるか、およびポートフォリオがどのくらい持つかを見積もることができます。",
-            "example": "例：年間7%のCAGRで30年間毎月500ドルは、約609,000ドルに成長します"
+            "example": "例：年間7%のCAGRで30年間毎月¥500は、約¥609,000に成長します"
           }
         ],
         "cautionTitle": "CAGRが教えてくれないこと",
@@ -496,288 +496,296 @@
   "pages": {
     "cagrFormula": {
       "metadata": {
-        "title": "CAGR Formula | How to Calculate Compound Annual Growth Rate",
-        "description": "Learn the CAGR formula with step-by-step examples. Calculate compound annual growth rate manually, in Excel, or with our free online CAGR calculator.",
-        "keywords": "cagr formula, compound annual growth rate formula, how to calculate cagr, cagr calculation, cagr variables, reverse cagr formula"
+        "title": "CAGR公式｜複合年間成長率の計算方法",
+        "description": "ステップバイステップの例でCAGR公式を学びます。手計算、Excel、または無料オンラインCAGR計算機で複合年間成長率を計算しましょう。",
+        "keywords": "cagr公式, 複合年間成長率 公式, cagrの計算方法, cagr計算, cagr変数, 逆cagr公式"
       },
-      "title": "CAGR Formula: How to Calculate Compound Annual Growth Rate",
-      "subtitle": "A complete guide to the compound annual growth rate formula with examples and reverse formulas",
-      "intro": "The CAGR formula calculates the annualized growth rate of an investment over a stated period, assuming profits are reinvested each year.",
+      "title": "CAGR公式：複合年間成長率の計算方法",
+      "subtitle": "例と逆公式付きの複合年間成長率公式完全ガイド",
+      "intro": "CAGR公式は、利益が毎年再投資されると仮定して、投資の指定期間における年率換算成長率を計算します。",
       "formula": "CAGR = (FV / PV)^(1/n) - 1",
-      "formulaCaption": "Where FV is final value, PV is present value, and n is number of years.",
-      "variablesTitle": "Where:",
+      "formulaCaption": "ここで、FVは最終価値、PVは現在価値、nは年数です。",
+      "variablesTitle": "ここで：",
       "variables": {
         "fv": {
-          "term": "FV (Final Value)",
-          "definition": "The ending value of the investment."
+          "term": "FV（最終価値）",
+          "definition": "投資の終了価値。"
         },
         "pv": {
-          "term": "PV (Present Value)",
-          "definition": "The beginning value or initial investment amount."
+          "term": "PV（現在価値）",
+          "definition": "開始価値または初期投資額。"
         },
         "n": {
-          "term": "n (Number of Years)",
-          "definition": "The investment time period in years."
+          "term": "n（年数）",
+          "definition": "年単位の投資期間。"
         }
       },
-      "stepsTitle": "Step-by-Step Calculation",
+      "stepsTitle": "ステップバイステップ計算",
       "steps": [
-        "Divide the final value (FV) by the initial value (PV).",
-        "Raise the result to the power of 1 divided by the number of years (n).",
-        "Subtract 1 from the result.",
-        "Multiply by 100 to convert to a percentage."
+        "最終価値（FV）を初期価値（PV）で割る。",
+        "結果を1を年数（n）で割ったべき乗にする。",
+        "結果から1を引く。",
+        "100を掛けてパーセンテージに変換する。"
       ],
-      "exampleTitle": "Example Calculation",
+      "exampleTitle": "計算例",
       "example": {
-        "given": "Given: PV = $10,000, FV = $20,000, n = 5 years",
-        "step1": "Step 1: 20,000 / 10,000 = 2",
-        "step2": "Step 2: 2^((1/5)) = 2^(0.2) = 1.1487",
-        "step3": "Step 3: 1.1487 - 1 = 0.1487",
-        "result": "Result: 0.1487 × 100 = 14.87%"
+        "given": "与えられた値：PV = ¥10,000、FV = ¥20,000、n = 5年",
+        "step1": "ステップ1：20,000 / 10,000 = 2",
+        "step2": "ステップ2：2^((1/5)) = 2^(0.2) = 1.1487",
+        "step3": "ステップ3：1.1487 - 1 = 0.1487",
+        "result": "結果：0.1487 × 100 = 14.87%"
       },
-      "reverseTitle": "Reverse CAGR Formulas",
-      "reverseIntro": "You can rearrange the CAGR formula to solve for any missing variable. These reverse formulas are useful when you know your target return and want to find the required initial investment, final value, or time horizon.",
+      "reverseTitle": "逆CAGR公式",
+      "reverseIntro": "CAGR公式を並べ替えて、欠落している変数を求めることができます。目標リターンがわかっていて、必要な初期投資額、最終価値、または期間を求めたい場合に、これらの逆公式は役立ちます。",
       "reverseFormulas": [
         {
-          "name": "Calculate Final Value",
+          "name": "最終価値を計算",
           "formula": "FV = PV × (1 + CAGR)^n",
-          "when": "Use when you know the initial investment, CAGR, and time period."
+          "when": "初期投資額、CAGR、期間がわかっている場合に使用します。"
         },
         {
-          "name": "Calculate Initial Value",
+          "name": "初期価値を計算",
           "formula": "PV = FV / (1 + CAGR)^n",
-          "when": "Use when you know the target final value, CAGR, and time period."
+          "when": "目標最終価値、CAGR、期間がわかっている場合に使用します。"
         },
         {
-          "name": "Calculate Time Period",
+          "name": "期間を計算",
           "formula": "n = ln(FV / PV) / ln(1 + CAGR)",
-          "when": "Use when you know the initial value, final value, and CAGR."
+          "when": "初期価値、最終価値、CAGRがわかっている場合に使用します。"
         }
       ],
-      "calculatorModesTitle": "Our CAGR Calculator Solves for Any Variable",
-      "calculatorModesIntro": "Our smart calculator lets you input any 3 of the 4 variables and automatically calculates the missing one.",
+      "calculatorModesTitle": "当社のCAGR計算機は任意の変数を解決します",
+      "calculatorModesIntro": "当社のスマート計算機を使うと、4つの変数のうち3つを入力するだけで、欠落している変数を自動的に計算します。",
       "calculatorModes": [
-        "Calculate CAGR: Given PV, FV, and n",
-        "Calculate FV: Given PV, CAGR, and n",
-        "Calculate PV: Given FV, CAGR, and n",
-        "Calculate Time: Given PV, FV, and CAGR"
+        "CAGRを計算：PV、FV、nが与えられた場合",
+        "FVを計算：PV、CAGR、nが与えられた場合",
+        "PVを計算：FV、CAGR、nが与えられた場合",
+        "期間を計算：PV、FV、CAGRが与えられた場合"
       ],
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula?",
-            "answer": "CAGR = (FV/PV)^(1/n) - 1, where FV is the final value, PV is the initial value, and n is the number of years."
+            "question": "CAGR公式とは何ですか？",
+            "answer": "CAGR = (FV/PV)^(1/n) - 1です。ここで、FVは最終価値、PVは初期価値、nは年数です。"
           },
           {
-            "question": "Can CAGR be negative?",
-            "answer": "Yes. If the final value is lower than the initial value, CAGR will be negative, indicating a loss."
+            "question": "CAGRはマイナスになりますか？",
+            "answer": "はい。最終価値が初期価値より低い場合、CAGRはマイナスとなり、損失を示します。"
           },
           {
-            "question": "How do I calculate CAGR in Excel?",
-            "answer": "Use =POWER(FV/PV, 1/n)-1, =(FV/PV)^(1/n)-1, or =RATE(n, 0, -PV, FV)."
+            "question": "ExcelでCAGRを計算するにはどうすればよいですか？",
+            "answer": "=POWER(FV/PV, 1/n)-1、=(FV/PV)^(1/n)-1、または=RATE(n, 0, -PV, FV)を使用します。"
           },
           {
-            "question": "What is a good CAGR?",
-            "answer": "Historically, the S&P 500 has returned about 10-11% CAGR before inflation. A 'good' CAGR depends on your risk tolerance and goals."
+            "question": "良いCAGRとは何ですか？",
+            "answer": "歴史的に、S&P 500はインフレ前で年率約10～11%のCAGRを示しています。「良い」CAGRは、リスク許容度と目標によります。"
           },
           {
-            "question": "Does CAGR include dividends?",
-            "answer": "Only if dividends are reinvested. If taken as cash, they should be tracked separately as income."
+            "question": "CAGRには配当が含まれますか？",
+            "answer": "配当が再投資される場合のみ含まれます。現金で受け取る場合は、収入として別途管理する必要があります。"
           }
         ]
       }
     },
     "cagrVsIrr": {
       "metadata": {
-        "title": "CAGR vs IRR: Key Differences & When to Use Each",
-        "description": "CAGR and IRR both measure investment returns, but they answer different questions. Learn the differences, formulas, and when to use each metric.",
-        "keywords": "cagr vs irr, difference between cagr and irr, when to use irr, internal rate of return, cagr formula vs irr"
+        "title": "CAGR vs IRR：主な違いと使い分け",
+        "description": "CAGRとIRRはどちらも投資リターンを測定しますが、異なる問いに答えます。違い、公式、そして各指標の使い分けを学びましょう。",
+        "keywords": "cagr vs irr, cagrとirrの違い, いつirrを使うか, 内部収益率, cagr公式 vs irr"
       },
-      "title": "CAGR vs IRR: What's the Difference?",
-      "subtitle": "Two popular return metrics, explained with examples",
-      "intro": "CAGR and IRR are both used to measure investment performance, but they work best in different situations. CAGR is simple and good for start-to-end comparisons. IRR is more advanced and accounts for the timing of cash flows.",
+      "title": "CAGR vs IRR：違いは何ですか？",
+      "subtitle": "例で説明する2つの人気リターン指標",
+      "intro": "CAGRとIRRはどちらも投資パフォーマンスを測定するために使用されますが、それぞれが最適な状況が異なります。CAGRはシンプルで、開始から終了までの比較に適しています。IRRはより高度で、キャッシュフローのタイミングを考慮します。",
       "comparisonHeaders": {
-        "metric": "Metric",
-        "description": "Description",
-        "bestFor": "Best For"
+        "metric": "指標",
+        "description": "説明",
+        "bestFor": "最適な用途"
       },
       "comparisonTable": [
         {
           "name": "CAGR",
-          "description": "Smoothed annualized growth rate assuming compounding.",
-          "bestFor": "Long-term investment performance with no intermediate cash flows."
+          "description": "複利を前提とした平滑化された年率換算成長率。",
+          "bestFor": "中間キャッシュフローのない長期投資パフォーマンス。"
         },
         {
-          "name": "Simple Average Return",
-          "description": "Arithmetic mean of annual returns.",
-          "bestFor": "Quick rough estimates only."
+          "name": "単純平均リターン",
+          "description": "年間リターンの算術平均。",
+          "bestFor": "迅速な概算のみ。"
         },
         {
-          "name": "Absolute Return",
-          "description": "Total percentage change from start to end.",
-          "bestFor": "Short-term or single-period performance."
+          "name": "絶対リターン",
+          "description": "開始から終了までの総パーセンテージ変化。",
+          "bestFor": "短期または単一期間のパフォーマンス。"
         },
         {
           "name": "IRR",
-          "description": "Discount rate that makes the net present value of all cash flows zero.",
-          "bestFor": "Investments with multiple inflows and outflows."
+          "description": "すべてのキャッシュフローの正味現在価値をゼロにする割引率。",
+          "bestFor": "複数のキャッシュイン・アウトを伴う投資。"
         },
         {
           "name": "TWR",
-          "description": "Removes the impact of external cash flows.",
-          "bestFor": "Evaluating fund manager performance."
+          "description": "外部キャッシュフローの影響を除去。",
+          "bestFor": "ファンドマネージャーのパフォーマンス評価。"
         }
       ],
       "whatIsCagr": {
-        "title": "What Is CAGR?",
-        "text": "CAGR measures the annualized growth of an investment from a starting value to an ending value, assuming no intermediate cash flows. It smooths out volatility and gives a single growth rate."
+        "title": "CAGRとは？",
+        "text": "CAGRは、中間キャッシュフローがないと仮定して、投資の開始価値から終了価値までの年率成長を測定します。変動性を平滑化し、単一の成長率を示します。"
       },
       "whatIsIrr": {
-        "title": "What Is IRR?",
-        "text": "IRR is the annualized rate of return at which the net present value of all cash flows equals zero. It accounts for the timing and size of each cash flow.",
-        "useCase": "Use IRR for projects, real estate investments, private equity, or any investment with irregular contributions and withdrawals."
+        "title": "IRRとは？",
+        "text": "IRRは、すべてのキャッシュフローの正味現在価値がゼロとなる年率リターンです。各キャッシュフローのタイミングと規模を考慮します。",
+        "useCase": "プロジェクト、不動産投資、私募ファンド、または不規則な積立・引き出しを伴う投資にはIRRを使用してください。"
       },
-      "exampleTitle": "Same Investment, Different Results",
-      "exampleIntro": "You buy a stock for $10,000, receive $2,000 in dividends at the end of each year for 4 years, and sell it for $12,000 at the end of year 4.",
+      "exampleTitle": "同じ投資、異なる結果",
+      "exampleIntro": "¥10,000で株式を購入し、4年間毎年末に¥2,000の配当を受け取り、第4年末に¥12,000で売却します。",
       "example": {
         "cagr": {
-          "title": "CAGR Calculation",
-          "calculation": "CAGR only uses the purchase price ($10,000) and the sale price ($12,000) over 4 years: CAGR = (12,000/10,000)^(1/4) - 1 = 4.66%."
+          "title": "CAGR計算",
+          "calculation": "CAGRは4年間の購入価格（¥10,000）と売却価格（¥12,000）のみを使用します：CAGR = (12,000/10,000)^(1/4) - 1 = 4.66%。"
         },
         "irr": {
-          "title": "IRR Calculation",
-          "calculation": "IRR includes every dividend's timing. For cash flows -10,000, +2,000, +2,000, +2,000, +14,000, Excel =IRR(...) returns 20.0%."
+          "title": "IRR計算",
+          "calculation": "IRRは各配当のタイミングを含みます。キャッシュフロー-10,000、+2,000、+2,000、+2,000、+14,000に対し、Excelの=IRR(...)は20.0%を返します。"
         },
-        "conclusion": "CAGR understates the true return because it ignores the $8,000 of dividends received before the final sale. IRR captures the full picture."
+        "conclusion": "CAGRは、最終売却前に受け取った¥8,000の配当を無視するため、真のリターンを過小評価します。IRRは全体像を捉えます。"
       },
       "useCagr": {
-        "title": "Use CAGR When",
+        "title": "CAGRを使う場合",
         "items": [
-          "You have one initial investment and one final value.",
-          "You want to compare investments over the same time period.",
-          "There are no intermediate deposits or withdrawals.",
-          "You need a quick, easy-to-understand annualized return."
+          "1回の初期投資と1つの最終価値がある場合。",
+          "同じ期間で投資を比較したい場合。",
+          "中間の預入れや引き出しがない場合。",
+          "迅速で分かりやすい年率リターンが必要な場合。"
         ]
       },
       "useIrr": {
-        "title": "Use IRR When",
+        "title": "IRRを使う場合",
         "items": [
-          "There are multiple cash flows over time.",
-          "You want to account for the timing of each cash flow.",
-          "You are evaluating a project or business investment.",
-          "You have irregular contributions like a SIP or DCA plan."
+          "時間の経過とともに複数のキャッシュフローがある場合。",
+          "各キャッシュフローのタイミングを考慮したい場合。",
+          "プロジェクトや事業投資を評価している場合。",
+          "SIPやDCAのような不規則な積立がある場合。"
         ]
       },
       "faq": {
         "questions": [
           {
-            "question": "Is CAGR the same as IRR?",
-            "answer": "No. CAGR measures smoothed annualized growth between two values. IRR accounts for the timing and size of multiple cash flows."
+            "question": "CAGRとIRRは同じですか？",
+            "answer": "違います。CAGRは2つの価値間の平滑化された年率成長を測定します。IRRは複数のキャッシュフローのタイミングと規模を考慮します。"
           },
           {
-            "question": "Why is IRR lower than CAGR?",
-            "answer": "IRR can be lower when early cash flows are small and later cash flows are large, because money received earlier is more valuable."
+            "question": "IRRがCAGRより低いのはなぜですか？",
+            "answer": "早期のキャッシュフローが小さく、後期のキャッシュフローが大きい場合、IRRは低くなることがあります。なぜなら、早期に受け取った資金の価値が高いからです。"
           },
           {
-            "question": "Can I use CAGR for SIP investments?",
-            "answer": "No. For monthly contributions, use XIRR because each contribution has a different investment horizon."
+            "question": "SIP投資にCAGRを使えますか？",
+            "answer": "できません。毎月の積立には、各積立の投資期間が異なるためXIRRを使用してください。"
           },
           {
-            "question": "Which is better for comparing mutual funds?",
-            "answer": "CAGR is better for comparing lump-sum investments over the same period. IRR or XIRR is better for SIPs."
+            "question": "投資信託の比較にはどちらが適していますか？",
+            "answer": "同じ期間の一括投資を比較するにはCAGRが適しています。SIPにはIRRまたはXIRRが適しています。"
           }
         ]
       }
     },
     "cagrInExcel": {
       "metadata": {
-        "title": "CAGR in Excel: 3 Formulas with Examples",
-        "description": "Learn how to calculate CAGR in Excel using POWER, RATE, and manual formulas. Includes examples, common errors, and when to use XIRR instead.",
-        "keywords": "cagr in excel, cagr formula excel, how to calculate cagr in excel, cagr excel template, cagr rate function"
+        "title": "ExcelでのCAGR：例付き3つの公式",
+        "description": "ExcelでPOWER、RATE、手動の公式を使ってCAGRを計算する方法を学びます。例、よくあるエラー、XIRRを使うべき場面も解説します。",
+        "keywords": "excelでのcagr, cagr公式 excel, excelでcagrを計算する方法, cagr excelテンプレート, cagr rate関数"
       },
-      "title": "How to Calculate CAGR in Excel",
-      "subtitle": "Three formulas, one result — with examples and common fixes",
-      "intro": "You can calculate CAGR in Excel using the POWER function, the RATE function, or a manual formula. Each method gives the same result; choose the one that fits your worksheet.",
-      "methodsTitle": "Three Ways to Calculate CAGR in Excel",
+      "title": "ExcelでCAGRを計算する方法",
+      "subtitle": "3つの公式、1つの結果——例とよくある修正方法付き",
+      "intro": "Excelでは、POWER関数、RATE関数、または手動の公式を使用してCAGRを計算できます。各方法は同じ結果を返します。ワークシートに最適なものを選択してください。",
+      "methodsTitle": "ExcelでCAGRを計算する3つの方法",
       "methods": [
         {
-          "name": "POWER function",
+          "name": "POWER関数",
           "formula": "=POWER(FV/PV, 1/n)-1",
-          "example": "=POWER(20000/10000, 1/5)-1 returns 0.1487 or 14.87%"
+          "example": "=POWER(20000/10000, 1/5)-1 は 0.1487 または 14.87% を返します"
         },
         {
-          "name": "Manual formula",
+          "name": "手動の公式",
           "formula": "=(FV/PV)^(1/n)-1",
-          "example": "=(20000/10000)^(1/5)-1 returns 0.1487 or 14.87%"
+          "example": "=(20000/10000)^(1/5)-1 は 0.1487 または 14.87% を返します"
         },
         {
-          "name": "RATE function",
+          "name": "RATE関数",
           "formula": "=RATE(n, 0, -PV, FV)",
-          "example": "=RATE(5, 0, -10000, 20000) returns 0.1487 or 14.87%"
+          "example": "=RATE(5, 0, -10000, 20000) は 0.1487 または 14.87% を返します"
         }
       ],
-      "workedExampleTitle": "Full Worked Example",
-      "workedExampleIntro": "Here is a complete example you can copy into Excel.",
+      "variablesTitle": "ここで：",
+      "variables": {
+        "fv": "FV = 投資の終了価値",
+        "pv": "PV = 投資の開始価値",
+        "n": "n = 年数"
+      },
+      "tipTitle": "ヒント",
+      "tip": "データに毎月の積立や不規則な日付が含まれる場合は、CAGRの代わりに=XIRR(値, 日付)を使用してください。上記の無料オンラインCAGR計算機を使って、Excelの結果をダブルチェックすることもできます。",
+      "workedExampleTitle": "完全な実例",
+      "workedExampleIntro": "以下は、Excelにコピーできる完全な例です。",
       "workedExampleHeaders": {
-        "label": "Input",
-        "value": "Value"
+        "label": "入力",
+        "value": "値"
       },
       "workedExampleRows": {
-        "pv": "Initial Value (PV)",
-        "fv": "Final Value (FV)",
-        "n": "Years (n)",
+        "pv": "初期価値（PV）",
+        "fv": "最終価値（FV）",
+        "n": "年数（n）",
         "cagr": "CAGR"
       },
       "workedExampleValues": {
-        "pv": "$10,000",
-        "fv": "$20,000",
+        "pv": "¥10,000",
+        "fv": "¥20,000",
         "n": "5",
         "cagr": "14.87%"
       },
-      "commonErrorsTitle": "Common Errors & How to Fix Them",
+      "commonErrorsTitle": "よくあるエラーと修正方法",
       "commonErrors": [
         {
-          "error": "#NUM! error with RATE",
-          "cause": "PV was not entered as a negative number.",
-          "fix": "Use =RATE(n, 0, -PV, FV) with a minus sign before PV."
+          "error": "RATEで#NUM!エラー",
+          "cause": "PVが負の数として入力されていません。",
+          "fix": "=RATE(n, 0, -PV, FV)を使用し、PVの前にマイナス記号を付けます。"
         },
         {
-          "error": "Result looks too small",
-          "cause": "The cell is not formatted as a percentage.",
-          "fix": "Select the cell, then Home → Number → Percentage."
+          "error": "結果が小さすぎるように見える",
+          "cause": "セルがパーセンテージ形式に設定されていません。",
+          "fix": "セルを選択し、ホーム → 数値 → パーセンテージを選択します。"
         },
         {
-          "error": "Monthly data gives wrong CAGR",
-          "cause": "n was entered in months but the result was not annualized.",
-          "fix": "Use n in years, or multiply the monthly result by 12."
+          "error": "月次データでCAGRがおかしい",
+          "cause": "nを月数で入力したが、結果を年率換算していません。",
+          "fix": "nを年単位で使用するか、月次結果に12を掛けます。"
         },
         {
-          "error": "Result is 100x too large or small",
-          "cause": "Percentage formatting is missing or applied twice.",
-          "fix": "Check the cell format and whether you already multiplied by 100."
+          "error": "結果が100倍大きいまたは小さい",
+          "cause": "パーセンテージ形式が欠けているか、2重に適用されています。",
+          "fix": "セルの書式と、すでに100を掛けているかどうかを確認します。"
         }
       ],
       "xirr": {
-        "title": "When to Use XIRR Instead",
-        "text": "If your data includes monthly contributions, dividends, or irregular dates, use =XIRR(values, dates) instead of CAGR. XIRR handles cash flows that happen on any date."
+        "title": "XIRRを使うべき場面",
+        "text": "データに毎月の積立、配当、または不規則な日付が含まれる場合は、CAGRの代わりに=XIRR(値, 日付)を使用してください。XIRRは任意の日付に発生するキャッシュフローを処理します。"
       },
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula in Excel?",
-            "answer": "The most common formulas are =POWER(FV/PV, 1/n)-1 and =RATE(n, 0, -PV, FV)."
+            "question": "ExcelでのCAGR公式は何ですか？",
+            "answer": "最も一般的な公式は=POWER(FV/PV, 1/n)-1と=RATE(n, 0, -PV, FV)です。"
           },
           {
-            "question": "How do I calculate CAGR for 5 years in Excel?",
-            "answer": "Enter PV, FV, and n=5, then use =POWER(FV/PV, 1/5)-1."
+            "question": "Excelで5年間のCAGRを計算するには？",
+            "answer": "PV、FV、n=5を入力し、=POWER(FV/PV, 1/5)-1を使用します。"
           },
           {
-            "question": "Why does RATE show #NUM!?",
-            "answer": "RATE requires PV to be negative because it represents a cash outflow."
+            "question": "RATEが#NUM!と表示されるのはなぜですか？",
+            "answer": "RATEでは、PVは現金流出を表すため負の数である必要があります。"
           },
           {
-            "question": "Should I use CAGR or XIRR for SIP?",
-            "answer": "Use XIRR. CAGR assumes a single initial and final value, while XIRR handles multiple contributions."
+            "question": "SIPにはCAGRとXIRRのどちらを使うべきですか？",
+            "answer": "XIRRを使用してください。CAGRは単一の初期値と最終値を前提とし、XIRRは複数の積立を処理します。"
           }
         ]
       }

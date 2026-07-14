@@ -87,10 +87,10 @@
       "about": "À propos de notre calculateur TCAC gratuit en ligne",
       "cagrInExcel": "TCAC dans Excel",
       "cagrForInvestments": "TCAC pour actions, fonds et retraite",
-      "readMoreFormula": "Read the full CAGR formula guide",
-      "readMoreCagrVsIrr": "Read the full CAGR vs IRR guide",
-      "readMoreCagrInExcel": "Read the full CAGR in Excel guide",
-      "readMoreFaq": "Browse all FAQ"
+      "readMoreFormula": "Lire le guide complet sur la formule TCAC",
+      "readMoreCagrVsIrr": "Lire le guide complet TCAC vs TRI",
+      "readMoreCagrInExcel": "Lire le guide complet TCAC dans Excel",
+      "readMoreFaq": "Parcourir toutes les FAQ"
     },
     "loading": "Chargement du calculateur...",
     "educational": {
@@ -124,7 +124,7 @@
         "whereTitle": "Où:",
         "variables": {
           "fv": {
-            "term": "VF (Valeur Finale)",
+            "term": "FV (Valeur Finale)",
             "definition": "La valeur finale de l'investissement"
           },
           "pv": {
@@ -138,14 +138,14 @@
         },
         "stepByStepTitle": "Calcul étape par étape",
         "steps": [
-          "Divisez la valeur finale (VF) par la valeur initiale (VI)",
+          "Divisez la valeur finale (FV) par la valeur initiale (VI)",
           "Élevez le résultat à la puissance de 1 divisé par le nombre d'années (n)",
           "Soustrayez 1 du résultat",
           "Multipliez par 100 pour convertir en pourcentage"
         ],
         "exampleTitle": "Exemple de calcul",
         "example": {
-          "given": "Données: VI = 10 000€, VF = 20 000€, n = 5 ans",
+          "given": "Données: VI = 10 000€, FV = 20 000€, n = 5 ans",
           "step1": "Étape 1: 20 000 / 10 000 = 2",
           "step2": "Étape 2: 2^((1/5)) = 2^(0,2) = 1,1487",
           "step3": "Étape 3: 1,1487 - 1 = 0,1487",
@@ -328,7 +328,7 @@
           },
           {
             "question": "Quelle est la différence entre le TCAC et le XIRR?",
-            "answer": "Le TCAC fonctionne mieux lorsqu'il y a un seul investissement initial et une seule valeur finale. Le XIRR gère plusieurs investissements ou retraits à différentes dates, ce qui le rend meilleur pour les SIP, les plans de réinvestissement de dividendes ou les portefeuilles avec des contributions irrégulières. Dans Excel, utilisez =XIRR(valeurs, dates) avec les flux de trésorerie sortants comme négatifs et la valeur finale du portefeuille comme positive."
+            "answer": "Le TCAC fonctionne mieux lorsqu'il y a un seul investissement initial et une seule valeur finale. Le XIRR gère plusieurs investissements ou retraits à différentes dates, ce qui le rend meilleur pour les SIP, les plans de réinvestissement de dividendes ou les portefeuilles avec des contributions irrégulières. Dans Excel, utilisez =XIRR(valeurs, dates) avec les flux de sortie comme négatifs et la valeur finale du portefeuille comme positive."
           }
         ],
         "stillHaveQuestionsTitle": "Vous avez encore des questions?",
@@ -439,29 +439,29 @@
       },
       "cagrInExcel": {
         "title": "Formule du TCAC dans Excel",
-        "intro": "Vous pouvez calculer le TCAC dans Excel en utilisant la fonction POWER, la fonction RATE ou une formule manuelle. Chaque méthode donne le même résultat ; choisissez celle qui convient le mieux à votre feuille de calcul.",
+        "intro": "Vous pouvez calculer le TCAC dans Excel en utilisant la fonction PUISSANCE, la fonction TAUX ou une formule manuelle. Chaque méthode donne le même résultat ; choisissez celle qui convient le mieux à votre feuille de calcul.",
         "methodsTitle": "Trois méthodes pour calculer le TCAC dans Excel",
         "methods": [
           {
-            "name": "Fonction POWER",
-            "formula": "=POWER(FV/PV, 1/n)-1",
-            "example": "=POWER(20000/10000, 1/5)-1 retourne 0,1487 ou 14,87%"
+            "name": "Fonction PUISSANCE",
+            "formula": "=PUISSANCE(VF/VI, 1/n)-1",
+            "example": "=PUISSANCE(20000/10000, 1/5)-1 retourne 0,1487 ou 14,87%"
           },
           {
             "name": "Formule manuelle",
-            "formula": "=(FV/PV)^(1/n)-1",
+            "formula": "=(VF/VI)^(1/n)-1",
             "example": "=(20000/10000)^(1/5)-1 retourne 0,1487 ou 14,87%"
           },
           {
-            "name": "Fonction RATE",
-            "formula": "=RATE(n, 0, -PV, FV)",
-            "example": "=RATE(5, 0, -10000, 20000) retourne 0,1487 ou 14,87%"
+            "name": "Fonction TAUX",
+            "formula": "=TAUX(n, 0, -VI, VF)",
+            "example": "=TAUX(5, 0, -10000, 20000) retourne 0,1487 ou 14,87%"
           }
         ],
         "variablesTitle": "Où:",
         "variables": {
-          "fv": "FV = valeur finale de l'investissement",
-          "pv": "PV = valeur initiale de l'investissement",
+          "fv": "VF = valeur finale de l'investissement",
+          "pv": "VI = valeur initiale de l'investissement",
           "n": "n = nombre d'années"
         },
         "tipTitle": "Astuce",
@@ -496,288 +496,296 @@
   "pages": {
     "cagrFormula": {
       "metadata": {
-        "title": "CAGR Formula | How to Calculate Compound Annual Growth Rate",
-        "description": "Learn the CAGR formula with step-by-step examples. Calculate compound annual growth rate manually, in Excel, or with our free online CAGR calculator.",
-        "keywords": "cagr formula, compound annual growth rate formula, how to calculate cagr, cagr calculation, cagr variables, reverse cagr formula"
+        "title": "Formule TCAC | Comment Calculer le Taux de Croissance Annuel Composé",
+        "description": "Apprenez la formule TCAC avec des exemples pas à pas. Calculez le taux de croissance annuel composé manuellement, dans Excel ou avec notre calculateur TCAC gratuit en ligne.",
+        "keywords": "formule tcac, taux de croissance annuel composé formule, comment calculer tcac, calcul tcac, variables tcac, formule tcac inverse"
       },
-      "title": "CAGR Formula: How to Calculate Compound Annual Growth Rate",
-      "subtitle": "A complete guide to the compound annual growth rate formula with examples and reverse formulas",
-      "intro": "The CAGR formula calculates the annualized growth rate of an investment over a stated period, assuming profits are reinvested each year.",
-      "formula": "CAGR = (FV / PV)^(1/n) - 1",
-      "formulaCaption": "Where FV is final value, PV is present value, and n is number of years.",
-      "variablesTitle": "Where:",
+      "title": "Formule TCAC : Comment Calculer le Taux de Croissance Annuel Composé",
+      "subtitle": "Un guide complet de la formule du taux de croissance annuel composé avec des exemples et des formules inverses",
+      "intro": "La formule TCAC calcule le taux de croissance annualisé d'un investissement sur une période donnée, en supposant que les bénéfices sont réinvestis chaque année.",
+      "formula": "TCAC = (VF / VI)^(1/n) - 1",
+      "formulaCaption": "Où VF est la valeur finale, VI la valeur initiale et n le nombre d'années.",
+      "variablesTitle": "Où :",
       "variables": {
         "fv": {
-          "term": "FV (Final Value)",
-          "definition": "The ending value of the investment."
+          "term": "VF (Valeur Finale)",
+          "definition": "La valeur finale de l'investissement."
         },
         "pv": {
-          "term": "PV (Present Value)",
-          "definition": "The beginning value or initial investment amount."
+          "term": "VI (Valeur Initiale)",
+          "definition": "La valeur de départ ou le montant initial de l'investissement."
         },
         "n": {
-          "term": "n (Number of Years)",
-          "definition": "The investment time period in years."
+          "term": "n (Nombre d'Années)",
+          "definition": "La période d'investissement en années."
         }
       },
-      "stepsTitle": "Step-by-Step Calculation",
+      "stepsTitle": "Calcul Étape par Étape",
       "steps": [
-        "Divide the final value (FV) by the initial value (PV).",
-        "Raise the result to the power of 1 divided by the number of years (n).",
-        "Subtract 1 from the result.",
-        "Multiply by 100 to convert to a percentage."
+        "Divisez la valeur finale (VF) par la valeur initiale (VI).",
+        "Élevez le résultat à la puissance de 1 divisé par le nombre d'années (n).",
+        "Soustrayez 1 du résultat.",
+        "Multipliez par 100 pour convertir en pourcentage."
       ],
-      "exampleTitle": "Example Calculation",
+      "exampleTitle": "Exemple de Calcul",
       "example": {
-        "given": "Given: PV = $10,000, FV = $20,000, n = 5 years",
-        "step1": "Step 1: 20,000 / 10,000 = 2",
-        "step2": "Step 2: 2^((1/5)) = 2^(0.2) = 1.1487",
-        "step3": "Step 3: 1.1487 - 1 = 0.1487",
-        "result": "Result: 0.1487 × 100 = 14.87%"
+        "given": "Données : VI = 10 000 €, VF = 20 000 €, n = 5 ans",
+        "step1": "Étape 1 : 20 000 / 10 000 = 2",
+        "step2": "Étape 2 : 2^((1/5)) = 2^(0,2) = 1,1487",
+        "step3": "Étape 3 : 1,1487 - 1 = 0,1487",
+        "result": "Résultat : 0,1487 × 100 = 14,87 %"
       },
-      "reverseTitle": "Reverse CAGR Formulas",
-      "reverseIntro": "You can rearrange the CAGR formula to solve for any missing variable. These reverse formulas are useful when you know your target return and want to find the required initial investment, final value, or time horizon.",
+      "reverseTitle": "Formules TCAC Inverses",
+      "reverseIntro": "Vous pouvez réorganiser la formule TCAC pour résoudre n'importe quelle variable manquante. Ces formules inverses sont utiles lorsque vous connaissez votre rendement cible et que vous souhaitez trouver l'investissement initial, la valeur finale ou l'horizon temporel requis.",
       "reverseFormulas": [
         {
-          "name": "Calculate Final Value",
-          "formula": "FV = PV × (1 + CAGR)^n",
-          "when": "Use when you know the initial investment, CAGR, and time period."
+          "name": "Calculer la Valeur Finale",
+          "formula": "VF = VI × (1 + TCAC)^n",
+          "when": "À utiliser lorsque vous connaissez l'investissement initial, le TCAC et la période."
         },
         {
-          "name": "Calculate Initial Value",
-          "formula": "PV = FV / (1 + CAGR)^n",
-          "when": "Use when you know the target final value, CAGR, and time period."
+          "name": "Calculer la Valeur Initiale",
+          "formula": "VI = VF / (1 + TCAC)^n",
+          "when": "À utiliser lorsque vous connaissez la valeur finale cible, le TCAC et la période."
         },
         {
-          "name": "Calculate Time Period",
-          "formula": "n = ln(FV / PV) / ln(1 + CAGR)",
-          "when": "Use when you know the initial value, final value, and CAGR."
+          "name": "Calculer la Période",
+          "formula": "n = ln(VF / VI) / ln(1 + TCAC)",
+          "when": "À utiliser lorsque vous connaissez la valeur initiale, la valeur finale et le TCAC."
         }
       ],
-      "calculatorModesTitle": "Our CAGR Calculator Solves for Any Variable",
-      "calculatorModesIntro": "Our smart calculator lets you input any 3 of the 4 variables and automatically calculates the missing one.",
+      "calculatorModesTitle": "Notre Calculateur TCAC Résout pour Toute Variable",
+      "calculatorModesIntro": "Notre calculateur intelligent vous permet de saisir 3 des 4 variables et calcule automatiquement celle qui manque.",
       "calculatorModes": [
-        "Calculate CAGR: Given PV, FV, and n",
-        "Calculate FV: Given PV, CAGR, and n",
-        "Calculate PV: Given FV, CAGR, and n",
-        "Calculate Time: Given PV, FV, and CAGR"
+        "Calculer le TCAC : avec VI, VF et n",
+        "Calculer la VF : avec VI, le TCAC et n",
+        "Calculer la VI : avec VF, le TCAC et n",
+        "Calculer la période : avec VI, VF et le TCAC"
       ],
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula?",
-            "answer": "CAGR = (FV/PV)^(1/n) - 1, where FV is the final value, PV is the initial value, and n is the number of years."
+            "question": "Quelle est la formule du TCAC ?",
+            "answer": "TCAC = (VF/VI)^(1/n) - 1, où VF est la valeur finale, VI la valeur initiale et n le nombre d'années."
           },
           {
-            "question": "Can CAGR be negative?",
-            "answer": "Yes. If the final value is lower than the initial value, CAGR will be negative, indicating a loss."
+            "question": "Le TCAC peut-il être négatif ?",
+            "answer": "Oui. Si la valeur finale est inférieure à la valeur initiale, le TCAC sera négatif, indiquant une perte."
           },
           {
-            "question": "How do I calculate CAGR in Excel?",
-            "answer": "Use =POWER(FV/PV, 1/n)-1, =(FV/PV)^(1/n)-1, or =RATE(n, 0, -PV, FV)."
+            "question": "Comment calculer le TCAC dans Excel ?",
+            "answer": "Utilisez =PUISSANCE(VF/VI, 1/n)-1, =(VF/VI)^(1/n)-1 ou =TAUX(n, 0, -VI, VF)."
           },
           {
-            "question": "What is a good CAGR?",
-            "answer": "Historically, the S&P 500 has returned about 10-11% CAGR before inflation. A 'good' CAGR depends on your risk tolerance and goals."
+            "question": "Quel est un bon TCAC ?",
+            "answer": "Historiquement, le S&P 500 a affiché environ 10-11 % de TCAC avant inflation. Un « bon » TCAC dépend de votre tolérance au risque et de vos objectifs."
           },
           {
-            "question": "Does CAGR include dividends?",
-            "answer": "Only if dividends are reinvested. If taken as cash, they should be tracked separately as income."
+            "question": "Le TCAC inclut-il les dividendes ?",
+            "answer": "Uniquement si les dividendes sont réinvestis. S'ils sont encaissés, ils doivent être suivis séparément comme revenu."
           }
         ]
       }
     },
     "cagrVsIrr": {
       "metadata": {
-        "title": "CAGR vs IRR: Key Differences & When to Use Each",
-        "description": "CAGR and IRR both measure investment returns, but they answer different questions. Learn the differences, formulas, and when to use each metric.",
-        "keywords": "cagr vs irr, difference between cagr and irr, when to use irr, internal rate of return, cagr formula vs irr"
+        "title": "TCAC vs TRI : Différences Clés et Quand Utiliser Chacun",
+        "description": "Le TCAC et le TRI mesurent tous deux le rendement des investissements, mais ils répondent à des questions différentes. Découvrez les différences, les formules et quand utiliser chaque indicateur.",
+        "keywords": "tcac vs tri, différence entre tcac et tri, quand utiliser tri, taux de rendement interne, formule tcac vs tri"
       },
-      "title": "CAGR vs IRR: What's the Difference?",
-      "subtitle": "Two popular return metrics, explained with examples",
-      "intro": "CAGR and IRR are both used to measure investment performance, but they work best in different situations. CAGR is simple and good for start-to-end comparisons. IRR is more advanced and accounts for the timing of cash flows.",
+      "title": "TCAC vs TRI : Quelle est la Différence ?",
+      "subtitle": "Deux indicateurs de rendement populaires, expliqués avec des exemples",
+      "intro": "Le TCAC et le TRI sont tous deux utilisés pour mesurer la performance d'un investissement, mais ils sont plus adaptés à des situations différentes. Le TCAC est simple et adapté aux comparaisons de début à fin. Le TRI est plus avancé et prend en compte le calendrier des flux de trésorerie.",
       "comparisonHeaders": {
-        "metric": "Metric",
+        "metric": "Indicateur",
         "description": "Description",
-        "bestFor": "Best For"
+        "bestFor": "Meilleur Pour"
       },
       "comparisonTable": [
         {
-          "name": "CAGR",
-          "description": "Smoothed annualized growth rate assuming compounding.",
-          "bestFor": "Long-term investment performance with no intermediate cash flows."
+          "name": "TCAC",
+          "description": "Taux de croissance annualisé lissé, en supposant la capitalisation.",
+          "bestFor": "Performance d'investissement à long terme sans flux de trésorerie intermédiaires."
         },
         {
-          "name": "Simple Average Return",
-          "description": "Arithmetic mean of annual returns.",
-          "bestFor": "Quick rough estimates only."
+          "name": "Rendement Moyen Simple",
+          "description": "Moyenne arithmétique des rendements annuels.",
+          "bestFor": "Uniquement pour des estimations rapides et approximatives."
         },
         {
-          "name": "Absolute Return",
-          "description": "Total percentage change from start to end.",
-          "bestFor": "Short-term or single-period performance."
+          "name": "Rendement Absolu",
+          "description": "Variation en pourcentage totale du début à la fin.",
+          "bestFor": "Performance à court terme ou sur une seule période."
         },
         {
-          "name": "IRR",
-          "description": "Discount rate that makes the net present value of all cash flows zero.",
-          "bestFor": "Investments with multiple inflows and outflows."
+          "name": "TRI",
+          "description": "Taux d'actualisation qui rend la valeur actuelle nette de tous les flux de trésorerie nulle.",
+          "bestFor": "Investissements avec plusieurs entrées et sorties de trésorerie."
         },
         {
           "name": "TWR",
-          "description": "Removes the impact of external cash flows.",
-          "bestFor": "Evaluating fund manager performance."
+          "description": "Élimine l'impact des flux de trésorerie externes.",
+          "bestFor": "Évaluer la performance du gestionnaire de fonds."
         }
       ],
       "whatIsCagr": {
-        "title": "What Is CAGR?",
-        "text": "CAGR measures the annualized growth of an investment from a starting value to an ending value, assuming no intermediate cash flows. It smooths out volatility and gives a single growth rate."
+        "title": "Qu'est-ce que le TCAC ?",
+        "text": "Le TCAC mesure la croissance annualisée d'un investissement entre une valeur initiale et une valeur finale, en supposant qu'il n'y a pas de flux de trésorerie intermédiaires. Il lisse la volatilité et fournit un taux de croissance unique."
       },
       "whatIsIrr": {
-        "title": "What Is IRR?",
-        "text": "IRR is the annualized rate of return at which the net present value of all cash flows equals zero. It accounts for the timing and size of each cash flow.",
-        "useCase": "Use IRR for projects, real estate investments, private equity, or any investment with irregular contributions and withdrawals."
+        "title": "Qu'est-ce que le TRI ?",
+        "text": "Le TRI est le taux de rendement annualisé auquel la valeur actuelle nette de tous les flux de trésorerie est égale à zéro. Il prend en compte le calendrier et l'importance de chaque flux de trésorerie.",
+        "useCase": "Utilisez le TRI pour les projets, les investissements immobiliers, le capital-investissement ou tout investissement avec des contributions et des retraits irréguliers."
       },
-      "exampleTitle": "Same Investment, Different Results",
-      "exampleIntro": "You buy a stock for $10,000, receive $2,000 in dividends at the end of each year for 4 years, and sell it for $12,000 at the end of year 4.",
+      "exampleTitle": "Même Investissement, Résultats Différents",
+      "exampleIntro": "Vous achetez une action pour 10 000 €, recevez 2 000 € de dividendes à la fin de chaque année pendant 4 ans et la vendez pour 12 000 € à la fin de la 4e année.",
       "example": {
         "cagr": {
-          "title": "CAGR Calculation",
-          "calculation": "CAGR only uses the purchase price ($10,000) and the sale price ($12,000) over 4 years: CAGR = (12,000/10,000)^(1/4) - 1 = 4.66%."
+          "title": "Calcul du TCAC",
+          "calculation": "Le TCAC n'utilise que le prix d'achat (10 000 €) et le prix de vente (12 000 €) sur 4 ans : TCAC = (12 000/10 000)^(1/4) - 1 = 4,66 %."
         },
         "irr": {
-          "title": "IRR Calculation",
-          "calculation": "IRR includes every dividend's timing. For cash flows -10,000, +2,000, +2,000, +2,000, +14,000, Excel =IRR(...) returns 20.0%."
+          "title": "Calcul du TRI",
+          "calculation": "Le TRI intègre le calendrier de chaque dividende. Pour les flux -10 000, +2 000, +2 000, +2 000, +14 000, Excel =TRI(...) retourne 20,0 %."
         },
-        "conclusion": "CAGR understates the true return because it ignores the $8,000 of dividends received before the final sale. IRR captures the full picture."
+        "conclusion": "Le TCAC sous-estime le vrai rendement car il ignore les 8 000 € de dividendes reçus avant la vente finale. Le TRI donne l'image complète."
       },
       "useCagr": {
-        "title": "Use CAGR When",
+        "title": "Utilisez le TCAC Quand",
         "items": [
-          "You have one initial investment and one final value.",
-          "You want to compare investments over the same time period.",
-          "There are no intermediate deposits or withdrawals.",
-          "You need a quick, easy-to-understand annualized return."
+          "Vous avez un investissement initial et une valeur finale unique.",
+          "Vous souhaitez comparer des investissements sur la même période.",
+          "Il n'y a pas de dépôts ou de retraits intermédiaires.",
+          "Vous avez besoin d'un rendement annualisé rapide et facile à comprendre."
         ]
       },
       "useIrr": {
-        "title": "Use IRR When",
+        "title": "Utilisez le TRI Quand",
         "items": [
-          "There are multiple cash flows over time.",
-          "You want to account for the timing of each cash flow.",
-          "You are evaluating a project or business investment.",
-          "You have irregular contributions like a SIP or DCA plan."
+          "Il y a plusieurs flux de trésorerie au fil du temps.",
+          "Vous souhaitez prendre en compte le calendrier de chaque flux de trésorerie.",
+          "Vous évaluez un projet ou un investissement commercial.",
+          "Vous avez des contributions irrégulières comme un plan SIP ou DCA."
         ]
       },
       "faq": {
         "questions": [
           {
-            "question": "Is CAGR the same as IRR?",
-            "answer": "No. CAGR measures smoothed annualized growth between two values. IRR accounts for the timing and size of multiple cash flows."
+            "question": "Le TCAC est-il le même que le TRI ?",
+            "answer": "Non. Le TCAC mesure la croissance annualisée lissée entre deux valeurs. Le TRI prend en compte le calendrier et l'importance de plusieurs flux de trésorerie."
           },
           {
-            "question": "Why is IRR lower than CAGR?",
-            "answer": "IRR can be lower when early cash flows are small and later cash flows are large, because money received earlier is more valuable."
+            "question": "Pourquoi le TRI est-il inférieur au TCAC ?",
+            "answer": "Le TRI peut être inférieur lorsque les flux de trésorerie anticipés sont faibles et les flux ultérieurs importants, car l'argent reçu plus tôt a plus de valeur."
           },
           {
-            "question": "Can I use CAGR for SIP investments?",
-            "answer": "No. For monthly contributions, use XIRR because each contribution has a different investment horizon."
+            "question": "Puis-je utiliser le TCAC pour des investissements en SIP ?",
+            "answer": "Non. Pour des contributions mensuelles, utilisez XIRR car chaque contribution a un horizon d'investissement différent."
           },
           {
-            "question": "Which is better for comparing mutual funds?",
-            "answer": "CAGR is better for comparing lump-sum investments over the same period. IRR or XIRR is better for SIPs."
+            "question": "Lequel est meilleur pour comparer des fonds communs ?",
+            "answer": "Le TCAC est meilleur pour comparer des investissements forfaitaires sur la même période. Le TRI ou XIRR est meilleur pour les SIP."
           }
         ]
       }
     },
     "cagrInExcel": {
       "metadata": {
-        "title": "CAGR in Excel: 3 Formulas with Examples",
-        "description": "Learn how to calculate CAGR in Excel using POWER, RATE, and manual formulas. Includes examples, common errors, and when to use XIRR instead.",
-        "keywords": "cagr in excel, cagr formula excel, how to calculate cagr in excel, cagr excel template, cagr rate function"
+        "title": "TCAC dans Excel : 3 Formules avec Exemples",
+        "description": "Apprenez à calculer le TCAC dans Excel avec les fonctions PUISSANCE, TAUX et la formule manuelle. Inclut des exemples, des erreurs courantes et quand utiliser XIRR à la place.",
+        "keywords": "tcac dans excel, formule tcac excel, comment calculer tcac dans excel, modèle tcac excel, fonction taux tcac"
       },
-      "title": "How to Calculate CAGR in Excel",
-      "subtitle": "Three formulas, one result — with examples and common fixes",
-      "intro": "You can calculate CAGR in Excel using the POWER function, the RATE function, or a manual formula. Each method gives the same result; choose the one that fits your worksheet.",
-      "methodsTitle": "Three Ways to Calculate CAGR in Excel",
+      "title": "Comment Calculer le TCAC dans Excel",
+      "subtitle": "Trois formules, un résultat — avec des exemples et des corrections courantes",
+      "intro": "Vous pouvez calculer le TCAC dans Excel à l'aide de la fonction PUISSANCE, de la fonction TAUX ou d'une formule manuelle. Chaque méthode donne le même résultat ; choisissez celle qui convient à votre feuille de calcul.",
+      "methodsTitle": "Trois Façons de Calculer le TCAC dans Excel",
       "methods": [
         {
-          "name": "POWER function",
-          "formula": "=POWER(FV/PV, 1/n)-1",
-          "example": "=POWER(20000/10000, 1/5)-1 returns 0.1487 or 14.87%"
+          "name": "Fonction PUISSANCE",
+          "formula": "=PUISSANCE(VF/VI, 1/n)-1",
+          "example": "=PUISSANCE(20000/10000, 1/5)-1 retourne 0,1487 ou 14,87 %"
         },
         {
-          "name": "Manual formula",
-          "formula": "=(FV/PV)^(1/n)-1",
-          "example": "=(20000/10000)^(1/5)-1 returns 0.1487 or 14.87%"
+          "name": "Formule manuelle",
+          "formula": "=(VF/VI)^(1/n)-1",
+          "example": "=(20000/10000)^(1/5)-1 retourne 0,1487 ou 14,87 %"
         },
         {
-          "name": "RATE function",
-          "formula": "=RATE(n, 0, -PV, FV)",
-          "example": "=RATE(5, 0, -10000, 20000) returns 0.1487 or 14.87%"
+          "name": "Fonction TAUX",
+          "formula": "=TAUX(n, 0, -VI, VF)",
+          "example": "=TAUX(5, 0, -10000, 20000) retourne 0,1487 ou 14,87 %"
         }
       ],
-      "workedExampleTitle": "Full Worked Example",
-      "workedExampleIntro": "Here is a complete example you can copy into Excel.",
+      "variablesTitle": "Où :",
+      "variables": {
+        "fv": "VF = valeur finale de l'investissement",
+        "pv": "VI = valeur initiale de l'investissement",
+        "n": "n = nombre d'années"
+      },
+      "tipTitle": "Astuce",
+      "tip": "Si vos données incluent des contributions mensuelles ou des dates irrégulières, utilisez =XIRR(valeurs, dates) au lieu du TCAC. Vous pouvez également utiliser notre calculateur TCAC gratuit en ligne ci-dessus pour vérifier votre résultat Excel.",
+      "workedExampleTitle": "Exemple Complet",
+      "workedExampleIntro": "Voici un exemple complet que vous pouvez copier dans Excel.",
       "workedExampleHeaders": {
-        "label": "Input",
-        "value": "Value"
+        "label": "Entrée",
+        "value": "Valeur"
       },
       "workedExampleRows": {
-        "pv": "Initial Value (PV)",
-        "fv": "Final Value (FV)",
-        "n": "Years (n)",
-        "cagr": "CAGR"
+        "pv": "Valeur Initiale (VI)",
+        "fv": "Valeur Finale (VF)",
+        "n": "Années (n)",
+        "cagr": "TCAC"
       },
       "workedExampleValues": {
-        "pv": "$10,000",
-        "fv": "$20,000",
+        "pv": "10 000 €",
+        "fv": "20 000 €",
         "n": "5",
-        "cagr": "14.87%"
+        "cagr": "14,87 %"
       },
-      "commonErrorsTitle": "Common Errors & How to Fix Them",
+      "commonErrorsTitle": "Erreurs Courantes et Comment les Corriger",
       "commonErrors": [
         {
-          "error": "#NUM! error with RATE",
-          "cause": "PV was not entered as a negative number.",
-          "fix": "Use =RATE(n, 0, -PV, FV) with a minus sign before PV."
+          "error": "Erreur #NOMBRE! avec TAUX",
+          "cause": "La VI n'a pas été saisie comme nombre négatif.",
+          "fix": "Utilisez =TAUX(n, 0, -VI, VF) avec un signe moins avant la VI."
         },
         {
-          "error": "Result looks too small",
-          "cause": "The cell is not formatted as a percentage.",
-          "fix": "Select the cell, then Home → Number → Percentage."
+          "error": "Le résultat semble trop petit",
+          "cause": "La cellule n'est pas formatée en pourcentage.",
+          "fix": "Sélectionnez la cellule, puis Accueil → Nombre → Pourcentage."
         },
         {
-          "error": "Monthly data gives wrong CAGR",
-          "cause": "n was entered in months but the result was not annualized.",
-          "fix": "Use n in years, or multiply the monthly result by 12."
+          "error": "Les données mensuelles donnent un mauvais TCAC",
+          "cause": "n a été saisi en mois mais le résultat n'a pas été annualisé.",
+          "fix": "Utilisez n en années, ou multipliez le résultat mensuel par 12."
         },
         {
-          "error": "Result is 100x too large or small",
-          "cause": "Percentage formatting is missing or applied twice.",
-          "fix": "Check the cell format and whether you already multiplied by 100."
+          "error": "Le résultat est 100 fois trop grand ou trop petit",
+          "cause": "Le formatage en pourcentage est manquant ou appliqué deux fois.",
+          "fix": "Vérifiez le format de la cellule et si vous avez déjà multiplié par 100."
         }
       ],
       "xirr": {
-        "title": "When to Use XIRR Instead",
-        "text": "If your data includes monthly contributions, dividends, or irregular dates, use =XIRR(values, dates) instead of CAGR. XIRR handles cash flows that happen on any date."
+        "title": "Quand Utiliser XIRR à la Place",
+        "text": "Si vos données incluent des contributions mensuelles, des dividendes ou des dates irrégulières, utilisez =XIRR(valeurs, dates) au lieu du TCAC. XIRR gère les flux de trésorerie sur n'importe quelle date."
       },
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula in Excel?",
-            "answer": "The most common formulas are =POWER(FV/PV, 1/n)-1 and =RATE(n, 0, -PV, FV)."
+            "question": "Quelle est la formule du TCAC dans Excel ?",
+            "answer": "Les formules les plus courantes sont =PUISSANCE(VF/VI, 1/n)-1 et =TAUX(n, 0, -VI, VF)."
           },
           {
-            "question": "How do I calculate CAGR for 5 years in Excel?",
-            "answer": "Enter PV, FV, and n=5, then use =POWER(FV/PV, 1/5)-1."
+            "question": "Comment calculer le TCAC sur 5 ans dans Excel ?",
+            "answer": "Saisissez VI, VF et n=5, puis utilisez =PUISSANCE(VF/VI, 1/5)-1."
           },
           {
-            "question": "Why does RATE show #NUM!?",
-            "answer": "RATE requires PV to be negative because it represents a cash outflow."
+            "question": "Pourquoi TAUX affiche-t-il #NOMBRE! ?",
+            "answer": "TAUX exige que la VI soit négative car elle représente une sortie de trésorerie."
           },
           {
-            "question": "Should I use CAGR or XIRR for SIP?",
-            "answer": "Use XIRR. CAGR assumes a single initial and final value, while XIRR handles multiple contributions."
+            "question": "Dois-je utiliser le TCAC ou XIRR pour un SIP ?",
+            "answer": "Utilisez XIRR. Le TCAC suppose une valeur initiale et finale unique, tandis que XIRR gère plusieurs contributions."
           }
         ]
       }

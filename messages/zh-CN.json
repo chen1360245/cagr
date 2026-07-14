@@ -51,7 +51,7 @@
         "cagrRate": "15"
       },
       "helperText": {
-        "currency": "输入美元金额",
+        "currency": "输入人民币金额",
         "number": "输入年数",
         "percentage": "输入百分比（例如，15 表示 15%）"
       }
@@ -87,10 +87,10 @@
       "about": "关于我们的免费在线CAGR计算器",
       "cagrInExcel": "Excel中的CAGR计算",
       "cagrForInvestments": "CAGR用于股票、基金与退休规划",
-      "readMoreFormula": "Read the full CAGR formula guide",
-      "readMoreCagrVsIrr": "Read the full CAGR vs IRR guide",
-      "readMoreCagrInExcel": "Read the full CAGR in Excel guide",
-      "readMoreFaq": "Browse all FAQ"
+      "readMoreFormula": "阅读完整CAGR公式指南",
+      "readMoreCagrVsIrr": "阅读完整CAGR vs IRR指南",
+      "readMoreCagrInExcel": "阅读完整Excel中的CAGR指南",
+      "readMoreFaq": "浏览所有常见问题"
     },
     "loading": "加载计算器中...",
     "educational": {
@@ -101,7 +101,7 @@
         "advantages": {
           "smoothens": {
             "title": "平滑波动：",
-            "text": "CAGR 有效地将多个时期的增长率\"平滑\"为单一的年化增长率"
+            "text": "CAGR 有效地将多个时期的增长率「平滑」为单一的年化增长率"
           },
           "comparison": {
             "title": "易于比较：",
@@ -117,7 +117,7 @@
           }
         },
         "keyInsightTitle": "关键见解",
-        "keyInsightText": "如果您投资了 $10,000，5 年后增长到 $20,000，CAGR 约为每年 14.87%。这意味着您的投资在该时期内平均每年增长 14.87%。使用上面的计算器立即找到您投资的 CAGR。"
+        "keyInsightText": "如果您投资了 ¥10,000，5 年后增长到 ¥20,000，CAGR 约为每年 14.87%。这意味着您的投资在该时期内平均每年增长 14.87%。使用上面的计算器立即找到您投资的 CAGR。"
       },
       "formula": {
         "title": "CAGR 公式",
@@ -145,7 +145,7 @@
         ],
         "exampleTitle": "计算示例",
         "example": {
-          "given": "给定：PV = $10,000，FV = $20,000，n = 5 年",
+          "given": "给定：PV = ¥10,000，FV = ¥20,000，n = 5 年",
           "step1": "步骤 1：20,000 / 10,000 = 2",
           "step2": "步骤 2：2^((1/5)) = 2^(0.2) = 1.1487",
           "step3": "步骤 3：1.1487 - 1 = 0.1487",
@@ -165,18 +165,18 @@
         "cases": [
           {
             "title": "投资组合增长",
-            "description": "衡量您的投资组合在多年内的表现。例如，如果您的投资组合在 10 年内从 $100,000 增长到 $300,000，11.6% 的 CAGR 显示了您的平均年增长率。",
-            "example": "示例：$100K → $300K，10 年 = 11.6% CAGR"
+            "description": "衡量您的投资组合在多年内的表现。例如，如果您的投资组合在 10 年内从 ¥100,000 增长到 ¥300,000，11.6% 的 CAGR 显示了您的平均年增长率。",
+            "example": "示例：¥100K → ¥300K，10 年 = 11.6% CAGR"
           },
           {
             "title": "投资翻倍时间",
-            "description": "计算您的投资在一定增长率下翻倍需要多长时间。如果您投资 $10,000 并希望它增长到 $20,000，了解您的预期 CAGR 可以帮助您估算时间范围。",
-            "example": "示例：$10K → $20K，14.87% CAGR = 5 年"
+            "description": "计算您的投资在一定增长率下翻倍需要多长时间。如果您投资 ¥10,000 并希望它增长到 ¥20,000，了解您的预期 CAGR 可以帮助您估算时间范围。",
+            "example": "示例：¥10K → ¥20K，14.87% CAGR = 5 年"
           },
           {
             "title": "公司收入分析",
             "description": "分析公司多年的收入增长以了解其长期表现。这有助于利益相关者对公司的财务健康状况做出明智的决策。",
-            "example": "示例：收入 $5M → $12M，7 年 = 13.3% CAGR"
+            "example": "示例：收入 ¥5M → ¥12M，7 年 = 13.3% CAGR"
           },
           {
             "title": "共同基金比较",
@@ -186,7 +186,7 @@
           {
             "title": "增长预测",
             "description": "使用历史 CAGR 预测未来增长。如果一家企业在过去 5 年中保持了 15% 的 CAGR，您可以使用此比率来预测潜在的未来表现。",
-            "example": "示例：当前值 $50K，15% CAGR = 约 5 年后 $100K"
+            "example": "示例：当前值 ¥50K，15% CAGR = 约 5 年后 ¥100K"
           }
         ],
         "whenToUseTitle": "何时使用 CAGR 计算器",
@@ -207,8 +207,8 @@
             "description": "找出您的投资实现了什么增长率。",
             "enterLabel": "输入：",
             "inputs": [
-              "初始值：$10,000",
-              "最终值：$20,000",
+              "初始值：¥10,000",
+              "最终值：¥20,000",
               "时间段：5 年"
             ],
             "result": "结果：14.87% CAGR"
@@ -219,11 +219,11 @@
             "description": "预测您的投资将增长到多少。",
             "enterLabel": "输入：",
             "inputs": [
-              "初始值：$10,000",
+              "初始值：¥10,000",
               "CAGR 率：15%",
               "时间段：10 年"
             ],
-            "result": "结果：$40,455.58"
+            "result": "结果：¥40,455.58"
           },
           {
             "number": "3",
@@ -231,11 +231,11 @@
             "description": "找出您需要投资多少才能达到目标。",
             "enterLabel": "输入：",
             "inputs": [
-              "最终值：$500,000",
+              "最终值：¥500,000",
               "CAGR 率：15%",
               "时间段：10 年"
             ],
-            "result": "结果：$123,592.35"
+            "result": "结果：¥123,592.35"
           },
           {
             "number": "4",
@@ -243,8 +243,8 @@
             "description": "确定达到目标需要多长时间。",
             "enterLabel": "输入：",
             "inputs": [
-              "初始值：$100",
-              "最终值：$200",
+              "初始值：¥100",
+              "最终值：¥200",
               "CAGR 率：50%"
             ],
             "result": "结果：1.7 年"
@@ -262,9 +262,9 @@
         "interpretingItems": [
           "CAGR (%)：您的年化增长率 - 越高越好（但要考虑风险）",
           "总增长 (%)：从开始到结束的总体百分比增长",
-          "绝对回报 ($)：获得或损失的实际美元金额",
+          "绝对回报 (¥)：获得或损失的实际人民币金额",
           "翻倍时间：在此增长率下您的资金翻倍需要多长时间",
-          "基准比较：您的结果与市场平均值（标普 500、债券等）的比较"
+          "基准比较：您的结果与市场平均值（沪深 300、债券等）的比较"
         ]
       },
       "faq": {
@@ -276,7 +276,7 @@
           },
           {
             "question": "CAGR 可以为负吗？",
-            "answer": "是的，如果最终值小于初始值，CAGR 可以为负。负 CAGR 表示投资在该时期内贬值。例如，如果 $10,000 在 5 年内变成 $8,000，CAGR 约为 -4.4%。"
+            "answer": "是的，如果最终值小于初始值，CAGR 可以为负。负 CAGR 表示投资在该时期内贬值。例如，如果 ¥10,000 在 5 年内变成 ¥8,000，CAGR 约为 -4.4%。"
           },
           {
             "question": "更高的 CAGR 总是更好吗？",
@@ -300,11 +300,11 @@
           },
           {
             "question": "股票、债券和房地产的良好 CAGR 是多少？",
-            "answer": "历史上：标普 500 股票约 10-11% CAGR，企业债券约 5-6% CAGR，房地产约 8-9% CAGR，黄金约 7% CAGR。然而，过去的表现并不保证未来的回报。\"好\" CAGR 取决于您的风险承受能力、投资目标和更广泛的经济背景。"
+            "answer": "历史上：沪深 300 股票约 8-10% CAGR，企业债券约 5-6% CAGR，房地产约 8-9% CAGR，黄金约 7% CAGR。然而，过去的表现并不保证未来的回报。「好」CAGR 取决于您的风险承受能力、投资目标和更广泛的经济背景。"
           },
           {
             "question": "如何在 Excel 中计算 CAGR？",
-            "answer": "在 Excel 中，使用此公式：=(FV/PV)^(1/n)-1 或 =POWER(FV/PV, 1/n)-1。您还可以使用 RATE 函数：=RATE(n, 0, -PV, FV)。例如，对于 $10,000 在 5 年内增长到 $20,000：=POWER(20000/10000, 1/5)-1 返回 0.1487 或 14.87%。然而，我们的免费在线计算器要快得多，并且消除了公式错误的风险。"
+            "answer": "在 Excel 中，使用此公式：=(FV/PV)^(1/n)-1 或 =POWER(FV/PV, 1/n)-1。您还可以使用 RATE 函数：=RATE(n, 0, -PV, FV)。例如，对于 ¥10,000 在 5 年内增长到 ¥20,000：=POWER(20000/10000, 1/5)-1 返回 0.1487 或 14.87%。然而，我们的免费在线计算器要快得多，并且消除了公式错误的风险。"
           },
           {
             "question": "CAGR 的主要局限性是什么？",
@@ -316,7 +316,7 @@
           },
           {
             "question": "CAGR 是否包含分红？",
-            "answer": "标准 CAGR 不包含分红，除非分红被再投资。如果你将分红再投资，应将其计入最终值（FV）。例如，一只股票从 $10,000 涨到 $18,000，并支付了 $2,000 再投资分红，那么 FV 应取 $20,000。如果分红以现金取出，则不属于 CAGR 的一部分，应单独作为收益记录。"
+            "answer": "标准 CAGR 不包含分红，除非分红被再投资。如果你将分红再投资，应将其计入最终值（FV）。例如，一只股票从 ¥10,000 涨到 ¥18,000，并支付了 ¥2,000 再投资分红，那么 FV 应取 ¥20,000。如果分红以现金取出，则不属于 CAGR 的一部分，应单独作为收益记录。"
           },
           {
             "question": "每月定投/SIP 怎么计算 CAGR？",
@@ -324,7 +324,7 @@
           },
           {
             "question": "退休投资的合理 CAGR 目标是多少？",
-            "answer": "长期来看，全球股市历史年化回报约为 10%（未扣除通胀）。考虑通胀和股债混合配置后，退休组合的实际 CAGR 目标通常在 5-7% 左右。具体目标应根据你的风险承受能力、投资期限和取款计划来确定。历史业绩不代表未来表现。"
+            "answer": "长期来看，A 股市场历史年化回报约为 8-10%（未扣除通胀）。考虑通胀和股债混合配置后，退休组合的实际 CAGR 目标通常在 5-7% 左右。具体目标应根据你的风险承受能力、投资期限和取款计划来确定。历史业绩不代表未来表现。"
           },
           {
             "question": "CAGR 和 XIRR 有什么区别？",
@@ -430,7 +430,7 @@
           "过去的 CAGR 并不保证未来的回报"
         ],
         "exampleTitle": "示例：CAGR 与简单平均",
-        "exampleIntro": "考虑一项投资：$100 → $150 → $120 → $180，3 年",
+        "exampleIntro": "考虑一项投资：¥100 → ¥150 → ¥120 → ¥180，3 年",
         "simpleAverageTitle": "简单平均回报：",
         "simpleAverageCalc": "第 1 年：+50% | 第 2 年：-20% | 第 3 年：+50% 平均 = (50 - 20 + 50) / 3 = 26.67%",
         "cagrTitle": "CAGR：",
@@ -474,8 +474,8 @@
         "scenarios": [
           {
             "title": "股票与指数基金",
-            "description": "标普 500 长期历史回报约为 10-11% CAGR（未扣除通胀）。个股可能因公司和市况不同而更高或更低。",
-            "example": "示例：$10,000 投入年化 10% 的指数基金，10 年后增长至约 $25,937"
+            "description": "沪深 300 长期历史回报约为 8-10% CAGR（未扣除通胀）。个股可能因公司和市况不同而更高或更低。",
+            "example": "示例：¥10,000 投入年化 10% 的指数基金，10 年后增长至约 ¥25,937"
           },
           {
             "title": "基金比较",
@@ -485,7 +485,7 @@
           {
             "title": "退休规划",
             "description": "退休组合预测通常使用扣除通胀后 5-7% 的实际 CAGR 假设。这有助于估算你需要存多少钱以及投资组合能持续多久。",
-            "example": "示例：每月 $500、CAGR 7%，30 年后增长至约 $609,000"
+            "example": "示例：每月 ¥500、CAGR 7%，30 年后增长至约 ¥609,000"
           }
         ],
         "cautionTitle": "CAGR 不能告诉你什么",
@@ -496,288 +496,296 @@
   "pages": {
     "cagrFormula": {
       "metadata": {
-        "title": "CAGR Formula | How to Calculate Compound Annual Growth Rate",
-        "description": "Learn the CAGR formula with step-by-step examples. Calculate compound annual growth rate manually, in Excel, or with our free online CAGR calculator.",
-        "keywords": "cagr formula, compound annual growth rate formula, how to calculate cagr, cagr calculation, cagr variables, reverse cagr formula"
+        "title": "CAGR公式 | 如何计算复合年增长率",
+        "description": "通过分步示例学习CAGR公式。手动、在Excel中或使用我们的免费在线CAGR计算器计算复合年增长率。",
+        "keywords": "cagr公式, 复合年增长率公式, 如何计算cagr, cagr计算, cagr变量, 反向cagr公式"
       },
-      "title": "CAGR Formula: How to Calculate Compound Annual Growth Rate",
-      "subtitle": "A complete guide to the compound annual growth rate formula with examples and reverse formulas",
-      "intro": "The CAGR formula calculates the annualized growth rate of an investment over a stated period, assuming profits are reinvested each year.",
+      "title": "CAGR公式：如何计算复合年增长率",
+      "subtitle": "包含示例和反向公式的复合年增长率公式完整指南",
+      "intro": "CAGR公式计算投资在特定时期内的年化增长率，假设利润每年再投资。",
       "formula": "CAGR = (FV / PV)^(1/n) - 1",
-      "formulaCaption": "Where FV is final value, PV is present value, and n is number of years.",
-      "variablesTitle": "Where:",
+      "formulaCaption": "其中FV为最终值，PV为初始值，n为年数。",
+      "variablesTitle": "其中：",
       "variables": {
         "fv": {
-          "term": "FV (Final Value)",
-          "definition": "The ending value of the investment."
+          "term": "FV（最终值）",
+          "definition": "投资的结束价值。"
         },
         "pv": {
-          "term": "PV (Present Value)",
-          "definition": "The beginning value or initial investment amount."
+          "term": "PV（现值）",
+          "definition": "起始价值或初始投资金额。"
         },
         "n": {
-          "term": "n (Number of Years)",
-          "definition": "The investment time period in years."
+          "term": "n（年数）",
+          "definition": "投资时间段，单位为年。"
         }
       },
-      "stepsTitle": "Step-by-Step Calculation",
+      "stepsTitle": "分步计算",
       "steps": [
-        "Divide the final value (FV) by the initial value (PV).",
-        "Raise the result to the power of 1 divided by the number of years (n).",
-        "Subtract 1 from the result.",
-        "Multiply by 100 to convert to a percentage."
+        "将最终值（FV）除以初始值（PV）。",
+        "将结果提升到1除以年数（n）的幂。",
+        "从结果中减去1。",
+        "乘以100转换为百分比。"
       ],
-      "exampleTitle": "Example Calculation",
+      "exampleTitle": "计算示例",
       "example": {
-        "given": "Given: PV = $10,000, FV = $20,000, n = 5 years",
-        "step1": "Step 1: 20,000 / 10,000 = 2",
-        "step2": "Step 2: 2^((1/5)) = 2^(0.2) = 1.1487",
-        "step3": "Step 3: 1.1487 - 1 = 0.1487",
-        "result": "Result: 0.1487 × 100 = 14.87%"
+        "given": "给定：PV = ¥10,000，FV = ¥20,000，n = 5年",
+        "step1": "步骤1：20,000 / 10,000 = 2",
+        "step2": "步骤2：2^((1/5)) = 2^(0.2) = 1.1487",
+        "step3": "步骤3：1.1487 - 1 = 0.1487",
+        "result": "结果：0.1487 × 100 = 14.87%"
       },
-      "reverseTitle": "Reverse CAGR Formulas",
-      "reverseIntro": "You can rearrange the CAGR formula to solve for any missing variable. These reverse formulas are useful when you know your target return and want to find the required initial investment, final value, or time horizon.",
+      "reverseTitle": "反向CAGR公式",
+      "reverseIntro": "您可以重新排列CAGR公式以求解任何缺失的变量。当您知道目标收益率并希望找到所需的初始投资、最终值或时间范围时，这些反向公式非常有用。",
       "reverseFormulas": [
         {
-          "name": "Calculate Final Value",
+          "name": "计算最终值",
           "formula": "FV = PV × (1 + CAGR)^n",
-          "when": "Use when you know the initial investment, CAGR, and time period."
+          "when": "当您知道初始投资、CAGR和时间周期时使用。"
         },
         {
-          "name": "Calculate Initial Value",
+          "name": "计算初始值",
           "formula": "PV = FV / (1 + CAGR)^n",
-          "when": "Use when you know the target final value, CAGR, and time period."
+          "when": "当您知道目标最终值、CAGR和时间周期时使用。"
         },
         {
-          "name": "Calculate Time Period",
+          "name": "计算时间周期",
           "formula": "n = ln(FV / PV) / ln(1 + CAGR)",
-          "when": "Use when you know the initial value, final value, and CAGR."
+          "when": "当您知道初始值、最终值和CAGR时使用。"
         }
       ],
-      "calculatorModesTitle": "Our CAGR Calculator Solves for Any Variable",
-      "calculatorModesIntro": "Our smart calculator lets you input any 3 of the 4 variables and automatically calculates the missing one.",
+      "calculatorModesTitle": "我们的CAGR计算器可求解任意变量",
+      "calculatorModesIntro": "我们的智能计算器允许您输入4个变量中的任意3个，并自动计算缺失的那个。",
       "calculatorModes": [
-        "Calculate CAGR: Given PV, FV, and n",
-        "Calculate FV: Given PV, CAGR, and n",
-        "Calculate PV: Given FV, CAGR, and n",
-        "Calculate Time: Given PV, FV, and CAGR"
+        "计算CAGR：给定PV、FV和n",
+        "计算FV：给定PV、CAGR和n",
+        "计算PV：给定FV、CAGR和n",
+        "计算时间：给定PV、FV和CAGR"
       ],
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula?",
-            "answer": "CAGR = (FV/PV)^(1/n) - 1, where FV is the final value, PV is the initial value, and n is the number of years."
+            "question": "CAGR公式是什么？",
+            "answer": "CAGR = (FV/PV)^(1/n) - 1，其中FV是最终值，PV是初始值，n是年数。"
           },
           {
-            "question": "Can CAGR be negative?",
-            "answer": "Yes. If the final value is lower than the initial value, CAGR will be negative, indicating a loss."
+            "question": "CAGR可以为负吗？",
+            "answer": "可以。如果最终值低于初始值，CAGR将为负，表示亏损。"
           },
           {
-            "question": "How do I calculate CAGR in Excel?",
-            "answer": "Use =POWER(FV/PV, 1/n)-1, =(FV/PV)^(1/n)-1, or =RATE(n, 0, -PV, FV)."
+            "question": "如何在Excel中计算CAGR？",
+            "answer": "使用=POWER(FV/PV, 1/n)-1、=(FV/PV)^(1/n)-1或=RATE(n, 0, -PV, FV)。"
           },
           {
-            "question": "What is a good CAGR?",
-            "answer": "Historically, the S&P 500 has returned about 10-11% CAGR before inflation. A 'good' CAGR depends on your risk tolerance and goals."
+            "question": "什么是好的CAGR？",
+            "answer": "历史上，标普500在通胀前的CAGR约为10-11%。「好的」CAGR取决于您的风险承受能力和目标。"
           },
           {
-            "question": "Does CAGR include dividends?",
-            "answer": "Only if dividends are reinvested. If taken as cash, they should be tracked separately as income."
+            "question": "CAGR包含股息吗？",
+            "answer": "只有在股息再投资的情况下才包含。如果以现金取出，应单独作为收入记录。"
           }
         ]
       }
     },
     "cagrVsIrr": {
       "metadata": {
-        "title": "CAGR vs IRR: Key Differences & When to Use Each",
-        "description": "CAGR and IRR both measure investment returns, but they answer different questions. Learn the differences, formulas, and when to use each metric.",
-        "keywords": "cagr vs irr, difference between cagr and irr, when to use irr, internal rate of return, cagr formula vs irr"
+        "title": "CAGR vs IRR：关键区别及何时使用",
+        "description": "CAGR和IRR都衡量投资回报，但它们回答不同的问题。了解区别、公式以及何时使用每个指标。",
+        "keywords": "cagr vs irr, cagr和irr的区别, 何时使用irr, 内部收益率, cagr公式 vs irr"
       },
-      "title": "CAGR vs IRR: What's the Difference?",
-      "subtitle": "Two popular return metrics, explained with examples",
-      "intro": "CAGR and IRR are both used to measure investment performance, but they work best in different situations. CAGR is simple and good for start-to-end comparisons. IRR is more advanced and accounts for the timing of cash flows.",
+      "title": "CAGR vs IRR：有什么区别？",
+      "subtitle": "通过示例解释两个流行的收益指标",
+      "intro": "CAGR和IRR都用于衡量投资表现，但它们最适合不同的情况。CAGR简单，适合起点到终点的比较。IRR更高级，考虑了现金流的时间。",
       "comparisonHeaders": {
-        "metric": "Metric",
-        "description": "Description",
-        "bestFor": "Best For"
+        "metric": "指标",
+        "description": "描述",
+        "bestFor": "最适合"
       },
       "comparisonTable": [
         {
           "name": "CAGR",
-          "description": "Smoothed annualized growth rate assuming compounding.",
-          "bestFor": "Long-term investment performance with no intermediate cash flows."
+          "description": "假设复利的平滑年化增长率。",
+          "bestFor": "没有中间现金流的长期投资表现。"
         },
         {
-          "name": "Simple Average Return",
-          "description": "Arithmetic mean of annual returns.",
-          "bestFor": "Quick rough estimates only."
+          "name": "简单平均回报",
+          "description": "年度回报的算术平均值。",
+          "bestFor": "仅用于快速粗略估计。"
         },
         {
-          "name": "Absolute Return",
-          "description": "Total percentage change from start to end.",
-          "bestFor": "Short-term or single-period performance."
+          "name": "绝对回报",
+          "description": "从开始到结束的总百分比变化。",
+          "bestFor": "短期或单期表现。"
         },
         {
           "name": "IRR",
-          "description": "Discount rate that makes the net present value of all cash flows zero.",
-          "bestFor": "Investments with multiple inflows and outflows."
+          "description": "使所有现金流净现值为零的折现率。",
+          "bestFor": "具有多个现金流入和流出的投资。"
         },
         {
           "name": "TWR",
-          "description": "Removes the impact of external cash flows.",
-          "bestFor": "Evaluating fund manager performance."
+          "description": "消除外部现金流的影响。",
+          "bestFor": "评估基金经理表现。"
         }
       ],
       "whatIsCagr": {
-        "title": "What Is CAGR?",
-        "text": "CAGR measures the annualized growth of an investment from a starting value to an ending value, assuming no intermediate cash flows. It smooths out volatility and gives a single growth rate."
+        "title": "什么是CAGR？",
+        "text": "CAGR衡量投资从起始值到结束值的年化增长，假设没有中间现金流。它平滑波动并给出单一增长率。"
       },
       "whatIsIrr": {
-        "title": "What Is IRR?",
-        "text": "IRR is the annualized rate of return at which the net present value of all cash flows equals zero. It accounts for the timing and size of each cash flow.",
-        "useCase": "Use IRR for projects, real estate investments, private equity, or any investment with irregular contributions and withdrawals."
+        "title": "什么是IRR？",
+        "text": "IRR是所有现金流净现值等于零时的年化收益率。它考虑了每笔现金流的时间和规模。",
+        "useCase": "对于项目、房地产投资、私募股权投资或任何具有不规则投入和撤出的投资，请使用IRR。"
       },
-      "exampleTitle": "Same Investment, Different Results",
-      "exampleIntro": "You buy a stock for $10,000, receive $2,000 in dividends at the end of each year for 4 years, and sell it for $12,000 at the end of year 4.",
+      "exampleTitle": "同一投资，不同结果",
+      "exampleIntro": "您以¥10,000买入一只股票，每年末获得¥2,000股息，持续4年，并在第4年末以¥12,000卖出。",
       "example": {
         "cagr": {
-          "title": "CAGR Calculation",
-          "calculation": "CAGR only uses the purchase price ($10,000) and the sale price ($12,000) over 4 years: CAGR = (12,000/10,000)^(1/4) - 1 = 4.66%."
+          "title": "CAGR计算",
+          "calculation": "CAGR仅使用买入价（¥10,000）和卖出价（¥12,000）计算4年：CAGR = (12,000/10,000)^(1/4) - 1 = 4.66%。"
         },
         "irr": {
-          "title": "IRR Calculation",
-          "calculation": "IRR includes every dividend's timing. For cash flows -10,000, +2,000, +2,000, +2,000, +14,000, Excel =IRR(...) returns 20.0%."
+          "title": "IRR计算",
+          "calculation": "IRR包含每笔股息的时间。对于现金流-10,000、+2,000、+2,000、+2,000、+14,000，Excel =IRR(...)返回20.0%。"
         },
-        "conclusion": "CAGR understates the true return because it ignores the $8,000 of dividends received before the final sale. IRR captures the full picture."
+        "conclusion": "CAGR低估了真实回报，因为它忽略了最终卖出前收到的¥8,000股息。IRR captures the full picture."
       },
       "useCagr": {
-        "title": "Use CAGR When",
+        "title": "何时使用CAGR",
         "items": [
-          "You have one initial investment and one final value.",
-          "You want to compare investments over the same time period.",
-          "There are no intermediate deposits or withdrawals.",
-          "You need a quick, easy-to-understand annualized return."
+          "您有一次性初始投资和单一最终值。",
+          "您想在同一时期比较不同投资。",
+          "没有中间存款或取款。",
+          "您需要一个快速、易于理解的年化回报。"
         ]
       },
       "useIrr": {
-        "title": "Use IRR When",
+        "title": "何时使用IRR",
         "items": [
-          "There are multiple cash flows over time.",
-          "You want to account for the timing of each cash flow.",
-          "You are evaluating a project or business investment.",
-          "You have irregular contributions like a SIP or DCA plan."
+          "随着时间的推移有多个现金流。",
+          "您想考虑每笔现金流的时间。",
+          "您正在评估一个项目或商业投资。",
+          "您有像SIP或DCA计划这样的不规则投入。"
         ]
       },
       "faq": {
         "questions": [
           {
-            "question": "Is CAGR the same as IRR?",
-            "answer": "No. CAGR measures smoothed annualized growth between two values. IRR accounts for the timing and size of multiple cash flows."
+            "question": "CAGR和IRR一样吗？",
+            "answer": "不一样。CAGR衡量两个值之间的平滑年化增长。IRR考虑多笔现金流的时间和规模。"
           },
           {
-            "question": "Why is IRR lower than CAGR?",
-            "answer": "IRR can be lower when early cash flows are small and later cash flows are large, because money received earlier is more valuable."
+            "question": "为什么IRR低于CAGR？",
+            "answer": "当早期现金流较小而后期现金流较大时，IRR可能较低，因为更早收到的钱更有价值。"
           },
           {
-            "question": "Can I use CAGR for SIP investments?",
-            "answer": "No. For monthly contributions, use XIRR because each contribution has a different investment horizon."
+            "question": "SIP投资可以使用CAGR吗？",
+            "answer": "不可以。对于每月定投，请使用XIRR，因为每笔投入的持有期不同。"
           },
           {
-            "question": "Which is better for comparing mutual funds?",
-            "answer": "CAGR is better for comparing lump-sum investments over the same period. IRR or XIRR is better for SIPs."
+            "question": "比较共同基金哪个更好？",
+            "answer": "CAGR更适合在同一时期比较一次性投资。IRR或XIRR更适合定投。"
           }
         ]
       }
     },
     "cagrInExcel": {
       "metadata": {
-        "title": "CAGR in Excel: 3 Formulas with Examples",
-        "description": "Learn how to calculate CAGR in Excel using POWER, RATE, and manual formulas. Includes examples, common errors, and when to use XIRR instead.",
-        "keywords": "cagr in excel, cagr formula excel, how to calculate cagr in excel, cagr excel template, cagr rate function"
+        "title": "Excel中的CAGR：3个带示例的公式",
+        "description": "学习如何在Excel中使用POWER、RATE和手动公式计算CAGR。包含示例、常见错误以及何时改用XIRR。",
+        "keywords": "excel中的cagr, cagr公式 excel, 如何在excel中计算cagr, cagr excel模板, cagr rate函数"
       },
-      "title": "How to Calculate CAGR in Excel",
-      "subtitle": "Three formulas, one result — with examples and common fixes",
-      "intro": "You can calculate CAGR in Excel using the POWER function, the RATE function, or a manual formula. Each method gives the same result; choose the one that fits your worksheet.",
-      "methodsTitle": "Three Ways to Calculate CAGR in Excel",
+      "title": "如何在Excel中计算CAGR",
+      "subtitle": "三个公式，一个结果——附示例和常见修复",
+      "intro": "您可以在Excel中使用POWER函数、RATE函数或手动公式计算CAGR。每种方法结果相同；选择适合您工作表的方式。",
+      "methodsTitle": "在Excel中计算CAGR的三种方法",
       "methods": [
         {
-          "name": "POWER function",
+          "name": "POWER函数",
           "formula": "=POWER(FV/PV, 1/n)-1",
-          "example": "=POWER(20000/10000, 1/5)-1 returns 0.1487 or 14.87%"
+          "example": "=POWER(20000/10000, 1/5)-1 返回 0.1487 或 14.87%"
         },
         {
-          "name": "Manual formula",
+          "name": "手动公式",
           "formula": "=(FV/PV)^(1/n)-1",
-          "example": "=(20000/10000)^(1/5)-1 returns 0.1487 or 14.87%"
+          "example": "=(20000/10000)^(1/5)-1 返回 0.1487 或 14.87%"
         },
         {
-          "name": "RATE function",
+          "name": "RATE函数",
           "formula": "=RATE(n, 0, -PV, FV)",
-          "example": "=RATE(5, 0, -10000, 20000) returns 0.1487 or 14.87%"
+          "example": "=RATE(5, 0, -10000, 20000) 返回 0.1487 或 14.87%"
         }
       ],
-      "workedExampleTitle": "Full Worked Example",
-      "workedExampleIntro": "Here is a complete example you can copy into Excel.",
+      "variablesTitle": "其中：",
+      "variables": {
+        "fv": "FV = 投资的结束价值",
+        "pv": "PV = 投资的起始价值",
+        "n": "n = 年数"
+      },
+      "tipTitle": "提示",
+      "tip": "如果您的数据包含每月定投或不规则日期，请使用=XIRR(金额, 日期)代替CAGR。您也可以使用上方免费的在线CAGR计算器来核对Excel结果。",
+      "workedExampleTitle": "完整示例",
+      "workedExampleIntro": "以下是您可以复制到Excel的完整示例。",
       "workedExampleHeaders": {
-        "label": "Input",
-        "value": "Value"
+        "label": "输入",
+        "value": "数值"
       },
       "workedExampleRows": {
-        "pv": "Initial Value (PV)",
-        "fv": "Final Value (FV)",
-        "n": "Years (n)",
+        "pv": "初始值（PV）",
+        "fv": "最终值（FV）",
+        "n": "年数（n）",
         "cagr": "CAGR"
       },
       "workedExampleValues": {
-        "pv": "$10,000",
-        "fv": "$20,000",
+        "pv": "¥10,000",
+        "fv": "¥20,000",
         "n": "5",
         "cagr": "14.87%"
       },
-      "commonErrorsTitle": "Common Errors & How to Fix Them",
+      "commonErrorsTitle": "常见错误及修复方法",
       "commonErrors": [
         {
-          "error": "#NUM! error with RATE",
-          "cause": "PV was not entered as a negative number.",
-          "fix": "Use =RATE(n, 0, -PV, FV) with a minus sign before PV."
+          "error": "RATE出现#NUM!错误",
+          "cause": "PV未输入为负数。",
+          "fix": "使用=RATE(n, 0, -PV, FV)，在PV前加负号。"
         },
         {
-          "error": "Result looks too small",
-          "cause": "The cell is not formatted as a percentage.",
-          "fix": "Select the cell, then Home → Number → Percentage."
+          "error": "结果看起来太小",
+          "cause": "单元格未设置为百分比格式。",
+          "fix": "选择单元格，然后 开始 → 数字 → 百分比。"
         },
         {
-          "error": "Monthly data gives wrong CAGR",
-          "cause": "n was entered in months but the result was not annualized.",
-          "fix": "Use n in years, or multiply the monthly result by 12."
+          "error": "月度数据得出错误的CAGR",
+          "cause": "n以月为单位输入，但结果未年化。",
+          "fix": "使用以年为单位的n，或将月度结果乘以12。"
         },
         {
-          "error": "Result is 100x too large or small",
-          "cause": "Percentage formatting is missing or applied twice.",
-          "fix": "Check the cell format and whether you already multiplied by 100."
+          "error": "结果过大或过小100倍",
+          "cause": "缺少百分比格式或应用了两次。",
+          "fix": "检查单元格格式以及是否已经乘以100。"
         }
       ],
       "xirr": {
-        "title": "When to Use XIRR Instead",
-        "text": "If your data includes monthly contributions, dividends, or irregular dates, use =XIRR(values, dates) instead of CAGR. XIRR handles cash flows that happen on any date."
+        "title": "何时改用XIRR",
+        "text": "如果您的数据包含每月定投、股息或不规则日期，请使用=XIRR(金额, 日期)代替CAGR。XIRR可处理发生在任何日期的现金流。"
       },
       "faq": {
         "questions": [
           {
-            "question": "What is the CAGR formula in Excel?",
-            "answer": "The most common formulas are =POWER(FV/PV, 1/n)-1 and =RATE(n, 0, -PV, FV)."
+            "question": "Excel中的CAGR公式是什么？",
+            "answer": "最常见的公式是=POWER(FV/PV, 1/n)-1和=RATE(n, 0, -PV, FV)。"
           },
           {
-            "question": "How do I calculate CAGR for 5 years in Excel?",
-            "answer": "Enter PV, FV, and n=5, then use =POWER(FV/PV, 1/5)-1."
+            "question": "如何在Excel中计算5年的CAGR？",
+            "answer": "输入PV、FV和n=5，然后使用=POWER(FV/PV, 1/5)-1。"
           },
           {
-            "question": "Why does RATE show #NUM!?",
-            "answer": "RATE requires PV to be negative because it represents a cash outflow."
+            "question": "为什么RATE显示#NUM!？",
+            "answer": "RATE要求PV为负数，因为它代表现金流出。"
           },
           {
-            "question": "Should I use CAGR or XIRR for SIP?",
-            "answer": "Use XIRR. CAGR assumes a single initial and final value, while XIRR handles multiple contributions."
+            "question": "定投应该用CAGR还是XIRR？",
+            "answer": "使用XIRR。CAGR假设单一初始值和最终值，而XIRR处理多笔投入。"
           }
         ]
       }
